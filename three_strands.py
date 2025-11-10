@@ -11,14 +11,20 @@ Inputs:
 - No command-line arguments; all model, domains, and constraints are defined in this script.
 
 Outputs:
-- Prints ensemble defect for 100 design trials and the best trial’s strand sequences.
-- Saves the best Strand 1 and Strand 2 sequences to 'best_strands.txt'.
+- Prints ensemble defect for 100 design trials and the best trial's strand sequences.
+- Saves the best Strand 1, Strand 2, and Strand 3 sequences to 'best_strands.txt'.
 """
 
-# lambda helper functions
-par_blankregion = lambda n: '.' * n
-par_leftclamp = lambda n: '(' * n
-par_rightclamp = lambda n: ')' * n
+#### PARAMETERS TO ADJUST ####
+loop_length = 54  # length of the loop domain in strand 2
+rod_length = 20  # length of the rod domain in strand 3
+clamp_length = 15  # length of the clamp domains in strands 1 and 2
+
+# NOTICE: loop_length - rod_length / 2 should be an integer.
+blankregion = (loop_length - rod_length) / 2
+if not blankregion.is_integer():
+    raise ValueError("loop_length - rod_length must be an even number.")
+blankregion = int(blankregion)
 
 
 model = Model(
@@ -34,18 +40,18 @@ options = DesignOptions(
     seed=12345,
 )
 
-d1  = Domain('N15', name='Domain 1')   # N15
-d2  = Domain('AACGTGCTCAAGGTGTCTTAGT', name='Domain 2')
+d1  = Domain(f'N{clamp_length}', name='Domain 1')   # N right clamp length
+d2  = Domain('AACGTGCTCAAGGTGTCTTAGT', name='Domain 2') # d2-d8 are the lettuce domains.
 d3  = Domain('AGGGATGATGCGGCAGTGGGCT', name='Domain 3')
 d4  = Domain('TCGCAGAAGA', name='Domain 4')
 d5  = Domain('GTGTT', name='Domain 5')
 d6  = Domain('TCTTCTGCGA', name='Domain 6')
 d7  = Domain('GGGG', name='Domain 7')
 d8  = Domain('ACTAAGACACCTTGAGCACGTT', name='Domain 8')
-d9  = Domain('N15', name='Domain 9')    # N15
-d10 = Domain('N17', name='Domain 10')    # N17
-d11  = Domain('N20', name='Domain 11')    # N20; Rod structure, variable length in simulations.
-d12 = Domain('N17', name='Domain 12')    # N17
+d9  = Domain(f'N{clamp_length}', name='Domain 9')    # left clamp length
+d10 = Domain(f'N{blankregion}', name='Domain 10')    # loop - rod = unpaired region
+d11  = Domain(f'N{rod_length}', name='Domain 11')    # N20; Rod structure, variable length in simulations.
+d12 = Domain(f'N{blankregion}', name='Domain 12')    # loop - rod = unpaired region
 
 # Strand 1 = Lettuce_S-9-1
 Strand1 = TargetStrand(
