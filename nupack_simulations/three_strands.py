@@ -110,11 +110,15 @@ sim2 = Similarity([d9], 'S15', limits=[0.45, 0.55])
 sim3 = Similarity([d10], 'S17', limits=[0.45, 0.55])
 sim4 = Similarity([d11], 'S20', limits=[0.45, 0.55])
 sim5 = Similarity([d12], 'S17', limits=[0.45, 0.55])
+# Diversity constraint
+div1 = Diversity(word=5, types=3, scope=[d1])
+div2 = Diversity(word=5, types=3, scope=[d9])
+div3 = Diversity(word=5, types=3, scope=[d11])
 
 
 design = tube_design(
     tubes=[tube1, tube2],
-    hard_constraints=[sim1, sim2, sim3, sim4, sim5],
+    hard_constraints=[sim1, sim2, sim3, sim4, sim5, div1, div2, div3],
     soft_constraints=[],
     defect_weights=None,
     options=None,
