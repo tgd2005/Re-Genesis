@@ -21,7 +21,7 @@ rod_length = 20  # length of the rod domain in strand 3
 clamp_length = 15  # length of the clamp domains in strands 1 and 2
 
 # NOTICE: loop_length - rod_length / 2 should be an integer.
-blankregion = (loop_length - rod_length) / 2
+blankregion = (loop_length - rod_length - 2*clamp_length) / 2
 if not blankregion.is_integer():
     raise ValueError("loop_length - rod_length must be an even number.")
 blankregion = int(blankregion)
@@ -72,8 +72,8 @@ Strand3 = TargetStrand(
 )
 
 # legacy structure for 2 strands: '(15(22.22(10.5)10.4)22(15+)15.54)15'
-s1s2_complex_structure = '(15(22.22(10.5)10.4)22(15+)15.17.20.17)15'
-s2s3_complex_structure = '.15.17(20.17.15+)20'
+s1s2_complex_structure = f'({clamp_length}(22.22(10.5)10.4)22({clamp_length}+){clamp_length}.{blankregion}.{rod_length}.{blankregion}){clamp_length}'
+s2s3_complex_structure = f'.{clamp_length}.{blankregion}({rod_length}.{blankregion}.{clamp_length}+){rod_length}'
 
 # complex when only lettuce and loop are interacting
 C1 = TargetComplex(
@@ -104,16 +104,16 @@ tube2 = TargetTube(
 
 # ---------- Design job (tube_design) ----------
 
-#GC content constraint
-sim1 = Similarity([d1], 'S15', limits=[0.35, 0.55])
-sim2 = Similarity([d9], 'S15', limits=[0.35, 0.55])
-sim3 = Similarity([d10], 'S17', limits=[0.35, 0.55])
-sim4 = Similarity([d11], 'S20', limits=[0.35, 0.55])
-sim5 = Similarity([d12], 'S17', limits=[0.35, 0.55])
+# GC content constraint
+sim1 = Similarity([d1], f'S{clamp_length}', limits=[0.35, 0.55])
+sim2 = Similarity([d9], f'S{clamp_length}', limits=[0.35, 0.55])
+sim3 = Similarity([d10], f'S{blankregion}', limits=[0.35, 0.55])
+sim4 = Similarity([d11], f'S{rod_length}', limits=[0.35, 0.55])
+sim5 = Similarity([d12], f'S{blankregion}', limits=[0.35, 0.55])
 # Diversity constraint
-div1 = Diversity(word=5, types=2, scope=[d1])
-div2 = Diversity(word=5, types=2, scope=[d9])
-div3 = Diversity(word=5, types=2, scope=[d11])
+div1 = Diversity(word=5, types=3, scope=[d1])
+div2 = Diversity(word=5, types=3, scope=[d9])
+div3 = Diversity(word=5, types=3, scope=[d11])
 
 
 design = tube_design(
