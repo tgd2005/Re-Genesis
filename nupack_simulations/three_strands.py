@@ -56,19 +56,19 @@ d12 = Domain(f'N{blankregion}', name='Domain 12')    # loop - rod = unpaired reg
 # Strand 1 = Lettuce_S-9-1
 Strand1 = TargetStrand(
     [d1, d2, d3, d4, d5, d6, d7, d8, d9],
-    name='Strand 1'
+    name='Lettuce_S-9-1'
 )
 
 # Strand 2 = Clamp loop structure
 Strand2 = TargetStrand(
     [~d1, d10 , d11, d12, ~d9],
-    name='Strand 2'
+    name='Clamp loop strand'
 )
 
 # Strand 3 = Rod structure
 Strand3 = TargetStrand(
     [~d11],
-    name='Strand 3'
+    name='Clamp rod strand'
 )
 
 # legacy structure for 2 strands: '(15(22.22(10.5)10.4)22(15+)15.54)15'
@@ -105,15 +105,15 @@ tube2 = TargetTube(
 # ---------- Design job (tube_design) ----------
 
 #GC content constraint
-sim1 = Similarity([d1], 'S15', limits=[0.45, 0.55])
-sim2 = Similarity([d9], 'S15', limits=[0.45, 0.55])
-sim3 = Similarity([d10], 'S17', limits=[0.45, 0.55])
-sim4 = Similarity([d11], 'S20', limits=[0.45, 0.55])
-sim5 = Similarity([d12], 'S17', limits=[0.45, 0.55])
+sim1 = Similarity([d1], 'S15', limits=[0.35, 0.55])
+sim2 = Similarity([d9], 'S15', limits=[0.35, 0.55])
+sim3 = Similarity([d10], 'S17', limits=[0.35, 0.55])
+sim4 = Similarity([d11], 'S20', limits=[0.35, 0.55])
+sim5 = Similarity([d12], 'S17', limits=[0.35, 0.55])
 # Diversity constraint
-div1 = Diversity(word=5, types=3, scope=[d1])
-div2 = Diversity(word=5, types=3, scope=[d9])
-div3 = Diversity(word=5, types=3, scope=[d11])
+div1 = Diversity(word=5, types=2, scope=[d1])
+div2 = Diversity(word=5, types=2, scope=[d9])
+div3 = Diversity(word=5, types=2, scope=[d11])
 
 
 design = tube_design(
