@@ -54,45 +54,59 @@ d11  = Domain(f'N{rod_length}', name='Domain 11')    # N20; Rod structure, varia
 d12 = Domain(f'N{blankregion}', name='Domain 12')    # loop - rod = unpaired region
 
 # Strand 1 = Lettuce_S-9-1
-Strand1 = TargetStrand(
+Strand1L = TargetStrand(
     [d1, d2, d3, d4, d5, d6, d7, d8, d9],
-    name='Strand 1'
+    name='Lettuce_S-9-1L'
 )
 
 # Strand 2 = Clamp loop structure
-Strand2 = TargetStrand(
+Strand2L = TargetStrand(
     [~d1, d10 , d11, d12, ~d9],
-    name='Strand 2'
+    name='Loop L'
+)
+
+Strand1R = TargetStrand(
+    [d1, d2, d3, d4, d5, d6, d7, d8, d9],
+    name='Lettuce_S-9-1R'
+)
+
+# Strand 2 = Clamp loop structure
+Strand2R = TargetStrand(
+    [~d1, d10 , d11, d12, ~d9],
+    name='Loop R'
 )
 
 # Strand 3 = Rod structure
 Strand3 = TargetStrand(
     [~d11],
-    name='Strand 3'
+    name='Rod Strand'
 )
 
+lettuce_structure = '(22.22(10.5)10.4)22'
+
 # legacy structure for 2 strands: '(15(22.22(10.5)10.4)22(15+)15.54)15'
-s1s2_complex_structure_5end = '.15.17.20.17(15+)15(22.22(10.5)10.4)22.15'
-s1s2_complex_structure_3end = '.15(22.22(10.5)10.4)22(15+)15.17.20.17.15'
-s2s3_complex_structure = '.15.17(20.17.15+)20'
+s1s2_complex_structure_5end = f'({clamp_length}' + lettuce_structure + f'.{clamp_length}+.{clamp_length}.{blankregion}.{rod_length}.{blankregion}){clamp_length}'
+#f'.{clamp_length}.{blankregion}.{rod_length}.{blankregion}({clamp_length}+){clamp_length}' + lettuce_structure + f'.{clamp_length}'
+s1s2_complex_structure_3end = f'.{clamp_length}' + lettuce_structure + f'({clamp_length}+){clamp_length}.{blankregion}.{rod_length}.{blankregion}.{clamp_length}'
+s2s3_complex_structure = f'.{clamp_length}.{blankregion}({rod_length}.{blankregion}.{clamp_length}+){rod_length}'
 
 # complex when only lettuce and loop are interacting
 C1 = TargetComplex(
-    [Strand2, Strand1],
+    [Strand1L, Strand2L],
     structure=s1s2_complex_structure_5end,
     name="5' Handle"
 )
 
 # complex when only lettuce and loop are interacting
 C2 = TargetComplex(
-    [Strand1, Strand2],
+    [Strand1R, Strand2R],
     structure=s1s2_complex_structure_3end,
     name="3' Handle"
 )
 
 # complex when loop and rod are interacting
 C3 = TargetComplex(
-    [Strand2, Strand3],
+    [Strand2R, Strand3],
     structure=s2s3_complex_structure,
     name='Loop-Rod Complex'
 )
@@ -135,7 +149,7 @@ design = tube_design(
 )
 
 # Run 100 trials
-results = design.run(trials=100)
+results = design.run(trials=1)
 
 for i, r in enumerate(results):
     ed = r.defects.ensemble_defect   # scalar
