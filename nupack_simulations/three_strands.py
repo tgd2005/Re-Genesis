@@ -111,9 +111,9 @@ sim3 = Similarity([d10], f'S{blankregion}', limits=[0.35, 0.55])
 sim4 = Similarity([d11], f'S{rod_length}', limits=[0.35, 0.55])
 sim5 = Similarity([d12], f'S{blankregion}', limits=[0.35, 0.55])
 # Diversity constraint
-div1 = Diversity(word=5, types=3, scope=[d1])
-div2 = Diversity(word=5, types=3, scope=[d9])
-div3 = Diversity(word=5, types=3, scope=[d11])
+div1 = Diversity(word=10, types=3, scope=[d1])
+div2 = Diversity(word=10, types=3, scope=[d9])
+div3 = Diversity(word=10, types=3, scope=[d11])
 
 
 design = tube_design(
