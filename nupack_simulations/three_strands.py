@@ -1,4 +1,5 @@
 from nupack import *
+import os
 
 
 """
@@ -147,7 +148,8 @@ for ts in target_strands:
     seq = str(designed_strand)
     print(f"{ts.name}: {seq}")
 
-with open("output//best_strands3.txt", "w") as f:
+os.chdir("output") # Change directory to output folder for saving results
+with open("strands3_r91.txt", "w") as f:
     f.write(f"Best trial ensemble defect: {best_result.defects.ensemble_defect:.4f}\n")
     for ts in target_strands:
         seq = str(best_result.to_analysis(ts))
