@@ -109,7 +109,7 @@ for ts in target_strands:
     seq = str(designed_strand)
     print(f"{ts.name}: {seq}")
 
-with open("best_strands.txt", "w") as f:
+with open("output\\best_strands.txt", "w") as f:
     for ts in target_strands:
         seq = str(best_result.to_analysis(ts))
         f.write(f"{ts.name}\t{seq}\n")
