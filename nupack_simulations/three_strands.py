@@ -112,11 +112,13 @@ sim4 = Similarity([d9], f'S{rod_length}', limits=[0.35, 0.55])
 sim5 = Similarity([d10], f'S{blankregion}', limits=[0.35, 0.55])
 # Diversity constraint
 div1 = Diversity(word=10, types=3, scope=[d1, d7, d8, d9, d10])
+# Pattern constraint
+pat1 = Pattern(['GGGG'], scope=[d1, d7, d8, d9, d10])  # No GGGG in variable domains
 
 
 design = tube_design(
     tubes=[tube1, tube2],
-    hard_constraints=[sim1, sim2, sim3, sim4, sim5, div1],
+    hard_constraints=[sim1, sim2, sim3, sim4, sim5, div1, pat1],
     soft_constraints=[],
     defect_weights=None,
     options=None,
