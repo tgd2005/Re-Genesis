@@ -165,7 +165,8 @@ print(f"Best trial: {best_idx}, ensemble defect = {best_result.defects.ensemble_
 
 
 
-target_strands = [Strand1, Strand2, Strand3]
+
+target_strands = [Strand1L, Strand1R, Strand2L, Strand2R, Strand3]
 
 print("Best strand sequences:")
 for ts in target_strands:
