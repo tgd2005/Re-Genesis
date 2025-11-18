@@ -17,11 +17,11 @@ Outputs:
 
 #### PARAMETERS TO ADJUST ####
 loop_length = 54  # length of the loop domain in strand 2
-rod_length = 20  # length of the rod domain in strand 3
+rod_length = 36  # length of the rod domain in strand 3
 clamp_length = 15  # length of the clamp domains in strands 1 and 2
 
 # NOTICE: loop_length - rod_length / 2 should be an integer.
-blankregion = (loop_length - rod_length - 2*clamp_length) / 2
+blankregion = (loop_length - rod_length) / 2
 if not blankregion.is_integer():
     raise ValueError("loop_length - rod_length must be an even number.")
 blankregion = int(blankregion)
@@ -55,6 +55,7 @@ d7 = Domain(f'N{rod_length}', name='Domain 7')    # N20; Rod structure, variable
 d8 = Domain(f'N{blankregion}', name='Domain 8')    # loop - rod = unpaired region
 d9 = Domain(f'N{rod_length/2}', name = 'Domain 9')
 d10 = Domain(f'N{rod_length/2}', name = 'Domain 10')
+
 # Strand 1 = Lettuce_r-9-1
 Strand1 = TargetStrand(
     [d1, d2, d3, d4, d5],
@@ -85,12 +86,13 @@ Strand5 = TargetStrand(
     name='Nicked loop strand - right'
 )
 
+# Strand 6 = Nicked rod strand - left side
 Strand6 = TargetStrand(
     [~d9],
     name='Nicked rod strand - left'
 )
 
-
+# Strand 7 = Nicked rod strand - right side
 Strand7 = TargetStrand(
     [~d10],
     name='Nicked rod strand - right'
@@ -150,14 +152,13 @@ sim3 = Similarity([d6], f'S{blankregion}', limits=[0.35, 0.55])
 sim4 = Similarity([d7], f'S{rod_length}', limits=[0.35, 0.55])
 sim5 = Similarity([d8], f'S{blankregion}', limits=[0.35, 0.55])
 # Diversity constraint
-div1 = Diversity(word=10, types=3, scope=[d1])
-div2 = Diversity(word=10, types=3, scope=[d5])
-div3 = Diversity(word=10, types=3, scope=[d7])
+div1 = Diversity(word=10, types=3, scope=[d1, d5, d6, d7, d8, d9, d10])
+pat1 = Pattern(['GGGG', 'CCCC'], scope=[d1, d5, d6, d7, d8, d9, d10]) # avoid G-quadruplexes
 
 
 design = tube_design(
     tubes=[tube1, tube2, tube3],
-    hard_constraints=[sim1, sim2, sim3, sim4, sim5, div1, div2, div3],
+    hard_constraints=[sim1, sim2, sim3, sim4, sim5, div1, pat1],
     soft_constraints=[],
     defect_weights=None,
     options=None,
