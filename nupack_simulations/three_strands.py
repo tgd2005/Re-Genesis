@@ -150,7 +150,7 @@ for ts in target_strands:
     seq = str(designed_strand)
     print(f"{ts.name}: {seq}")
 
-with open("best_strands3.txt", "w") as f:
+with open("output\\best_strands3.txt", "w") as f:
     f.write(f"Best trial ensemble defect: {best_result.defects.ensemble_defect:.4f}\n")
     for ts in target_strands:
         seq = str(best_result.to_analysis(ts))
