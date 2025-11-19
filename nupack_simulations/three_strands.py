@@ -18,11 +18,11 @@ Outputs:
 
 #### PARAMETERS TO ADJUST ####
 loop_length = 54  # length of the loop domain in strand 2
-rod_length = 20  # length of the rod domain in strand 3
+rod_length = 36  # length of the rod domain in strand 3
 clamp_length = 15  # length of the clamp domains in strands 1 and 2
 
 # NOTICE: loop_length - rod_length / 2 should be an integer.
-blankregion = (loop_length - rod_length - 2*clamp_length) / 2
+blankregion = (loop_length - rod_length) / 2
 if not blankregion.is_integer():
     raise ValueError("loop_length - rod_length must be an even number.")
 blankregion = int(blankregion)
