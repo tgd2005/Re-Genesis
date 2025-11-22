@@ -1,5 +1,5 @@
 from nupack import *
-
+import os
 
 """
 Design two DNA strands for a target duplex using the NUPACK 4 Python API.
@@ -190,7 +190,9 @@ for ts in target_strands:
     seq = str(designed_strand)
     print(f"{ts.name}: {seq}")
 
-with open("output\\strands3_r9_nicked.txt", "w") as f:
+os.chdir('../')
+os.chdir('../output/r-9')
+with open("strands3_r9_nicked.txt", "w") as f:
     f.write(f"Best trial ensemble defect: {best_result.defects.ensemble_defect:.4f}\n")
     for ts in target_strands:
         seq = str(best_result.to_analysis(ts))
