@@ -18,7 +18,7 @@ Outputs:
 
 #### PARAMETERS TO ADJUST ####
 loop_length = 54  # length of the loop domain in strand 2
-rod_length = 36  # length of the rod domain in strand 3
+rod_length = 26  # length of the rod domain in strand 3
 clamp_length = 15  # length of the clamp domains in strands 1 and 2
 
 # NOTICE: loop_length - rod_length / 2 should be an integer.
@@ -105,11 +105,11 @@ tube2 = TargetTube(
 # ---------- Design job (tube_design) ----------
 
 # GC content constraint
-sim1 = Similarity([d1], f'S{clamp_length}', limits=[0.35, 0.55])
-sim2 = Similarity([d7], f'S{clamp_length}', limits=[0.35, 0.55])
-sim3 = Similarity([d8], f'S{blankregion}', limits=[0.35, 0.55])
-sim4 = Similarity([d9], f'S{rod_length}', limits=[0.35, 0.55])
-sim5 = Similarity([d10], f'S{blankregion}', limits=[0.35, 0.55])
+sim1 = Similarity([d1], f'S{clamp_length}', limits=[0.40, 0.55])
+sim2 = Similarity([d7], f'S{clamp_length}', limits=[0.40, 0.55])
+sim3 = Similarity([d8], f'S{blankregion}', limits=[0.40, 0.55])
+sim4 = Similarity([d9], f'S{rod_length}', limits=[0.40, 0.55])
+sim5 = Similarity([d10], f'S{blankregion}', limits=[0.40, 0.55])
 # Diversity constraint
 div1 = Diversity(word=10, types=3, scope=[d1, d7, d8, d9, d10])
 # Pattern constraint
@@ -150,7 +150,8 @@ for ts in target_strands:
     seq = str(designed_strand)
     print(f"{ts.name}: {seq}")
 
-os.chdir("output") # Change directory to output folder for saving results
+os.chdir('../')
+os.chdir("../output") # Change directory to output folder for saving results
 with open("strands3_r91.txt", "w") as f:
     f.write(f"Best trial ensemble defect: {best_result.defects.ensemble_defect:.4f}\n")
     for ts in target_strands:

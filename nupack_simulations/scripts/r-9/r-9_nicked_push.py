@@ -66,7 +66,7 @@ d12 = Domain(f'N{rod_length/2}', name = 'Domain 10')
 
 # Strand 1 = Lettuce_r-9-1
 Strand1 = TargetStrand(
-    [clamp5p, d1, d2, d3, d4, d5, d6, d7, clamp3p],
+    [clamp5p, d2, d3, d4, d5, d6, clamp3p],
     name='Lettuce-r9'
 )
 
@@ -94,7 +94,7 @@ Strand5 = TargetStrand(
     name='Nicked rod strand - right'
 )
 
-lettuce_structure = f"){clamp_length}.3(2.2(10.30)12.11({clamp_length}"
+lettuce_structure = f"){clamp_length}(2.2(10.30)12({clamp_length}"
 rightrod_structure = f"({rod_length/2}"
 rightloop_structure = f"){rod_length/2}.{blankregion}({clamp_length}"
 leftloop_structure = f"){clamp_length}.{blankregion}({rod_length/2}"
@@ -141,8 +141,8 @@ design = tube_design(
     model=model
 )
 
-# Run 100 trials
-results = design.run(trials=100)
+# Run 10 trials
+results = design.run(trials=10)
 
 for i, r in enumerate(results):
     ed = r.defects.ensemble_defect   # scalar
