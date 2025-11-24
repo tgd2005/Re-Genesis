@@ -17,7 +17,7 @@ Outputs:
 
 #### PARAMETERS TO ADJUST ####
 loop_length = 54  # length of the loop domain in strand 2
-rod_length = 36  # length of the rod domain in strand 3
+rod_length = 54  # length of the rod domain in strand 3
 clamp_length = 15  # length of the clamp domains in strands 1 and 2
 
 # NOTICE: loop_length - rod_length / 2 should be an integer.
