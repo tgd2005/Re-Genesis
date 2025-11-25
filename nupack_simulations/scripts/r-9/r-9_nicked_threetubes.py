@@ -17,11 +17,11 @@ Outputs:
 
 #### PARAMETERS TO ADJUST ####
 loop_length = 54  # length of the loop domain in strand 2
-rod_length = 20  # length of the rod domain in strand 3
+rod_length = 36  # length of the rod domain in strand 3
 clamp_length = 15  # length of the clamp domains in strands 1 and 2
 
 # NOTICE: loop_length - rod_length / 2 should be an integer.
-blankregion = (loop_length - rod_length - 2*clamp_length) / 2
+blankregion = (loop_length - rod_length) / 2
 if not blankregion.is_integer():
     raise ValueError("loop_length - rod_length must be an even number.")
 blankregion = int(blankregion)
@@ -40,40 +40,69 @@ options = DesignOptions(
     seed=12345,
 )
 
-d1  = Domain(f'N{clamp_length}', name='Domain 1')   # N right clamp length
-d2  = Domain('AACGTGCTCAAGGTGTCTTAGT', name='Domain 2') # d2-d8 are the lettuce domains.
-d3  = Domain('AGGGATGATGCGGCAGTGGGCT', name='Domain 3')
-d4  = Domain('TCGCAGAAGA', name='Domain 4')
-d5  = Domain('GTGTT', name='Domain 5')
-d6  = Domain('TCTTCTGCGA', name='Domain 6')
-d7  = Domain('GGGG', name='Domain 7')
-d8  = Domain('ACTAAGACACCTTGAGCACGTT', name='Domain 8')
-d9  = Domain(f'N{clamp_length}', name='Domain 9')    # left clamp length
-d10 = Domain(f'N{blankregion}', name='Domain 10')    # loop - rod = unpaired region
-d11  = Domain(f'N{rod_length}', name='Domain 11')    # N20; Rod structure, variable length in simulations.
-d12 = Domain(f'N{blankregion}', name='Domain 12')    # loop - rod = unpaired region
 
-# Strand 1 = Lettuce_S-9-1
+stem1  = 'GCTCGGGACGAC'
+stem2  = 'GTCGTCCCGAGC'
+hairpin='AGGGATCAGGGATGTAGCGGCAGTGGGTGA'
+
+d1  = Domain(f'N{clamp_length}', name='Domain 1')   # N left clamp length
+d2  = Domain(stem1, name='Domain 2') # d2-d4 are the lettuce domains.
+d3  = Domain(hairpin, name='Domain 3')
+d4  = Domain(stem2, name='Domain 4')
+d5 = Domain(f'N{clamp_length}', name='Domain 5')    # right clamp length
+d6 = Domain(f'N{blankregion}', name='Domain 6')    # loop - rod = unpaired region
+d7 = Domain(f'N{rod_length}', name='Domain 7')    # N20; Rod structure, variable length in simulations.
+d8 = Domain(f'N{blankregion}', name='Domain 8')    # loop - rod = unpaired region
+d9 = Domain(f'N{rod_length/2}', name = 'Domain 9')
+d10 = Domain(f'N{rod_length/2}', name = 'Domain 10')
+
+# Strand 1 = Lettuce_r-9-1
 Strand1 = TargetStrand(
-    [d1, d2, d3, d4, d5, d6, d7, d8, d9],
-    name='Lettuce_S-9-1'
+    [d1, d2, d3, d4, d5],
+    name='Lettuce-r9'
 )
 
 # Strand 2 = Clamp loop structure
 Strand2 = TargetStrand(
-    [~d1, d10 , d11, d12, ~d9],
+    [~d1, d6, d7, d8, ~d5],
     name='Clamp loop strand'
 )
 
 # Strand 3 = Rod structure
 Strand3 = TargetStrand(
-    [~d11],
+    [~d7],
     name='Clamp rod strand'
 )
 
+# Strand 4 = Nicked loop strand - left side
+Strand4 = TargetStrand(
+    [d9, d6, ~d1],
+    name='Nicked loop strand - left'
+)
+
+# Strand 5 = Nicked loop strand - right side
+Strand5 = TargetStrand(
+    [~d5, d8, d10],
+    name='Nicked loop strand - right'
+)
+
+# Strand 6 = Nicked rod strand - left side
+Strand6 = TargetStrand(
+    [~d9],
+    name='Nicked rod strand - left'
+)
+
+# Strand 7 = Nicked rod strand - right side
+Strand7 = TargetStrand(
+    [~d10],
+    name='Nicked rod strand - right'
+)
+
+
 # legacy structure for 2 strands: '(15(22.22(10.5)10.4)22(15+)15.54)15'
-s1s2_complex_structure = f'({clamp_length}(22.22(10.5)10.4)22({clamp_length}+){clamp_length}.{blankregion}.{rod_length}.{blankregion}){clamp_length}'
-s2s3_complex_structure = f'.{clamp_length}.{blankregion}({rod_length}.{blankregion}.{clamp_length}+){rod_length}'
+s1s2_complex_structure = f'({clamp_length}({len(stem1)}.{len(hairpin)}){len(stem2)}({clamp_length}+){clamp_length}.{blankregion+rod_length+blankregion}){clamp_length}'
+s2s3_complex_structure = f'.{clamp_length+blankregion}({rod_length}.{blankregion+clamp_length}+){rod_length}'
+nicked_complex_structure = f'({rod_length/2}+){rod_length/2}.{blankregion}({clamp_length}+){clamp_length}({len(stem1)}.{len(hairpin)}){len(stem2)}({clamp_length}+){clamp_length}.{blankregion}({rod_length/2}+){rod_length/2}'
 
 # complex when only lettuce and loop are interacting
 C1 = TargetComplex(
@@ -89,6 +118,12 @@ C2 = TargetComplex(
     name='Complex 2'
 )
 
+C3 = TargetComplex(
+    [Strand6, Strand4, Strand1, Strand5, Strand7],
+    structure=nicked_complex_structure,
+    name='Complex 3'
+)
+
 #print(f"The number of nucleotides in the target structure:{C1.nt(model.alphabet)}")
 
 tube1 = TargetTube(
@@ -101,24 +136,29 @@ tube2 = TargetTube(
     off_targets=SetSpec(max_size=2),
     name='Tube 2'
 )
+tube3 = TargetTube(
+    on_targets={C3: 1e-6},
+    off_targets=SetSpec(max_size=4),
+    name='Tube 3'
+)
+
 
 # ---------- Design job (tube_design) ----------
 
 # GC content constraint
 sim1 = Similarity([d1], f'S{clamp_length}', limits=[0.35, 0.55])
-sim2 = Similarity([d9], f'S{clamp_length}', limits=[0.35, 0.55])
-sim3 = Similarity([d10], f'S{blankregion}', limits=[0.35, 0.55])
-sim4 = Similarity([d11], f'S{rod_length}', limits=[0.35, 0.55])
-sim5 = Similarity([d12], f'S{blankregion}', limits=[0.35, 0.55])
+sim2 = Similarity([d5], f'S{clamp_length}', limits=[0.35, 0.55])
+sim3 = Similarity([d6], f'S{blankregion}', limits=[0.35, 0.55])
+sim4 = Similarity([d7], f'S{rod_length}', limits=[0.35, 0.55])
+sim5 = Similarity([d8], f'S{blankregion}', limits=[0.35, 0.55])
 # Diversity constraint
-div1 = Diversity(word=10, types=3, scope=[d1])
-div2 = Diversity(word=10, types=3, scope=[d9])
-div3 = Diversity(word=10, types=3, scope=[d11])
+div1 = Diversity(word=10, types=3, scope=[d1, d5, d6, d7, d8, d9, d10])
+pat1 = Pattern(['GGGG', 'CCCC'], scope=[d1, d5, d6, d7, d8, d9, d10]) # avoid G-quadruplexes
 
 
 design = tube_design(
-    tubes=[tube1, tube2],
-    hard_constraints=[sim1, sim2, sim3, sim4, sim5, div1, div2, div3],
+    tubes=[tube1, tube2, tube3],
+    hard_constraints=[sim1, sim2, sim3, sim4, sim5, div1, pat1],
     soft_constraints=[],
     defect_weights=None,
     options=None,
@@ -126,7 +166,7 @@ design = tube_design(
 )
 
 # Run 100 trials
-results = design.run(trials=100)
+results = design.run(trials=10)
 
 for i, r in enumerate(results):
     ed = r.defects.ensemble_defect   # scalar
@@ -142,7 +182,7 @@ print(f"Best trial: {best_idx}, ensemble defect = {best_result.defects.ensemble_
 
 
 
-target_strands = [Strand1, Strand2, Strand3]
+target_strands = [Strand1, Strand2, Strand3, Strand4, Strand5, Strand6, Strand7]
 
 print("Best strand sequences:")
 for ts in target_strands:
@@ -150,7 +190,7 @@ for ts in target_strands:
     seq = str(designed_strand)
     print(f"{ts.name}: {seq}")
 
-with open("output\\best_strands3.txt", "w") as f:
+with open("output\\strands3_r9_nicked.txt", "w") as f:
     f.write(f"Best trial ensemble defect: {best_result.defects.ensemble_defect:.4f}\n")
     for ts in target_strands:
         seq = str(best_result.to_analysis(ts))
