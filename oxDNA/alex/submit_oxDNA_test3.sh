@@ -21,11 +21,11 @@ runcommand="$HOME/oxDNA_git/oxDNA/build/bin/oxDNA $inputfile"
 timeout 8m $runcommand
 
 # After oxDNA finishes, collect all .dat files in a separate output directory within the input directory
-outdir="../test_${IND}_output"
+outdir="./test_${IND}_output"
 mkdir -p "$outdir"
 for f in ./*.dat; do
      [ -e "$f" ] || break
-
+#Ignore initial.dat - the configuration file
 if [ "$(basename "$f")" = "initial.dat" ]; then
 continue
 fi
