@@ -1,6 +1,6 @@
 # Backend and Model
 interaction_type = DNA2
-seq_dep_file = '~/oxDNA' 
+seq_dep_file = '~/oxDNA/oxDNA2_sequence_dependent_parameters' 
 backend = CPU
 sim_type = MD
 restart_step_counter = 1
