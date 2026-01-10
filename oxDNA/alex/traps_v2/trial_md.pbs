@@ -24,12 +24,12 @@ if [ -n "${SEED:-}" ]; then
   sed -E -i 's/^([[:space:]]*seed[[:space:]]*=[[:space:]]*).*/\1'"$SEED"'/' trap_input
 fi
 
-# your familiar pattern
+# run simulation
 input_file="$OUTDIR/trap_input"
 runcommand="$HOME/oxDNA/build/bin/oxDNA $input_file"
 timeout 00:45:00 $runcommand
 
-# after the run finishes (keep your runcommand/timeout flow)
+# after the run finishes, keep runcommand/timeout flow
 jid="${PBS_JOBID%%.*}"          # e.g., 1501083 from 1501083.pbs-7
 for f in "$CASE/output"/*.o"$jid" "$CASE/output"/*.e"$jid"; do
   [ -f "$f" ] && mv "$f" "$OUTDIR"/
