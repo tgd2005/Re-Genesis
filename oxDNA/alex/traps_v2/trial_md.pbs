@@ -24,7 +24,7 @@ if [ -n "${SEED:-}" ]; then
   sed -E -i 's/^([[:space:]]*seed[[:space:]]*=[[:space:]]*).*/\1'"$SEED"'/' trap_input
 fi
 
-# ---- your familiar pattern ----
+# your familiar pattern
 input_file="$OUTDIR/trap_input"
 runcommand="$HOME/oxDNA/build/bin/oxDNA $input_file"
 timeout 00:45:00 $runcommand
