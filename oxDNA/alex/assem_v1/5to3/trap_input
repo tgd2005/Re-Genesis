@@ -28,7 +28,7 @@ print_conf_interval = 1e5
 print_energy_every = 1e5
 thermostat = john # john is an alternative
 #gamma = 4.0 # remove if john
-newtonian_steps = 103
+newtonian_steps = 53
 diff_coeff = 2.5
 time_scale = linear
 
