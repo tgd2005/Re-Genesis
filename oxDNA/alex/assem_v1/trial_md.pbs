@@ -1,0 +1,37 @@
+#!/bin/sh
+#PBS -lwalltime=01:00:00
+#PBS -lselect=1:ncpus=1:mem=10GB
+#PBS -o /dev/null
+#PBS -e /dev/null
+
+
+# input directory
+CASE="$HOME/test/traps_v2/5to3"
+
+# output directory
+OUTROOT="$CASE/output"
+OUTDIR="$OUTROOT/run_${PBS_JOBID:-manual}"
+mkdir -p "$OUTDIR"
+
+# copy the case files into the run folder
+rsync -a --exclude 'output/' "$CASE"/ "$OUTDIR"/
+
+# change directory to run from the output folder
+cd "$OUTDIR"
+
+# optionally set a custom seed: submit with `qsub -v SEED=X trial_md.pbs where X is an integer
+if [ -n "${SEED:-}" ]; then
+  sed -E -i 's/^([[:space:]]*seed[[:space:]]*=[[:space:]]*).*/\1'"$SEED"'/' trap_input
+fi
+
+# ---- your familiar pattern ----
+input_file="$OUTDIR/trap_input"
+runcommand="$HOME/oxDNA/build/bin/oxDNA $input_file"
+timeout 00:45:00 $runcommand
+
+# after the run finishes (keep your runcommand/timeout flow)
+jid="${PBS_JOBID%%.*}"          # e.g., 1501083 from 1501083.pbs-7
+for f in "$CASE/output"/*.o"$jid" "$CASE/output"/*.e"$jid"; do
+  [ -f "$f" ] && mv "$f" "$OUTDIR"/
+done
+
