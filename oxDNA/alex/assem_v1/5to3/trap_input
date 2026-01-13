@@ -18,19 +18,22 @@ refresh_vel = 1
 
 # Input/Output Files
 topology = top_5to3.top
-conf_file = last_conf_rel.dat
+conf_file = last_conf_MD0.dat
 trajectory_file = trajectory.dat
 energy_file = energy.dat
-lastconf_file = last_conf_MD.dat
+lastconf_file = last_conf_MD1.dat
 
 # Housekeeping
 print_conf_interval = 1e5
 print_energy_every = 1e5
 thermostat = john # john is an alternative
 #gamma = 4.0 # remove if john
-newtonian_steps = 53
+newtonian_steps = 1
 diff_coeff = 2.5
 time_scale = linear
+
+max_backbone_force = 5
+max_backbone_force_far = 10
 
 # mutual traps
 external_forces = 1

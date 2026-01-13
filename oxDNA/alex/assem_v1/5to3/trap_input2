@@ -18,7 +18,7 @@ refresh_vel = 1
 
 # Input/Output Files
 topology = top_5to3.top
-conf_file = last_conf_MD.dat
+conf_file = last_conf_MD1.dat
 trajectory_file = trajectory2.dat
 energy_file = energy2.dat
 lastconf_file = last_conf_MD2.dat
@@ -31,6 +31,9 @@ thermostat = john # john is an alternative
 newtonian_steps = 103
 diff_coeff = 2.5
 time_scale = linear
+
+max_backbone_force = 5
+max_backbone_force_far = 10
 
 # mutual traps
 external_forces = 1
