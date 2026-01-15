@@ -51,20 +51,8 @@ data_output_1={
                 particle_2=16
         }
         col_3={
-                type=distance
-                particle_1=14
-                particle_2=86
-        }
-        col_4={
-                type=distance
-                particle_1=17
-                particle_2=169
-        }
-        col_5={
-                type=distance
-                particle_1=32
-                particle_2=154
-        }
+		type=external_force
+		particles=15,16}
 }
 
 data_output_2 = {
