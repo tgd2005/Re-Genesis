@@ -1,0 +1,2 @@
+timeout: invalid time interval ‘00:45:00’
+Try 'timeout --help' for more information.
