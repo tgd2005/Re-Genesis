@@ -45,7 +45,7 @@ external_forces_file = external.conf
 
 data_output_1={
         name=posttraps_rel_MC_dist.dat
-        print_every=2e2
+        print_every=1e2
         col_1={
                 type=step
         }
@@ -55,25 +55,18 @@ data_output_1={
                 particle_2=16
         }
         col_3={
-                type=distance
-                particle_1=14
-                particle_2=86
+                type=external_force
+                particles=15
         }
         col_4={
-                type=distance
-                particle_1=17
-                particle_2=169
-        }
-        col_5={
-                type=distance
-                particle_1=32
-                particle_2=154
+                type=external_force
+                particles=16
         }
 }
 
 data_output_2 = {
         name = posttraps_rel_MC_hb.dat
-        print_every = 2e2
+        print_every = 1e2
         only_last = false
         col_1 = {
                 type = hb_list
