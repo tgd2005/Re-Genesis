@@ -52,7 +52,12 @@ data_output_1={
         }
         col_3={
 		type=external_force
-		particles=15,16}
+		particles=15
+	}
+	col_4={
+		type=external_force
+		partciles=16
+	}
 }
 
 data_output_2 = {
