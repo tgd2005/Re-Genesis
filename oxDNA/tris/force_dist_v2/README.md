@@ -22,7 +22,7 @@ The steps given in order are:
 1) Run input_postass_rel_MC, using the INITIAL_CONF_FILE and external2.conf -> runs a relaxation MC producing observables with the prefix "postass_relax_MC" or "postass_rel_MC"
 2) Run input_postass_rel_MD, using postass_relax_MC_last.conf and external2.conf -> runs a relaxation MD producing observables with the prefix "postass_relax_MD" or "postass_rel_MD"
 3) Run input_only_traps_MC, using postass_relax_MD_last.conf and external.conf -> observables have prefix "posttraps_relax_MC" or "posttraps_rel_MC"
-4) Run input_only_traps_MD, using posttraps_relax_MD_last.conf and external.conf -> observables have prefix "posttraps_relax_MD" or "posttraps_rel_MD"
+4) Run input_only_traps_MD, using posttraps_relax_MC_last.conf and external.conf -> observables have prefix "posttraps_relax_MD" or "posttraps_rel_MD"
 
 What hasn't been done yet, and would probably be wise to do so, is run one final MD simulation same as (4) but for a longer time span and dt for scientific robustness.
 I propose that for this we use input file name "input_only_traps_long_MD" observables prefix "posttraps_long_MD" to avoid further confusion.
