@@ -4,7 +4,7 @@
 
 
 # input directory
-CASE="$HOME/test/force_dist_v2/K_10_r0_12"
+CASE="$HOME/test/force_dist_v4"
 
 # output directory
 OUTROOT="$CASE/output"
