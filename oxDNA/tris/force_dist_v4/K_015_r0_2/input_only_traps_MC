@@ -22,7 +22,7 @@ delta_rotation = 0.1
 
 # Input/Output Files
 topology = top_5to3.top
-conf_file = posttraps_r0_4_last.conf
+conf_file = assembly_last.conf
 trajectory_file = posttraps_relax_MC_traj.dat
 energy_file = posttraps_relax_MC_energy.dat
 lastconf_file = posttraps_relax_MC_last.conf
