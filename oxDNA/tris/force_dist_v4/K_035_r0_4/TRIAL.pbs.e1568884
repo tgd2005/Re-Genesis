@@ -11,7 +11,8 @@ DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, 
 DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
 INFO: The Debye length at this temperature and salt concentration is 0.505571
 INFO: No order parameters file specified in input file; printing indices of any particle pairs that have a hydrogen bond between them
-INFO: pid: 53149
+INFO: No order parameters file specified in input file; printing indices of any particle pairs that have a hydrogen bond between them
+INFO: pid: 2251241
 DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
 DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
 INFO: The Debye length at this temperature and salt concentration is 0.505571
@@ -127,21 +128,21 @@ INFO: diffusion fixed.. -256.239 -256.239
 INFO: diffusion fixed.. -256.962 -256.962
 INFO: diffusion fixed.. -256.221 -256.221
 
-INFO: Total Running Time: 4434.08 s, per step: 0.443408 ms
+INFO: Total Running Time: 4328.66 s, per step: 0.432866 ms
 INFO: Timings, in seconds, by Timer (total, own, spent in children)
-> SimBackend                       4434.078 (100.0%)       15.421 (  0.3%)     4418.657 ( 99.7%)
-***> Lists                           46.155 (  1.0%)       46.155 (  1.0%)        0.000 (  0.0%)
-***> Thermostat                       2.764 (  0.1%)        2.764 (  0.1%)        0.000 (  0.0%)
-***> Forces                        4264.680 ( 96.2%)     4264.680 ( 96.2%)        0.000 (  0.0%)
-***> First Step                      94.400 (  2.1%)       94.400 (  2.1%)        0.000 (  0.0%)
-***> Observables                     10.658 (  0.2%)       10.658 (  0.2%)        0.000 (  0.0%)
+> SimBackend                       4328.663 (100.0%)       15.846 (  0.4%)     4312.817 ( 99.6%)
+***> Lists                           45.235 (  1.0%)       45.235 (  1.0%)        0.000 (  0.0%)
+***> Thermostat                       2.675 (  0.1%)        2.675 (  0.1%)        0.000 (  0.0%)
+***> Forces                        4157.643 ( 96.0%)     4157.643 ( 96.0%)        0.000 (  0.0%)
+***> First Step                      93.324 (  2.2%)       93.324 (  2.2%)        0.000 (  0.0%)
+***> Observables                     13.941 (  0.3%)       13.941 (  0.3%)        0.000 (  0.0%)
 
 INFO: END OF THE SIMULATION, everything went OK!
 INFO: Lists updated 223824 times (every ~44.677961 steps)
 INFO: Aggregated I/O statistics (set debug=1 for file-wise information)
-	 15.444 MB written to files
+	 15.472 MB written to files
 	  6.115 KB written to stdout/stderr
-	For a total of  0.00348 MB/s
+	For a total of  0.00358 MB/s
 
 Please cite at least the following publication for any work that uses the oxDNA simulation package
   * E. Poppleton et al., J. Open Source Softw. 8, 4693 (2023), DOI: 10.21105/joss.04693
