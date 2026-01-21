@@ -1,0 +1,148 @@
+INFO: seeding the RNG with 12345
+INFO: Initializing backend 
+INFO: Simulation type: MD
+INFO: The generator will try to take into account bonded interactions by choosing distances between bonded neighbours no larger than 2.000000
+INFO: Converting temperature from Celsius (20.000000 C°) to simulation units (0.097717)
+INFO: Using a maximum backbone force of 5  (the corresponding mbf_xmax is 0.120156) and a far value of 10
+INFO: Running Debye-Huckel at salt concentration =  0.5
+INFO: Using different widths for major and minor grooves
+INFO: Temperature change detected (new temperature: 20.00 C, 293.15 K), re-initialising the DNA interaction
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: No order parameters file specified in input file; printing indices of any particle pairs that have a hydrogen bond between them
+INFO: No order parameters file specified in input file; printing indices of any particle pairs that have a hydrogen bond between them
+INFO: pid: 2025736
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: Parsing force file external.conf
+INFO: Adding a MutualTrap (stiff=0.35, stiff_rate=0, r0=8, rate=0, ref_particle=16, PBC=1) on particle 15
+INFO: Adding a MutualTrap (stiff=0.35, stiff_rate=0, r0=8, rate=0, ref_particle=15, PBC=1) on particle 16
+INFO:    Force file parsed
+INFO: (Cells.cpp) N_cells_side: 7, 7, 7; rcut=3.33787, IS_MC: 0
+INFO: N: 170, N molecules: 4
+INFO: Using randomly distributed velocities
+INFO: Initial kinetic energy: 49.192606
+INFO: RELEASE: v3.7.0
+INFO: GIT COMMIT: 97e29111
+INFO: COMPILED ON: 05/11/25
+INFO: diffusion fixed.. -235.099 -235.099
+INFO: diffusion fixed.. -242.991 -242.991
+INFO: diffusion fixed.. -245.339 -245.339
+INFO: diffusion fixed.. -249.05 -249.05
+INFO: diffusion fixed.. -249.477 -249.477
+INFO: diffusion fixed.. -248.647 -248.647
+INFO: diffusion fixed.. -254.735 -254.735
+INFO: diffusion fixed.. -248.231 -248.231
+INFO: diffusion fixed.. -254.073 -254.073
+INFO: diffusion fixed.. -252.42 -252.42
+INFO: diffusion fixed.. -253.235 -253.235
+INFO: diffusion fixed.. -252.228 -252.228
+INFO: diffusion fixed.. -252.184 -252.184
+INFO: diffusion fixed.. -255.526 -255.526
+INFO: diffusion fixed.. -248.462 -248.462
+INFO: diffusion fixed.. -256.115 -256.115
+INFO: diffusion fixed.. -256.877 -256.877
+INFO: diffusion fixed.. -255.21 -255.21
+INFO: diffusion fixed.. -254.422 -254.422
+INFO: diffusion fixed.. -254.102 -254.102
+INFO: diffusion fixed.. -247.124 -247.124
+INFO: diffusion fixed.. -255.106 -255.106
+INFO: diffusion fixed.. -254.066 -254.066
+INFO: diffusion fixed.. -256.412 -256.412
+INFO: diffusion fixed.. -254.653 -254.653
+INFO: diffusion fixed.. -254.828 -254.828
+INFO: diffusion fixed.. -250.685 -250.685
+INFO: diffusion fixed.. -255.706 -255.706
+INFO: diffusion fixed.. -257.399 -257.399
+INFO: diffusion fixed.. -257.062 -257.062
+INFO: diffusion fixed.. -257.245 -257.245
+INFO: diffusion fixed.. -250.253 -250.253
+INFO: diffusion fixed.. -253.268 -253.268
+INFO: diffusion fixed.. -252.228 -252.228
+INFO: diffusion fixed.. -249.372 -249.372
+INFO: diffusion fixed.. -253.775 -253.775
+INFO: diffusion fixed.. -256.57 -256.57
+INFO: diffusion fixed.. -254.545 -254.545
+INFO: diffusion fixed.. -257.508 -257.508
+INFO: diffusion fixed.. -253.885 -253.885
+INFO: diffusion fixed.. -255.211 -255.211
+INFO: diffusion fixed.. -258.764 -258.764
+INFO: diffusion fixed.. -258.555 -258.555
+INFO: diffusion fixed.. -256.517 -256.517
+INFO: diffusion fixed.. -253.21 -253.21
+INFO: diffusion fixed.. -258.969 -258.969
+INFO: diffusion fixed.. -254.636 -254.636
+INFO: diffusion fixed.. -260.508 -260.508
+INFO: diffusion fixed.. -254.561 -254.561
+INFO: diffusion fixed.. -259.668 -259.668
+INFO: diffusion fixed.. -258.005 -258.005
+INFO: diffusion fixed.. -259.608 -259.608
+INFO: diffusion fixed.. -260.003 -260.003
+INFO: diffusion fixed.. -257.78 -257.78
+INFO: diffusion fixed.. -256.319 -256.319
+INFO: diffusion fixed.. -256.382 -256.382
+INFO: diffusion fixed.. -257.735 -257.735
+INFO: diffusion fixed.. -260.076 -260.076
+INFO: diffusion fixed.. -254.503 -254.503
+INFO: diffusion fixed.. -250.6 -250.6
+INFO: diffusion fixed.. -256.738 -256.738
+INFO: diffusion fixed.. -257.113 -257.113
+INFO: diffusion fixed.. -256.43 -256.43
+INFO: diffusion fixed.. -252.553 -252.553
+INFO: diffusion fixed.. -256.498 -256.498
+INFO: diffusion fixed.. -248.117 -248.117
+INFO: diffusion fixed.. -248.092 -248.092
+INFO: diffusion fixed.. -248.464 -248.464
+INFO: diffusion fixed.. -252.461 -252.461
+INFO: diffusion fixed.. -250.583 -250.583
+INFO: diffusion fixed.. -253.489 -253.489
+INFO: diffusion fixed.. -257.791 -257.791
+INFO: diffusion fixed.. -258.93 -258.93
+INFO: diffusion fixed.. -259.617 -259.617
+INFO: diffusion fixed.. -257.634 -257.634
+INFO: diffusion fixed.. -252.759 -252.759
+INFO: diffusion fixed.. -255.382 -255.382
+INFO: diffusion fixed.. -254.764 -254.764
+INFO: diffusion fixed.. -259.987 -259.987
+INFO: diffusion fixed.. -256.107 -256.107
+INFO: diffusion fixed.. -255.624 -255.624
+INFO: diffusion fixed.. -259.961 -259.961
+INFO: diffusion fixed.. -256.774 -256.774
+INFO: diffusion fixed.. -258.903 -258.903
+INFO: diffusion fixed.. -257.955 -257.955
+INFO: diffusion fixed.. -259.408 -259.408
+INFO: diffusion fixed.. -256.53 -256.53
+INFO: diffusion fixed.. -260.854 -260.854
+INFO: diffusion fixed.. -259.203 -259.203
+INFO: diffusion fixed.. -252.703 -252.703
+INFO: diffusion fixed.. -256.084 -256.084
+INFO: diffusion fixed.. -257.961 -257.961
+INFO: diffusion fixed.. -256.997 -256.997
+INFO: diffusion fixed.. -259.317 -259.317
+INFO: diffusion fixed.. -257.975 -257.975
+INFO: diffusion fixed.. -256.371 -256.371
+INFO: diffusion fixed.. -261.525 -261.525
+INFO: diffusion fixed.. -262.264 -262.264
+INFO: diffusion fixed.. -257.77 -257.77
+INFO: diffusion fixed.. -260.911 -260.911
+
+INFO: Total Running Time: 4360 s, per step: 0.436 ms
+INFO: Timings, in seconds, by Timer (total, own, spent in children)
+> SimBackend                       4359.998 (100.0%)       15.984 (  0.4%)     4344.015 ( 99.6%)
+***> Lists                           45.085 (  1.0%)       45.085 (  1.0%)        0.000 (  0.0%)
+***> Thermostat                       2.744 (  0.1%)        2.744 (  0.1%)        0.000 (  0.0%)
+***> Forces                        4188.282 ( 96.1%)     4188.282 ( 96.1%)        0.000 (  0.0%)
+***> First Step                      93.762 (  2.2%)       93.762 (  2.2%)        0.000 (  0.0%)
+***> Observables                     14.141 (  0.3%)       14.141 (  0.3%)        0.000 (  0.0%)
+
+INFO: END OF THE SIMULATION, everything went OK!
+INFO: Lists updated 224167 times (every ~44.609599 steps)
+INFO: Aggregated I/O statistics (set debug=1 for file-wise information)
+	 15.543 MB written to files
+	  6.115 KB written to stdout/stderr
+	For a total of  0.00357 MB/s
+
+Please cite at least the following publication for any work that uses the oxDNA simulation package
+  * E. Poppleton et al., J. Open Source Softw. 8, 4693 (2023), DOI: 10.21105/joss.04693
