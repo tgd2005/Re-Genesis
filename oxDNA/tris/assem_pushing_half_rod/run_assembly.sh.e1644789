@@ -10,7 +10,7 @@ INFO: Temperature change detected (new temperature: 20.00 C, 293.15 K), re-initi
 DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
 DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
 INFO: The Debye length at this temperature and salt concentration is 0.505571
-INFO: pid: 624697
+INFO: pid: 362563
 DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
 DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
 INFO: The Debye length at this temperature and salt concentration is 0.505571
@@ -647,74 +647,7 @@ INFO: diffusion fixed.. -254.873 -254.873
 INFO: diffusion fixed.. -253.854 -253.854
 INFO: diffusion fixed.. -257.987 -257.987
 INFO: diffusion fixed.. -254.967 -254.967
-INFO: diffusion fixed.. -254.702 -254.702
-INFO: diffusion fixed.. -256.908 -256.908
-INFO: diffusion fixed.. -251.286 -251.286
-INFO: diffusion fixed.. -255.256 -255.256
-INFO: diffusion fixed.. -255.585 -255.585
-INFO: diffusion fixed.. -255.248 -255.248
-INFO: diffusion fixed.. -254.95 -254.95
-INFO: diffusion fixed.. -257.349 -257.349
-INFO: diffusion fixed.. -257.273 -257.273
-INFO: diffusion fixed.. -255.067 -255.067
-INFO: diffusion fixed.. -251.958 -251.958
-INFO: diffusion fixed.. -255.127 -255.127
-INFO: diffusion fixed.. -256.667 -256.667
-INFO: diffusion fixed.. -250.03 -250.03
-INFO: diffusion fixed.. -253.696 -253.696
-INFO: diffusion fixed.. -254.755 -254.755
-INFO: diffusion fixed.. -255.938 -255.938
-INFO: diffusion fixed.. -250.599 -250.599
-INFO: diffusion fixed.. -253.625 -253.625
-INFO: diffusion fixed.. -253.301 -253.301
-INFO: diffusion fixed.. -253.798 -253.798
-INFO: diffusion fixed.. -254.149 -254.149
-INFO: diffusion fixed.. -252.616 -252.616
-INFO: diffusion fixed.. -256.647 -256.647
-INFO: diffusion fixed.. -258.131 -258.131
-INFO: diffusion fixed.. -257.443 -257.443
-INFO: diffusion fixed.. -253.765 -253.765
-INFO: diffusion fixed.. -256.05 -256.05
-INFO: diffusion fixed.. -256.225 -256.225
-INFO: diffusion fixed.. -258.395 -258.395
-INFO: diffusion fixed.. -255.887 -255.887
-INFO: diffusion fixed.. -254.233 -254.233
-INFO: diffusion fixed.. -258.234 -258.234
-INFO: diffusion fixed.. -252.773 -252.773
-INFO: diffusion fixed.. -253.108 -253.108
-INFO: diffusion fixed.. -253.024 -253.024
-INFO: diffusion fixed.. -255.399 -255.399
-INFO: diffusion fixed.. -254.71 -254.71
-INFO: diffusion fixed.. -255.717 -255.717
-INFO: diffusion fixed.. -256.44 -256.44
-INFO: diffusion fixed.. -254.607 -254.607
-INFO: diffusion fixed.. -259.408 -259.408
-INFO: diffusion fixed.. -255.215 -255.215
-INFO: diffusion fixed.. -253.87 -253.87
-INFO: diffusion fixed.. -255.43 -255.43
-INFO: diffusion fixed.. -253.107 -253.107
-INFO: diffusion fixed.. -259.608 -259.608
-INFO: diffusion fixed.. -256.828 -256.828
-INFO: diffusion fixed.. -260.122 -260.122
-INFO: diffusion fixed.. -256.964 -256.964
 INFO: # Caught SIGNAL 15; setting stop = 1
 
+INFO: # Caught SIGNAL 15; setting stop = 1
 
-INFO: Total Running Time: 27592 s, per step: 0.412533 ms
-INFO: Timings, in seconds, by Timer (total, own, spent in children)
-> SimBackend                      27591.961 (100.0%)      118.262 (  0.4%)    27473.699 ( 99.6%)
-***> Lists                          300.984 (  1.1%)      300.984 (  1.1%)        0.000 (  0.0%)
-***> Thermostat                      18.099 (  0.1%)       18.099 (  0.1%)        0.000 (  0.0%)
-***> Forces                       26485.520 ( 96.0%)    26485.520 ( 96.0%)        0.000 (  0.0%)
-***> First Step                     633.924 (  2.3%)      633.924 (  2.3%)        0.000 (  0.0%)
-***> Observables                     35.170 (  0.1%)       35.170 (  0.1%)        0.000 (  0.0%)
-
-INFO: END OF THE SIMULATION, everything went OK!
-INFO: Lists updated 1516773 times (every ~44.096417 steps)
-INFO: Aggregated I/O statistics (set debug=1 for file-wise information)
-	  5.919 MB written to files
-	  4.057 KB written to stdout/stderr
-	For a total of 0.000215 MB/s
-
-Please cite at least the following publication for any work that uses the oxDNA simulation package
-  * E. Poppleton et al., J. Open Source Softw. 8, 4693 (2023), DOI: 10.21105/joss.04693
