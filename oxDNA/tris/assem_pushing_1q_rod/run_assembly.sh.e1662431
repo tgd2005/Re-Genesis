@@ -1,0 +1,300 @@
+INFO: seeding the RNG with 12345
+INFO: Initializing backend 
+INFO: Simulation type: MD
+INFO: The generator will try to take into account bonded interactions by choosing distances between bonded neighbours no larger than 2.000000
+INFO: Converting temperature from Celsius (20.000000 C°) to simulation units (0.097717)
+INFO: Using a maximum backbone force of 5  (the corresponding mbf_xmax is 0.120156) and a far value of 10
+INFO: Running Debye-Huckel at salt concentration =  0.5
+INFO: Using different widths for major and minor grooves
+INFO: Temperature change detected (new temperature: 20.00 C, 293.15 K), re-initialising the DNA interaction
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: pid: 223771
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: Parsing force file external.conf
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=129, PBC=1) on particle 0
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=0, PBC=1) on particle 129
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=46, PBC=0) on particle 31
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=31, PBC=0) on particle 46
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=81, PBC=0) on particle 45
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=45, PBC=0) on particle 81
+INFO:    Force file parsed
+INFO: (Cells.cpp) N_cells_side: 7, 7, 7; rcut=3.33787, IS_MC: 0
+INFO: N: 130, N molecules: 4
+INFO: Using randomly distributed velocities
+INFO: Initial kinetic energy: 37.292510
+INFO: RELEASE: v3.7.0
+INFO: GIT COMMIT: 97e29111
+INFO: COMPILED ON: 05/11/25
+INFO: diffusion fixed.. 375.753 375.753
+INFO: diffusion fixed.. 27.7367 27.7367
+INFO: diffusion fixed.. 6.29143 6.29143
+INFO: diffusion fixed.. -8.82457 -8.82457
+INFO: diffusion fixed.. -16.4345 -16.4345
+INFO: diffusion fixed.. -37.1325 -37.1325
+INFO: diffusion fixed.. -39.3491 -39.3491
+INFO: diffusion fixed.. -53.6871 -53.6871
+INFO: diffusion fixed.. -62.1062 -62.1062
+INFO: diffusion fixed.. -74.1146 -74.1146
+INFO: diffusion fixed.. -77.527 -77.527
+INFO: diffusion fixed.. -87.3186 -87.3186
+INFO: diffusion fixed.. -97.2424 -97.2424
+INFO: diffusion fixed.. -100.277 -100.277
+INFO: diffusion fixed.. -114.005 -114.005
+INFO: diffusion fixed.. -118.916 -118.916
+INFO: diffusion fixed.. -113.555 -113.555
+INFO: diffusion fixed.. -108.349 -108.349
+INFO: diffusion fixed.. -111.06 -111.06
+INFO: diffusion fixed.. -110.853 -110.853
+INFO: diffusion fixed.. -116.079 -116.079
+INFO: diffusion fixed.. -114.952 -114.952
+INFO: diffusion fixed.. -114.875 -114.875
+INFO: diffusion fixed.. -118.615 -118.615
+INFO: diffusion fixed.. -119.48 -119.48
+INFO: diffusion fixed.. -117.444 -117.444
+INFO: diffusion fixed.. -122.208 -122.208
+INFO: diffusion fixed.. -115.947 -115.947
+INFO: diffusion fixed.. -120.44 -120.44
+INFO: diffusion fixed.. -121.356 -121.356
+INFO: diffusion fixed.. -125.871 -125.871
+INFO: diffusion fixed.. -133.063 -133.063
+INFO: diffusion fixed.. -130.219 -130.219
+INFO: diffusion fixed.. -131.497 -131.497
+INFO: diffusion fixed.. -132.101 -132.101
+INFO: diffusion fixed.. -131.358 -131.358
+INFO: diffusion fixed.. -129.227 -129.227
+INFO: diffusion fixed.. -129.211 -129.211
+INFO: diffusion fixed.. -130.399 -130.399
+INFO: diffusion fixed.. -129.5 -129.5
+INFO: diffusion fixed.. -134.813 -134.813
+INFO: diffusion fixed.. -124.461 -124.461
+INFO: diffusion fixed.. -124.809 -124.809
+INFO: diffusion fixed.. -120.993 -120.993
+INFO: diffusion fixed.. -124.448 -124.448
+INFO: diffusion fixed.. -119.57 -119.57
+INFO: diffusion fixed.. -123.219 -123.219
+INFO: diffusion fixed.. -123.044 -123.044
+INFO: diffusion fixed.. -125.585 -125.585
+INFO: diffusion fixed.. -120.225 -120.225
+INFO: diffusion fixed.. -124.289 -124.289
+INFO: diffusion fixed.. -123.988 -123.988
+INFO: diffusion fixed.. -132.144 -132.144
+INFO: diffusion fixed.. -136.223 -136.223
+INFO: diffusion fixed.. -139.445 -139.445
+INFO: diffusion fixed.. -139.583 -139.583
+INFO: diffusion fixed.. -136.684 -136.684
+INFO: diffusion fixed.. -132.035 -132.035
+INFO: diffusion fixed.. -133.228 -133.228
+INFO: diffusion fixed.. -133.766 -133.766
+INFO: diffusion fixed.. -127.673 -127.673
+INFO: diffusion fixed.. -135.178 -135.178
+INFO: diffusion fixed.. -136.476 -136.476
+INFO: diffusion fixed.. -134.321 -134.321
+INFO: diffusion fixed.. -134.658 -134.658
+INFO: diffusion fixed.. -138.426 -138.426
+INFO: diffusion fixed.. -140.851 -140.851
+INFO: diffusion fixed.. -138.043 -138.043
+INFO: diffusion fixed.. -142.09 -142.09
+INFO: diffusion fixed.. -138.117 -138.117
+INFO: diffusion fixed.. -132.946 -132.946
+INFO: diffusion fixed.. -141.738 -141.738
+INFO: diffusion fixed.. -140.198 -140.198
+INFO: diffusion fixed.. -139.073 -139.073
+INFO: diffusion fixed.. -136.219 -136.219
+INFO: diffusion fixed.. -134.276 -134.276
+INFO: diffusion fixed.. -133.119 -133.119
+INFO: diffusion fixed.. -133.546 -133.546
+INFO: diffusion fixed.. -136.918 -136.918
+INFO: diffusion fixed.. -137.189 -137.189
+INFO: diffusion fixed.. -143.201 -143.201
+INFO: diffusion fixed.. -138.856 -138.856
+INFO: diffusion fixed.. -144.785 -144.785
+INFO: diffusion fixed.. -144.478 -144.478
+INFO: diffusion fixed.. -142.55 -142.55
+INFO: diffusion fixed.. -146.811 -146.811
+INFO: diffusion fixed.. -150.865 -150.865
+INFO: diffusion fixed.. -151.71 -151.71
+INFO: diffusion fixed.. -153.28 -153.28
+INFO: diffusion fixed.. -149.812 -149.812
+INFO: diffusion fixed.. -149.368 -149.368
+INFO: diffusion fixed.. -145.544 -145.544
+INFO: diffusion fixed.. -149.772 -149.772
+INFO: diffusion fixed.. -146.708 -146.708
+INFO: diffusion fixed.. -147.232 -147.232
+INFO: diffusion fixed.. -146.197 -146.197
+INFO: diffusion fixed.. -144.572 -144.572
+INFO: diffusion fixed.. -147.948 -147.948
+INFO: diffusion fixed.. -145.231 -145.231
+INFO: diffusion fixed.. -145.878 -145.878
+INFO: diffusion fixed.. -143.743 -143.743
+INFO: diffusion fixed.. -148.598 -148.598
+INFO: diffusion fixed.. -150.529 -150.529
+INFO: diffusion fixed.. -154.9 -154.9
+INFO: diffusion fixed.. -150.542 -150.542
+INFO: diffusion fixed.. -157.332 -157.332
+INFO: diffusion fixed.. -150.457 -150.457
+INFO: diffusion fixed.. -150.142 -150.142
+INFO: diffusion fixed.. -158.552 -158.552
+INFO: diffusion fixed.. -160.639 -160.639
+INFO: diffusion fixed.. -161.713 -161.713
+INFO: diffusion fixed.. -155.447 -155.447
+INFO: diffusion fixed.. -157.976 -157.976
+INFO: diffusion fixed.. -159.111 -159.111
+INFO: diffusion fixed.. -160.186 -160.186
+INFO: diffusion fixed.. -162.866 -162.866
+INFO: diffusion fixed.. -161.659 -161.659
+INFO: diffusion fixed.. -156.546 -156.546
+INFO: diffusion fixed.. -156.582 -156.582
+INFO: diffusion fixed.. -160.414 -160.414
+INFO: diffusion fixed.. -161.858 -161.858
+INFO: diffusion fixed.. -161.559 -161.559
+INFO: diffusion fixed.. -161.943 -161.943
+INFO: diffusion fixed.. -158.791 -158.791
+INFO: diffusion fixed.. -159.503 -159.503
+INFO: diffusion fixed.. -162.439 -162.439
+INFO: diffusion fixed.. -162.874 -162.874
+INFO: diffusion fixed.. -160.297 -160.297
+INFO: diffusion fixed.. -160.408 -160.408
+INFO: diffusion fixed.. -155.997 -155.997
+INFO: diffusion fixed.. -156.488 -156.488
+INFO: diffusion fixed.. -156.076 -156.076
+INFO: diffusion fixed.. -152.569 -152.569
+INFO: diffusion fixed.. -152.012 -152.012
+INFO: diffusion fixed.. -151.526 -151.526
+INFO: diffusion fixed.. -149.167 -149.167
+INFO: diffusion fixed.. -150.668 -150.668
+INFO: diffusion fixed.. -150.656 -150.656
+INFO: diffusion fixed.. -156.19 -156.19
+INFO: diffusion fixed.. -153.181 -153.181
+INFO: diffusion fixed.. -154.999 -154.999
+INFO: diffusion fixed.. -157.565 -157.565
+INFO: diffusion fixed.. -152.442 -152.442
+INFO: diffusion fixed.. -149.455 -149.455
+INFO: diffusion fixed.. -152.264 -152.264
+INFO: diffusion fixed.. -151.013 -151.013
+INFO: diffusion fixed.. -154.345 -154.345
+INFO: diffusion fixed.. -147.79 -147.79
+INFO: diffusion fixed.. -149.476 -149.476
+INFO: diffusion fixed.. -149.585 -149.585
+INFO: diffusion fixed.. -145.893 -145.893
+INFO: diffusion fixed.. -151.478 -151.478
+INFO: diffusion fixed.. -151.822 -151.822
+INFO: diffusion fixed.. -151.61 -151.61
+INFO: diffusion fixed.. -145.506 -145.506
+INFO: diffusion fixed.. -144.57 -144.57
+INFO: diffusion fixed.. -146.158 -146.158
+INFO: diffusion fixed.. -146.628 -146.628
+INFO: diffusion fixed.. -144.853 -144.853
+INFO: diffusion fixed.. -145.261 -145.261
+INFO: diffusion fixed.. -146.646 -146.646
+INFO: diffusion fixed.. -143.751 -143.751
+INFO: diffusion fixed.. -146.059 -146.059
+INFO: diffusion fixed.. -154.024 -154.024
+INFO: diffusion fixed.. -154.748 -154.748
+INFO: diffusion fixed.. -153.262 -153.262
+INFO: diffusion fixed.. -158.694 -158.694
+INFO: diffusion fixed.. -152.512 -152.512
+INFO: diffusion fixed.. -155.189 -155.189
+INFO: diffusion fixed.. -156.437 -156.437
+INFO: diffusion fixed.. -157.443 -157.443
+INFO: diffusion fixed.. -154.414 -154.414
+INFO: diffusion fixed.. -153.363 -153.363
+INFO: diffusion fixed.. -155.453 -155.453
+INFO: diffusion fixed.. -152.553 -152.553
+INFO: diffusion fixed.. -150.53 -150.53
+INFO: diffusion fixed.. -158.555 -158.555
+INFO: diffusion fixed.. -151.296 -151.296
+INFO: diffusion fixed.. -147.655 -147.655
+INFO: diffusion fixed.. -153.136 -153.136
+INFO: diffusion fixed.. -151.76 -151.76
+INFO: diffusion fixed.. -151.523 -151.523
+INFO: diffusion fixed.. -148.26 -148.26
+INFO: diffusion fixed.. -147.823 -147.823
+INFO: diffusion fixed.. -146.704 -146.704
+INFO: diffusion fixed.. -151.517 -151.517
+INFO: diffusion fixed.. -152.453 -152.453
+INFO: diffusion fixed.. -149.655 -149.655
+INFO: diffusion fixed.. -154.67 -154.67
+INFO: diffusion fixed.. -153.162 -153.162
+INFO: diffusion fixed.. -153.389 -153.389
+INFO: diffusion fixed.. -150.79 -150.79
+INFO: diffusion fixed.. -148.435 -148.435
+INFO: diffusion fixed.. -150.535 -150.535
+INFO: diffusion fixed.. -151.728 -151.728
+INFO: diffusion fixed.. -153.392 -153.392
+INFO: diffusion fixed.. -153.664 -153.664
+INFO: diffusion fixed.. -157.17 -157.17
+INFO: diffusion fixed.. -152.533 -152.533
+INFO: diffusion fixed.. -153.342 -153.342
+INFO: diffusion fixed.. -150.134 -150.134
+INFO: diffusion fixed.. -151.783 -151.783
+INFO: diffusion fixed.. -154.113 -154.113
+INFO: diffusion fixed.. -157.674 -157.674
+INFO: diffusion fixed.. -155.228 -155.228
+INFO: diffusion fixed.. -153.774 -153.774
+INFO: diffusion fixed.. -153.36 -153.36
+INFO: diffusion fixed.. -151.946 -151.946
+INFO: diffusion fixed.. -156.213 -156.213
+INFO: diffusion fixed.. -150.363 -150.363
+INFO: diffusion fixed.. -147.158 -147.158
+INFO: diffusion fixed.. -156.057 -156.057
+INFO: diffusion fixed.. -156.926 -156.926
+INFO: diffusion fixed.. -158.772 -158.772
+INFO: diffusion fixed.. -154.037 -154.037
+INFO: diffusion fixed.. -157.221 -157.221
+INFO: diffusion fixed.. -155.987 -155.987
+INFO: diffusion fixed.. -154.519 -154.519
+INFO: diffusion fixed.. -158.186 -158.186
+INFO: diffusion fixed.. -150.847 -150.847
+INFO: diffusion fixed.. -153.182 -153.182
+INFO: diffusion fixed.. -152.286 -152.286
+INFO: diffusion fixed.. -151.102 -151.102
+INFO: diffusion fixed.. -151.866 -151.866
+INFO: diffusion fixed.. -159.215 -159.215
+INFO: diffusion fixed.. -158.605 -158.605
+INFO: diffusion fixed.. -157.509 -157.509
+INFO: diffusion fixed.. -154.484 -154.484
+INFO: diffusion fixed.. -158.451 -158.451
+INFO: diffusion fixed.. -155.083 -155.083
+INFO: diffusion fixed.. -160.88 -160.88
+INFO: diffusion fixed.. -155.859 -155.859
+INFO: diffusion fixed.. -153.389 -153.389
+INFO: diffusion fixed.. -154.663 -154.663
+INFO: diffusion fixed.. -151.992 -151.992
+INFO: diffusion fixed.. -150.506 -150.506
+INFO: diffusion fixed.. -147.011 -147.011
+INFO: diffusion fixed.. -145.924 -145.924
+INFO: diffusion fixed.. -145.134 -145.134
+INFO: diffusion fixed.. -149.055 -149.055
+INFO: diffusion fixed.. -151.99 -151.99
+INFO: diffusion fixed.. -153.401 -153.401
+INFO: diffusion fixed.. -152.55 -152.55
+INFO: diffusion fixed.. -147.549 -147.549
+INFO: diffusion fixed.. -148.38 -148.38
+INFO: diffusion fixed.. -152.387 -152.387
+INFO: diffusion fixed.. -146.118 -146.118
+INFO: diffusion fixed.. -148.92 -148.92
+INFO: diffusion fixed.. -149.157 -149.157
+INFO: diffusion fixed.. -151.284 -151.284
+
+INFO: Total Running Time: 5927.01 s, per step: 0.23708 ms
+INFO: Timings, in seconds, by Timer (total, own, spent in children)
+> SimBackend                       5927.008 (100.0%)       38.851 (  0.7%)     5888.156 ( 99.3%)
+***> Lists                           73.686 (  1.2%)       73.686 (  1.2%)        0.000 (  0.0%)
+***> Thermostat                       6.700 (  0.1%)        6.700 (  0.1%)        0.000 (  0.0%)
+***> Forces                        5603.779 ( 94.5%)     5603.779 ( 94.5%)        0.000 (  0.0%)
+***> First Step                     190.602 (  3.2%)      190.602 (  3.2%)        0.000 (  0.0%)
+***> Observables                     13.390 (  0.2%)       13.390 (  0.2%)        0.000 (  0.0%)
+
+INFO: END OF THE SIMULATION, everything went OK!
+INFO: Lists updated 575422 times (every ~43.446375 steps)
+INFO: Aggregated I/O statistics (set debug=1 for file-wise information)
+	  1.737 MB written to files
+	  1.574 KB written to stdout/stderr
+	For a total of 0.000293 MB/s
+
+Please cite at least the following publication for any work that uses the oxDNA simulation package
+  * E. Poppleton et al., J. Open Source Softw. 8, 4693 (2023), DOI: 10.21105/joss.04693
