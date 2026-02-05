@@ -1,6 +1,0 @@
-cp: cannot stat 'input_only_traps_long_MD': No such file or directory
-cp: cannot stat 'posttraps_relax_MD_last.conf': No such file or directory
-cp: cannot stat 'top_5to3.top': No such file or directory
-cp: cannot stat 'external.conf': No such file or directory
-ERROR: Input file '/rds/general/user/tgd23/home/test/force_dist_v4/output/run_1547410.pbs-7/input_only_traps_long_MD' not found
-
