@@ -11,8 +11,8 @@ T = 20C
 salt_concentration = 0.5
 
 # Simulation Length (10^8 steps)
-steps = 5e6
-dt = 0.001
+steps = 1e7
+dt = 0.005
 verlet_skin = 0.05
 refresh_vel = 1
 
