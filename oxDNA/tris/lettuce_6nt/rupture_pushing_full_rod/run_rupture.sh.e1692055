@@ -1,0 +1,151 @@
+INFO: seeding the RNG with 12345
+INFO: Initializing backend 
+INFO: Simulation type: MD
+INFO: The generator will try to take into account bonded interactions by choosing distances between bonded neighbours no larger than 2.000000
+INFO: Converting temperature from Celsius (20.000000 C°) to simulation units (0.097717)
+INFO: Using a maximum backbone force of 5  (the corresponding mbf_xmax is 0.120156) and a far value of 10
+INFO: Running Debye-Huckel at salt concentration =  0.5
+INFO: Using different widths for major and minor grooves
+INFO: Temperature change detected (new temperature: 20.00 C, 293.15 K), re-initialising the DNA interaction
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: pid: 2428285
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: (Cells.cpp) N_cells_side: 8, 8, 8; rcut=3.33787, IS_MC: 0
+INFO: Parsing order parameter file hb_region.txt
+INFO: Order parameter type bond found, processing
+INFO: --> Adding HB pair (15, 56) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (16, 55) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (17, 54) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (18, 53) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (19, 52) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (20, 51) to order parameter `lettuce6nt_stem_hb'
+INFO:  File hb_region.txt parsed; found 1 hb_dim, 0 dist_dim
+INFO: N: 210, N molecules: 3
+INFO: Using randomly distributed velocities
+INFO: Initial kinetic energy: 61.653372
+INFO: RELEASE: v3.7.0
+INFO: GIT COMMIT: 97e29111
+INFO: COMPILED ON: 05/11/25
+INFO: diffusion fixed.. -306.666 -306.666
+INFO: diffusion fixed.. -302.328 -302.328
+INFO: diffusion fixed.. -297.907 -297.907
+INFO: diffusion fixed.. -299.253 -299.253
+INFO: diffusion fixed.. -295.846 -295.846
+INFO: diffusion fixed.. -298.611 -298.611
+INFO: diffusion fixed.. -302.731 -302.731
+INFO: diffusion fixed.. -298.865 -298.865
+INFO: diffusion fixed.. -302.67 -302.67
+INFO: diffusion fixed.. -295.651 -295.651
+INFO: diffusion fixed.. -299.354 -299.354
+INFO: diffusion fixed.. -300.092 -300.092
+INFO: diffusion fixed.. -299.959 -299.959
+INFO: diffusion fixed.. -300.512 -300.512
+INFO: diffusion fixed.. -302.844 -302.844
+INFO: diffusion fixed.. -303.541 -303.541
+INFO: diffusion fixed.. -301.056 -301.056
+INFO: diffusion fixed.. -301.466 -301.466
+INFO: diffusion fixed.. -301.992 -301.992
+INFO: diffusion fixed.. -300.498 -300.498
+INFO: diffusion fixed.. -303.428 -303.428
+INFO: diffusion fixed.. -303.319 -303.319
+INFO: diffusion fixed.. -301.116 -301.116
+INFO: diffusion fixed.. -303.317 -303.317
+INFO: diffusion fixed.. -303.372 -303.372
+INFO: diffusion fixed.. -304.544 -304.544
+INFO: diffusion fixed.. -303.36 -303.36
+INFO: diffusion fixed.. -304.135 -304.135
+INFO: diffusion fixed.. -307.276 -307.276
+INFO: diffusion fixed.. -304.48 -304.48
+INFO: diffusion fixed.. -305.989 -305.989
+INFO: diffusion fixed.. -305.586 -305.586
+INFO: diffusion fixed.. -306.373 -306.373
+INFO: diffusion fixed.. -305.493 -305.493
+INFO: diffusion fixed.. -301.94 -301.94
+INFO: diffusion fixed.. -301.278 -301.278
+INFO: diffusion fixed.. -305.32 -305.32
+INFO: diffusion fixed.. -301.456 -301.456
+INFO: diffusion fixed.. -306.184 -306.184
+INFO: diffusion fixed.. -308.923 -308.923
+INFO: diffusion fixed.. -312.063 -312.063
+INFO: diffusion fixed.. -308.07 -308.07
+INFO: diffusion fixed.. -306.385 -306.385
+INFO: diffusion fixed.. -306.487 -306.487
+INFO: diffusion fixed.. -303.732 -303.732
+INFO: diffusion fixed.. -301.915 -301.915
+INFO: diffusion fixed.. -307.12 -307.12
+INFO: diffusion fixed.. -301.502 -301.502
+INFO: diffusion fixed.. -305.08 -305.08
+INFO: diffusion fixed.. -303.867 -303.867
+INFO: diffusion fixed.. -303.574 -303.574
+INFO: diffusion fixed.. -304.063 -304.063
+INFO: diffusion fixed.. -301.758 -301.758
+INFO: diffusion fixed.. -303.003 -303.003
+INFO: diffusion fixed.. -303.563 -303.563
+INFO: diffusion fixed.. -302.434 -302.434
+INFO: diffusion fixed.. -301.35 -301.35
+INFO: diffusion fixed.. -306.9 -306.9
+INFO: diffusion fixed.. -305.849 -305.849
+INFO: diffusion fixed.. -304.132 -304.132
+INFO: diffusion fixed.. -304.94 -304.94
+INFO: diffusion fixed.. -306.201 -306.201
+INFO: diffusion fixed.. -306.235 -306.235
+INFO: diffusion fixed.. -306.211 -306.211
+INFO: diffusion fixed.. -304.776 -304.776
+INFO: diffusion fixed.. -302.948 -302.948
+INFO: diffusion fixed.. -300.86 -300.86
+INFO: diffusion fixed.. -307.851 -307.851
+INFO: diffusion fixed.. -302.527 -302.527
+INFO: diffusion fixed.. -307.602 -307.602
+INFO: diffusion fixed.. -305.05 -305.05
+INFO: diffusion fixed.. -299.096 -299.096
+INFO: diffusion fixed.. -296.316 -296.316
+INFO: diffusion fixed.. -302.646 -302.646
+INFO: diffusion fixed.. -305.971 -305.971
+INFO: diffusion fixed.. -304.05 -304.05
+INFO: diffusion fixed.. -304.183 -304.183
+INFO: diffusion fixed.. -303.595 -303.595
+INFO: diffusion fixed.. -304.002 -304.002
+INFO: diffusion fixed.. -298.954 -298.954
+INFO: diffusion fixed.. -302.428 -302.428
+INFO: diffusion fixed.. -302.484 -302.484
+INFO: diffusion fixed.. -300.976 -300.976
+INFO: diffusion fixed.. -303.359 -303.359
+INFO: diffusion fixed.. -301.684 -301.684
+INFO: diffusion fixed.. -302.815 -302.815
+INFO: diffusion fixed.. -300.647 -300.647
+INFO: diffusion fixed.. -302.331 -302.331
+INFO: diffusion fixed.. -304.615 -304.615
+INFO: diffusion fixed.. -300.41 -300.41
+INFO: diffusion fixed.. -299.798 -299.798
+INFO: diffusion fixed.. -303.807 -303.807
+INFO: diffusion fixed.. -305.209 -305.209
+INFO: diffusion fixed.. -304.095 -304.095
+INFO: diffusion fixed.. -305.634 -305.634
+INFO: diffusion fixed.. -311.229 -311.229
+INFO: diffusion fixed.. -300.44 -300.44
+INFO: diffusion fixed.. -300.09 -300.09
+INFO: diffusion fixed.. -302.364 -302.364
+INFO: diffusion fixed.. -298.766 -298.766
+
+INFO: Total Running Time: 6897.73 s, per step: 0.689773 ms
+INFO: Timings, in seconds, by Timer (total, own, spent in children)
+> SimBackend                       6897.727 (100.0%)       17.857 (  0.3%)     6879.870 ( 99.7%)
+***> Lists                           81.774 (  1.2%)       81.774 (  1.2%)        0.000 (  0.0%)
+***> Thermostat                       3.359 (  0.0%)        3.359 (  0.0%)        0.000 (  0.0%)
+***> Forces                        6654.277 ( 96.5%)     6654.277 ( 96.5%)        0.000 (  0.0%)
+***> First Step                     133.170 (  1.9%)      133.170 (  1.9%)        0.000 (  0.0%)
+***> Observables                      7.289 (  0.1%)        7.289 (  0.1%)        0.000 (  0.0%)
+
+INFO: END OF THE SIMULATION, everything went OK!
+INFO: Lists updated 227953 times (every ~43.868692 steps)
+INFO: Aggregated I/O statistics (set debug=1 for file-wise information)
+	  1.297 MB written to files
+	682.000  B written to stdout/stderr
+	For a total of 0.000188 MB/s
+
+Please cite at least the following publication for any work that uses the oxDNA simulation package
+  * E. Poppleton et al., J. Open Source Softw. 8, 4693 (2023), DOI: 10.21105/joss.04693
