@@ -1,0 +1,128 @@
+INFO: seeding the RNG with 12345
+INFO: Initializing backend 
+INFO: Simulation type: MD
+INFO: The generator will try to take into account bonded interactions by choosing distances between bonded neighbours no larger than 2.000000
+INFO: Converting temperature from Celsius (20.000000 C°) to simulation units (0.097717)
+INFO: Using a maximum backbone force of 5  (the corresponding mbf_xmax is 0.120156) and a far value of 10
+INFO: Running Debye-Huckel at salt concentration =  0.5
+INFO: Using different widths for major and minor grooves
+INFO: Temperature change detected (new temperature: 20.00 C, 293.15 K), re-initialising the DNA interaction
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: pid: 3909119
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: Parsing force file external.conf
+INFO: Adding a MutualTrap (stiff=0.15, stiff_rate=0, r0=1, rate=0, ref_particle=209, PBC=1) on particle 0
+INFO: Adding a MutualTrap (stiff=0.15, stiff_rate=0, r0=1, rate=0, ref_particle=0, PBC=1) on particle 209
+INFO: Adding a MutualTrap (stiff=0.15, stiff_rate=0, r0=1, rate=0, ref_particle=195, PBC=0) on particle 14
+INFO: Adding a MutualTrap (stiff=0.15, stiff_rate=0, r0=1, rate=0, ref_particle=14, PBC=0) on particle 195
+INFO:    Force file parsed
+INFO: (Cells.cpp) N_cells_side: 8, 8, 8; rcut=3.33787, IS_MC: 0
+INFO: N: 210, N molecules: 3
+INFO: Using randomly distributed velocities
+INFO: Initial kinetic energy: 61.653372
+INFO: RELEASE: v3.7.0
+INFO: GIT COMMIT: 97e29111
+INFO: COMPILED ON: 05/11/25
+INFO: diffusion fixed.. -284.869 -284.869
+INFO: diffusion fixed.. -285.393 -285.393
+INFO: diffusion fixed.. -279.268 -279.268
+INFO: diffusion fixed.. -280.835 -280.835
+INFO: diffusion fixed.. -283.105 -283.105
+INFO: diffusion fixed.. -287.635 -287.635
+INFO: diffusion fixed.. -286.571 -286.571
+INFO: diffusion fixed.. -288.738 -288.738
+INFO: diffusion fixed.. -285.378 -285.378
+INFO: diffusion fixed.. -281.902 -281.902
+INFO: diffusion fixed.. -283.47 -283.47
+INFO: diffusion fixed.. -282.662 -282.662
+INFO: diffusion fixed.. -288.826 -288.826
+INFO: diffusion fixed.. -279.765 -279.765
+INFO: diffusion fixed.. -285.149 -285.149
+INFO: diffusion fixed.. -287.316 -287.316
+INFO: diffusion fixed.. -288.331 -288.331
+INFO: diffusion fixed.. -291.614 -291.614
+INFO: diffusion fixed.. -289.673 -289.673
+INFO: diffusion fixed.. -292.999 -292.999
+INFO: diffusion fixed.. -294.865 -294.865
+INFO: diffusion fixed.. -293.751 -293.751
+INFO: diffusion fixed.. -292 -292
+INFO: diffusion fixed.. -297.944 -297.944
+INFO: diffusion fixed.. -297.01 -297.01
+INFO: diffusion fixed.. -296.601 -296.601
+INFO: diffusion fixed.. -291.996 -291.996
+INFO: diffusion fixed.. -292.086 -292.086
+INFO: diffusion fixed.. -299.437 -299.437
+INFO: diffusion fixed.. -294.39 -294.39
+INFO: diffusion fixed.. -297.546 -297.546
+INFO: diffusion fixed.. -301.791 -301.791
+INFO: diffusion fixed.. -302.702 -302.702
+INFO: diffusion fixed.. -299.053 -299.053
+INFO: diffusion fixed.. -299.949 -299.949
+INFO: diffusion fixed.. -292.72 -292.72
+INFO: diffusion fixed.. -298.761 -298.761
+INFO: diffusion fixed.. -300.032 -300.032
+INFO: diffusion fixed.. -301.435 -301.435
+INFO: diffusion fixed.. -301.151 -301.151
+INFO: diffusion fixed.. -301.62 -301.62
+INFO: diffusion fixed.. -300.845 -300.845
+INFO: diffusion fixed.. -300.111 -300.111
+INFO: diffusion fixed.. -299.654 -299.654
+INFO: diffusion fixed.. -301.519 -301.519
+INFO: diffusion fixed.. -302.266 -302.266
+INFO: diffusion fixed.. -296.911 -296.911
+INFO: diffusion fixed.. -293.628 -293.628
+INFO: diffusion fixed.. -294.026 -294.026
+INFO: diffusion fixed.. -298.034 -298.034
+INFO: diffusion fixed.. -297.315 -297.315
+INFO: diffusion fixed.. -294.032 -294.032
+INFO: diffusion fixed.. -301.717 -301.717
+INFO: diffusion fixed.. -301.3 -301.3
+INFO: diffusion fixed.. -297.452 -297.452
+INFO: diffusion fixed.. -295.023 -295.023
+INFO: diffusion fixed.. -300.551 -300.551
+INFO: diffusion fixed.. -300.924 -300.924
+INFO: diffusion fixed.. -302.904 -302.904
+INFO: diffusion fixed.. -301.117 -301.117
+INFO: diffusion fixed.. -302.906 -302.906
+INFO: diffusion fixed.. -302.975 -302.975
+INFO: diffusion fixed.. -308.869 -308.869
+INFO: diffusion fixed.. -300.109 -300.109
+INFO: diffusion fixed.. -305.954 -305.954
+INFO: diffusion fixed.. -301.434 -301.434
+INFO: diffusion fixed.. -303.117 -303.117
+INFO: diffusion fixed.. -307.087 -307.087
+INFO: diffusion fixed.. -301.139 -301.139
+INFO: diffusion fixed.. -299.038 -299.038
+INFO: diffusion fixed.. -302.122 -302.122
+INFO: diffusion fixed.. -304.621 -304.621
+INFO: diffusion fixed.. -302.918 -302.918
+INFO: diffusion fixed.. -300.411 -300.411
+INFO: diffusion fixed.. -310.115 -310.115
+INFO: diffusion fixed.. -303.254 -303.254
+INFO: diffusion fixed.. -300.961 -300.961
+INFO: diffusion fixed.. -304.378 -304.378
+INFO: diffusion fixed.. -303.202 -303.202
+INFO: diffusion fixed.. -304.04 -304.04
+
+INFO: Total Running Time: 5161.19 s, per step: 0.645149 ms
+INFO: Timings, in seconds, by Timer (total, own, spent in children)
+> SimBackend                       5161.189 (100.0%)       13.570 (  0.3%)     5147.619 ( 99.7%)
+***> Lists                           63.387 (  1.2%)       63.387 (  1.2%)        0.000 (  0.0%)
+***> Thermostat                       2.550 (  0.0%)        2.550 (  0.0%)        0.000 (  0.0%)
+***> Forces                        4971.932 ( 96.3%)     4971.932 ( 96.3%)        0.000 (  0.0%)
+***> First Step                     105.050 (  2.0%)      105.050 (  2.0%)        0.000 (  0.0%)
+***> Observables                      4.700 (  0.1%)        4.700 (  0.1%)        0.000 (  0.0%)
+
+INFO: END OF THE SIMULATION, everything went OK!
+INFO: Lists updated 182358 times (every ~43.869751 steps)
+INFO: Aggregated I/O statistics (set debug=1 for file-wise information)
+	956.803 KB written to files
+	558.000  B written to stdout/stderr
+	For a total of 0.000181 MB/s
+
+Please cite at least the following publication for any work that uses the oxDNA simulation package
+  * E. Poppleton et al., J. Open Source Softw. 8, 4693 (2023), DOI: 10.21105/joss.04693
