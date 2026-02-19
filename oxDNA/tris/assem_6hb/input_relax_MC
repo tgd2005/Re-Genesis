@@ -40,5 +40,5 @@ max_backbone_force = 5
 max_backbone_force_far = 10
 
 # mutual traps
-external_forces = 1
+external_forces = 0
 external_forces_file = external.conf
