@@ -4,7 +4,7 @@ seq_dep_file = '/rds/general/user/tgd23/home/oxDNA/oxDNA2_average_sequence_param
 backend = CPU
 sim_type = MD
 restart_step_counter = 1
-seed = 1
+seed = 2
 
 # Physical Parameters
 T = 20C
@@ -47,16 +47,16 @@ data_output_1={
         }
         col_2={
                 type=distance
-                particle_1=472
-                particle_2=940
+                particle_1=1274
+                particle_2=1094
         }
         col_3={
 		type=external_force
-		particles=472
+		particles=1274
 	}
 	col_4={
 		type=external_force
-		particles=940
+		particles=1094
 	}
 	col_5={
 		type=hb_list
