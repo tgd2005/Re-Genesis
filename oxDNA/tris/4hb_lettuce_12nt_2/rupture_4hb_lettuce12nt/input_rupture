@@ -1,4 +1,4 @@
-# Backend and Model
+## Backend and Model
 interaction_type = DNA2
 seq_dep_file = '/rds/general/user/tgd23/home/oxDNA/oxDNA2_average_sequence_parameters.txt' 
 backend = CPU
@@ -11,7 +11,7 @@ T = 20C
 salt_concentration = 0.5
 
 # Simulation Length (10^8 steps)
-steps = 1e8
+steps = 2e8
 dt = 0.001
 verlet_skin = 0.05
 refresh_vel = 1
@@ -36,7 +36,8 @@ max_backbone_force = 5
 max_backbone_force_far = 10
 
 # mutual traps
-external_forces = 0
+external_forces = 1
+external_forces_file = external.conf
 
 data_output_1 = {
 	name = lettuce_hbonds.dat
