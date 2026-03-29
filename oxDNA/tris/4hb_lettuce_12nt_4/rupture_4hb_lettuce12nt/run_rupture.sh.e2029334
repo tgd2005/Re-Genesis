@@ -1,0 +1,189 @@
+INFO: seeding the RNG with 12345
+INFO: Initializing backend 
+INFO: Simulation type: MD
+INFO: The generator will try to take into account bonded interactions by choosing distances between bonded neighbours no larger than 2.000000
+INFO: Converting temperature from Celsius (20.000000 C°) to simulation units (0.097717)
+INFO: Using a maximum backbone force of 5  (the corresponding mbf_xmax is 0.120156) and a far value of 10
+INFO: Running Debye-Huckel at salt concentration =  0.5
+INFO: Using different widths for major and minor grooves
+INFO: Temperature change detected (new temperature: 20.00 C, 293.15 K), re-initialising the DNA interaction
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: pid: 2496985
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: Parsing force file external.conf
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1875, PBC=0) on particle 326
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=326, PBC=0) on particle 1875
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=323, PBC=0) on particle 1878
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1878, PBC=0) on particle 323
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1866, PBC=0) on particle 111
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=111, PBC=0) on particle 1866
+INFO:    Force file parsed
+INFO: (Cells.cpp) N_cells_side: 16, 16, 16; rcut=3.33787, IS_MC: 0
+INFO: Parsing order parameter file hb_region.txt
+INFO: Order parameter type bond found, processing
+INFO: --> Adding HB pair (1829, 1776) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1820 1785 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1820, 1785) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1819 1786 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1819, 1786) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1818 1787 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1818, 1787) to order parameter `lettuce12nt_stem_hb'
+INFO: --> Adding HB pair (1828, 1777) to order parameter `lettuce12nt_stem_hb'
+INFO: --> Adding HB pair (1827, 1778) to order parameter `lettuce12nt_stem_hb'
+INFO: --> Adding HB pair (1826, 1779) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1825 1780 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1825, 1780) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1824 1781 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1824, 1781) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1823 1782 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1823, 1782) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1822 1783 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1822, 1783) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1821 1784 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1821, 1784) to order parameter `lettuce12nt_stem_hb'
+INFO:  File hb_region.txt parsed; found 1 hb_dim, 0 dist_dim
+INFO: N: 1884, N molecules: 30
+INFO: Using randomly distributed velocities
+INFO: Initial kinetic energy: 543.633938
+INFO: RELEASE: v3.7.0
+INFO: GIT COMMIT: 97e29111
+INFO: COMPILED ON: 05/11/25
+INFO: diffusion fixed.. -2317.85 -2317.85
+INFO: diffusion fixed.. -2385.65 -2385.65
+INFO: diffusion fixed.. -2417.08 -2417.08
+INFO: diffusion fixed.. -2460.62 -2460.62
+INFO: diffusion fixed.. -2507.79 -2507.79
+INFO: diffusion fixed.. -2523.89 -2523.89
+INFO: diffusion fixed.. -2542.75 -2542.75
+INFO: diffusion fixed.. -2566.81 -2566.81
+INFO: diffusion fixed.. -2600.1 -2600.1
+INFO: diffusion fixed.. -2605.4 -2605.4
+INFO: diffusion fixed.. -2624.01 -2624.01
+INFO: diffusion fixed.. -2624.56 -2624.56
+INFO: diffusion fixed.. -2634.39 -2634.39
+INFO: diffusion fixed.. -2640.19 -2640.19
+INFO: diffusion fixed.. -2650.09 -2650.09
+INFO: diffusion fixed.. -2653.81 -2653.81
+INFO: diffusion fixed.. -2651.57 -2651.57
+INFO: diffusion fixed.. -2655.38 -2655.38
+INFO: diffusion fixed.. -2654.31 -2654.31
+INFO: diffusion fixed.. -2655.7 -2655.7
+INFO: diffusion fixed.. -2667.46 -2667.46
+INFO: diffusion fixed.. -2649.91 -2649.91
+INFO: diffusion fixed.. -2662.04 -2662.04
+INFO: diffusion fixed.. -2656.91 -2656.91
+INFO: diffusion fixed.. -2671.95 -2671.95
+INFO: diffusion fixed.. -2667.61 -2667.61
+INFO: diffusion fixed.. -2663.72 -2663.72
+INFO: diffusion fixed.. -2662.26 -2662.26
+INFO: diffusion fixed.. -2670.18 -2670.18
+INFO: diffusion fixed.. -2669.47 -2669.47
+INFO: diffusion fixed.. -2679.36 -2679.36
+INFO: diffusion fixed.. -2664.11 -2664.11
+INFO: diffusion fixed.. -2672.39 -2672.39
+INFO: diffusion fixed.. -2681.84 -2681.84
+INFO: diffusion fixed.. -2666.79 -2666.79
+INFO: diffusion fixed.. -2664.42 -2664.42
+INFO: diffusion fixed.. -2670.89 -2670.89
+INFO: diffusion fixed.. -2660.16 -2660.16
+INFO: diffusion fixed.. -2666.76 -2666.76
+INFO: diffusion fixed.. -2648.47 -2648.47
+INFO: diffusion fixed.. -2645.67 -2645.67
+INFO: diffusion fixed.. -2666.91 -2666.91
+INFO: diffusion fixed.. -2651.49 -2651.49
+INFO: diffusion fixed.. -2655.49 -2655.49
+INFO: diffusion fixed.. -2663.35 -2663.35
+INFO: diffusion fixed.. -2670.45 -2670.45
+INFO: diffusion fixed.. -2665.89 -2665.89
+INFO: diffusion fixed.. -2674.65 -2674.65
+INFO: diffusion fixed.. -2668.06 -2668.06
+INFO: diffusion fixed.. -2668.99 -2668.99
+INFO: diffusion fixed.. -2677.79 -2677.79
+INFO: diffusion fixed.. -2679.55 -2679.55
+INFO: diffusion fixed.. -2671.36 -2671.36
+INFO: diffusion fixed.. -2670.36 -2670.36
+INFO: diffusion fixed.. -2672.8 -2672.8
+INFO: diffusion fixed.. -2673.37 -2673.37
+INFO: diffusion fixed.. -2673.24 -2673.24
+INFO: diffusion fixed.. -2680.02 -2680.02
+INFO: diffusion fixed.. -2685.29 -2685.29
+INFO: diffusion fixed.. -2684.11 -2684.11
+INFO: diffusion fixed.. -2669.06 -2669.06
+INFO: diffusion fixed.. -2674.74 -2674.74
+INFO: diffusion fixed.. -2659.09 -2659.09
+INFO: diffusion fixed.. -2668.38 -2668.38
+INFO: diffusion fixed.. -2673.75 -2673.75
+INFO: diffusion fixed.. -2675.87 -2675.87
+INFO: diffusion fixed.. -2681.02 -2681.02
+INFO: diffusion fixed.. -2679 -2679
+INFO: diffusion fixed.. -2678.69 -2678.69
+INFO: diffusion fixed.. -2684.22 -2684.22
+INFO: diffusion fixed.. -2680.06 -2680.06
+INFO: diffusion fixed.. -2672.31 -2672.31
+INFO: diffusion fixed.. -2689.46 -2689.46
+INFO: diffusion fixed.. -2683.75 -2683.75
+INFO: diffusion fixed.. -2692.15 -2692.15
+INFO: diffusion fixed.. -2676.12 -2676.12
+INFO: diffusion fixed.. -2669.56 -2669.56
+INFO: diffusion fixed.. -2682.57 -2682.57
+INFO: diffusion fixed.. -2674.24 -2674.24
+INFO: diffusion fixed.. -2688.13 -2688.13
+INFO: diffusion fixed.. -2671.09 -2671.09
+INFO: diffusion fixed.. -2668.43 -2668.43
+INFO: diffusion fixed.. -2676.4 -2676.4
+INFO: diffusion fixed.. -2658.56 -2658.56
+INFO: diffusion fixed.. -2671.33 -2671.33
+INFO: diffusion fixed.. -2679.37 -2679.37
+INFO: diffusion fixed.. -2678.63 -2678.63
+INFO: diffusion fixed.. -2688.77 -2688.77
+INFO: diffusion fixed.. -2675.93 -2675.93
+INFO: diffusion fixed.. -2681.04 -2681.04
+INFO: diffusion fixed.. -2668.74 -2668.74
+INFO: diffusion fixed.. -2673.02 -2673.02
+INFO: diffusion fixed.. -2668.49 -2668.49
+INFO: diffusion fixed.. -2667.32 -2667.32
+INFO: diffusion fixed.. -2675.62 -2675.62
+INFO: diffusion fixed.. -2676.44 -2676.44
+INFO: diffusion fixed.. -2678.21 -2678.21
+INFO: diffusion fixed.. -2663.47 -2663.47
+INFO: diffusion fixed.. -2662.78 -2662.78
+INFO: diffusion fixed.. -2666.06 -2666.06
+INFO: diffusion fixed.. -2673.65 -2673.65
+INFO: diffusion fixed.. -2666.07 -2666.07
+INFO: diffusion fixed.. -2660.26 -2660.26
+INFO: diffusion fixed.. -2668.65 -2668.65
+INFO: diffusion fixed.. -2658.3 -2658.3
+INFO: diffusion fixed.. -2674.57 -2674.57
+INFO: diffusion fixed.. -2666.91 -2666.91
+INFO: diffusion fixed.. -2674.18 -2674.18
+INFO: diffusion fixed.. -2684.38 -2684.38
+INFO: diffusion fixed.. -2688.05 -2688.05
+INFO: diffusion fixed.. -2677.98 -2677.98
+INFO: diffusion fixed.. -2665.95 -2665.95
+INFO: diffusion fixed.. -2669.6 -2669.6
+INFO: diffusion fixed.. -2683.85 -2683.85
+INFO: # Caught SIGNAL 15; setting stop = 1
+
+
+INFO: Total Running Time: 85274.1 s, per step: 7.47363 ms
+INFO: Timings, in seconds, by Timer (total, own, spent in children)
+> SimBackend                      85274.082 (100.0%)       29.087 (  0.0%)    85244.995 (100.0%)
+***> Lists                         3114.722 (  3.7%)     3114.722 (  3.7%)        0.000 (  0.0%)
+***> Thermostat                       8.657 (  0.0%)        8.657 (  0.0%)        0.000 (  0.0%)
+***> Forces                       80549.958 ( 94.5%)    80549.958 ( 94.5%)        0.000 (  0.0%)
+***> First Step                    1553.739 (  1.8%)     1553.739 (  1.8%)        0.000 (  0.0%)
+***> Observables                     17.920 (  0.0%)       17.920 (  0.0%)        0.000 (  0.0%)
+
+INFO: END OF THE SIMULATION, everything went OK!
+INFO: Lists updated 305890 times (every ~37.300958 steps)
+INFO: Aggregated I/O statistics (set debug=1 for file-wise information)
+	 11.553 MB written to files
+	744.000  B written to stdout/stderr
+	For a total of 0.000135 MB/s
+
+Please cite at least the following publication for any work that uses the oxDNA simulation package
+  * E. Poppleton et al., J. Open Source Softw. 8, 4693 (2023), DOI: 10.21105/joss.04693
