@@ -1,0 +1,4 @@
+INFO: seeding the RNG with 12345
+INFO: Initializing backend 
+INFO: Simulation type: MD
+ERROR: Backend 'CUDA' not supported
