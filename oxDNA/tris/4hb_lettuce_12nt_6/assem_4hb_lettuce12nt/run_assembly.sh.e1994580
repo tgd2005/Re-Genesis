@@ -1,0 +1,86 @@
+INFO: seeding the RNG with 12345
+INFO: Initializing backend 
+INFO: Simulation type: MD
+INFO: The generator will try to take into account bonded interactions by choosing distances between bonded neighbours no larger than 2.000000
+INFO: Converting temperature from Celsius (20.000000 C°) to simulation units (0.097717)
+INFO: Using a maximum backbone force of 5  (the corresponding mbf_xmax is 0.120156) and a far value of 10
+INFO: Running Debye-Huckel at salt concentration =  0.5
+INFO: Using different widths for major and minor grooves
+INFO: Temperature change detected (new temperature: 20.00 C, 293.15 K), re-initialising the DNA interaction
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: pid: 241901
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: Parsing force file external.conf
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1844, PBC=0) on particle 1746
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1746, PBC=0) on particle 1844
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1830, PBC=0) on particle 1760
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1760, PBC=0) on particle 1830
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1749, PBC=0) on particle 1841
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1841, PBC=0) on particle 1749
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1776, PBC=0) on particle 1829
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1829, PBC=0) on particle 1776
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1788, PBC=0) on particle 1818
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1818, PBC=0) on particle 1788
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1675, PBC=0) on particle 1775
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1775, PBC=0) on particle 1675
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1689, PBC=0) on particle 1761
+INFO: Adding a MutualTrap (stiff=10, stiff_rate=0, r0=1, rate=0, ref_particle=1761, PBC=0) on particle 1689
+INFO:    Force file parsed
+INFO: (Cells.cpp) N_cells_side: 16, 16, 16; rcut=3.33787, IS_MC: 0
+INFO: N: 1845, N molecules: 29
+INFO: Using randomly distributed velocities
+INFO: Initial kinetic energy: 532.369706
+INFO: RELEASE: v3.7.0
+INFO: GIT COMMIT: 97e29111
+INFO: COMPILED ON: 05/11/25
+INFO: diffusion fixed.. -2641.5 -2641.5
+INFO: diffusion fixed.. -2637.23 -2637.23
+INFO: diffusion fixed.. -2645.87 -2645.87
+INFO: diffusion fixed.. -2666.62 -2666.62
+INFO: diffusion fixed.. -2665.22 -2665.22
+INFO: diffusion fixed.. -2660.62 -2660.62
+INFO: diffusion fixed.. -2681.82 -2681.82
+INFO: diffusion fixed.. -2679.56 -2679.56
+INFO: diffusion fixed.. -2684.36 -2684.36
+INFO: diffusion fixed.. -2688.58 -2688.58
+INFO: diffusion fixed.. -2687.96 -2687.96
+INFO: diffusion fixed.. -2703.24 -2703.24
+INFO: diffusion fixed.. -2685.41 -2685.41
+INFO: diffusion fixed.. -2686.16 -2686.16
+INFO: diffusion fixed.. -2689.86 -2689.86
+INFO: diffusion fixed.. -2712.38 -2712.38
+INFO: diffusion fixed.. -2702.84 -2702.84
+INFO: diffusion fixed.. -2701.8 -2701.8
+INFO: diffusion fixed.. -2711.91 -2711.91
+INFO: diffusion fixed.. -2704.43 -2704.43
+INFO: diffusion fixed.. -2698.33 -2698.33
+INFO: diffusion fixed.. -2689.66 -2689.66
+INFO: diffusion fixed.. -2693.92 -2693.92
+INFO: diffusion fixed.. -2685.41 -2685.41
+INFO: diffusion fixed.. -2693.02 -2693.02
+INFO: diffusion fixed.. -2692.2 -2692.2
+INFO: # Caught SIGNAL 15; setting stop = 1
+
+
+INFO: Total Running Time: 17453.8 s, per step: 6.64733 ms
+INFO: Timings, in seconds, by Timer (total, own, spent in children)
+> SimBackend                      17453.762 (100.0%)        5.320 (  0.0%)    17448.442 (100.0%)
+***> Lists                          613.358 (  3.5%)      613.358 (  3.5%)        0.000 (  0.0%)
+***> Thermostat                       1.359 (  0.0%)        1.359 (  0.0%)        0.000 (  0.0%)
+***> Forces                       16564.615 ( 94.9%)    16564.615 ( 94.9%)        0.000 (  0.0%)
+***> First Step                     267.475 (  1.5%)      267.475 (  1.5%)        0.000 (  0.0%)
+***> Observables                      1.636 (  0.0%)        1.636 (  0.0%)        0.000 (  0.0%)
+
+INFO: END OF THE SIMULATION, everything went OK!
+INFO: Lists updated 69280 times (every ~37.899553 steps)
+INFO: Aggregated I/O statistics (set debug=1 for file-wise information)
+	  2.419 MB written to files
+	186.000  B written to stdout/stderr
+	For a total of 0.000139 MB/s
+
+Please cite at least the following publication for any work that uses the oxDNA simulation package
+  * E. Poppleton et al., J. Open Source Softw. 8, 4693 (2023), DOI: 10.21105/joss.04693
