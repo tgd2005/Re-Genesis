@@ -1,0 +1,16 @@
+{
+   order_parameter = bond
+   name = lettuce12nt_stem_hb
+   pair1 = 1829, 1776
+   pair2 = 1828, 1777
+   pair3 = 1827, 1778
+   pair4 = 1826, 1779
+   pair5 = 1825, 1780
+   pair6 = 1824, 1781
+   pair7 = 1823, 1782
+   pair8 = 1822, 1783
+   pair9 = 1821, 1784
+   pair10 = 1820, 1785
+   pair11 = 1819, 1786
+   pair12 = 1818, 1787
+}
