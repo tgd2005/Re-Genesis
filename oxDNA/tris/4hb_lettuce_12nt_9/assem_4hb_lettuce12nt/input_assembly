@@ -1,0 +1,40 @@
+# Backend and Model
+interaction_type = DNA2
+seq_dep_file = '/rds/general/user/tgd23/home/oxDNA/oxDNA2_average_sequence_parameters.txt' 
+backend = CPU
+sim_type = MD
+restart_step_counter = 1
+seed = 12345
+
+# Physical Parameters
+T = 20C
+salt_concentration = 0.5
+
+# Simulation Length (10^8 steps)
+steps = 5e6
+dt = 0.001
+verlet_skin = 0.05
+refresh_vel = 1
+
+# Input/Output Files
+topology = top_5to3.top
+conf_file = relax_MD_last.conf
+trajectory_file = assembly_traj.dat
+energy_file = assembly_energy.dat
+lastconf_file = assembly_last.conf
+
+# Housekeeping
+print_conf_interval = 1e6
+print_energy_every = 1e6
+thermostat = john # john is an alternative
+#gamma = 4.0 # remove if john
+newtonian_steps = 103
+diff_coeff = 2.5
+time_scale = linear
+
+max_backbone_force = 5
+max_backbone_force_far = 10
+
+# mutual traps
+external_forces = 1
+external_forces_file = external.conf

@@ -1,0 +1,21 @@
+{
+   order_parameter = bond
+   name = staple_hb_sect3
+   # SECTION 3
+   pair1 = 1869, 547
+   pair2 = 1870, 548
+   pair3 = 1871, 549
+   # SECTION 4
+   pair4 = 1883, 318
+   pair5 = 1882, 319
+   pair6 = 1881, 320
+   pair7 = 1880, 321
+   pair8 = 1879, 322
+   pair9 = 1878, 323
+   pair10 = 1877, 324
+   pair11 = 1876, 325
+   pair12 = 1875, 326
+   pair13 = 1874, 327
+   pair14 = 1873, 328
+   pair15 = 1872, 329
+}
