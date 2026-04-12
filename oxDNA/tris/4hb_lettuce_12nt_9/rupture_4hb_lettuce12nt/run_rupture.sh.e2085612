@@ -1,0 +1,155 @@
+INFO: seeding the RNG with 12345
+INFO: Initializing backend 
+INFO: Simulation type: MD
+INFO: The generator will try to take into account bonded interactions by choosing distances between bonded neighbours no larger than 2.000000
+INFO: Converting temperature from Celsius (20.000000 C°) to simulation units (0.097717)
+INFO: Running Debye-Huckel at salt concentration =  0.5
+INFO: Using different widths for major and minor grooves
+INFO: Temperature change detected (new temperature: 20.00 C, 293.15 K), re-initialising the DNA interaction
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: pid: 2348383
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: Parsing force file external.conf
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=1883, PBC=0) on particle 318
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=318, PBC=0) on particle 1883
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=329, PBC=0) on particle 1872
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=1872, PBC=0) on particle 329
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=1871, PBC=0) on particle 549
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=549, PBC=0) on particle 1871
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=547, PBC=0) on particle 1869
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=1869, PBC=0) on particle 547
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=108, PBC=0) on particle 1859
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=1859, PBC=0) on particle 108
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=109, PBC=0) on particle 1868
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=1868, PBC=0) on particle 109
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=1845, PBC=0) on particle 564
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=564, PBC=0) on particle 1845
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=551, PBC=0) on particle 1858
+INFO: Adding a MutualTrap (stiff=2, stiff_rate=0, r0=1, rate=0, ref_particle=1858, PBC=0) on particle 551
+INFO:    Force file parsed
+INFO: (Cells.cpp) N_cells_side: 16, 16, 16; rcut=3.33787, IS_MC: 0
+INFO: Parsing order parameter file hb_region.txt
+INFO: Order parameter type bond found, processing
+INFO: --> Adding HB pair (1829, 1776) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1820 1785 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1820, 1785) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1819 1786 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1819, 1786) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1818 1787 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1818, 1787) to order parameter `lettuce12nt_stem_hb'
+INFO: --> Adding HB pair (1828, 1777) to order parameter `lettuce12nt_stem_hb'
+INFO: --> Adding HB pair (1827, 1778) to order parameter `lettuce12nt_stem_hb'
+INFO: --> Adding HB pair (1826, 1779) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1825 1780 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1825, 1780) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1824 1781 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1824, 1781) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1823 1782 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1823, 1782) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1822 1783 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1822, 1783) to order parameter `lettuce12nt_stem_hb'
+WARNING: HB pair 1821 1784 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1821, 1784) to order parameter `lettuce12nt_stem_hb'
+INFO:  File hb_region.txt parsed; found 1 hb_dim, 0 dist_dim
+INFO: Parsing order parameter file hb_region_staple_sect1.txt
+INFO: Order parameter type bond found, processing
+INFO: --> Adding HB pair (1845, 564) to order parameter `staple_hb_sect1'
+INFO: --> Adding HB pair (1854, 555) to order parameter `staple_hb_sect1'
+INFO: --> Adding HB pair (1855, 554) to order parameter `staple_hb_sect1'
+INFO: --> Adding HB pair (1856, 553) to order parameter `staple_hb_sect1'
+INFO: --> Adding HB pair (1857, 552) to order parameter `staple_hb_sect1'
+INFO: --> Adding HB pair (1858, 551) to order parameter `staple_hb_sect1'
+INFO: --> Adding HB pair (1846, 563) to order parameter `staple_hb_sect1'
+INFO: --> Adding HB pair (1847, 562) to order parameter `staple_hb_sect1'
+INFO: --> Adding HB pair (1848, 561) to order parameter `staple_hb_sect1'
+INFO: --> Adding HB pair (1849, 560) to order parameter `staple_hb_sect1'
+INFO: --> Adding HB pair (1850, 559) to order parameter `staple_hb_sect1'
+INFO: --> Adding HB pair (1851, 558) to order parameter `staple_hb_sect1'
+INFO: --> Adding HB pair (1852, 557) to order parameter `staple_hb_sect1'
+INFO: --> Adding HB pair (1853, 556) to order parameter `staple_hb_sect1'
+INFO:  File hb_region_staple_sect1.txt parsed; found 1 hb_dim, 0 dist_dim
+INFO: Parsing order parameter file hb_region_staple_sect2.txt
+INFO: Order parameter type bond found, processing
+INFO: --> Adding HB pair (1859, 108) to order parameter `staple_hb_sect2'
+INFO: --> Adding HB pair (1868, 109) to order parameter `staple_hb_sect2'
+INFO: --> Adding HB pair (1860, 107) to order parameter `staple_hb_sect2'
+INFO: --> Adding HB pair (1861, 106) to order parameter `staple_hb_sect2'
+INFO: --> Adding HB pair (1862, 105) to order parameter `staple_hb_sect2'
+INFO: --> Adding HB pair (1863, 104) to order parameter `staple_hb_sect2'
+INFO: --> Adding HB pair (1864, 113) to order parameter `staple_hb_sect2'
+INFO: --> Adding HB pair (1865, 112) to order parameter `staple_hb_sect2'
+INFO: --> Adding HB pair (1866, 111) to order parameter `staple_hb_sect2'
+INFO: --> Adding HB pair (1867, 110) to order parameter `staple_hb_sect2'
+INFO:  File hb_region_staple_sect2.txt parsed; found 1 hb_dim, 0 dist_dim
+INFO: Parsing order parameter file hb_region_staple_sect3.txt
+INFO: Order parameter type bond found, processing
+INFO: --> Adding HB pair (1869, 547) to order parameter `staple_hb_sect3'
+INFO: --> Adding HB pair (1877, 324) to order parameter `staple_hb_sect3'
+INFO: --> Adding HB pair (1876, 325) to order parameter `staple_hb_sect3'
+INFO: --> Adding HB pair (1875, 326) to order parameter `staple_hb_sect3'
+INFO: --> Adding HB pair (1874, 327) to order parameter `staple_hb_sect3'
+INFO: --> Adding HB pair (1873, 328) to order parameter `staple_hb_sect3'
+INFO: --> Adding HB pair (1872, 329) to order parameter `staple_hb_sect3'
+WARNING: HB pair 1870 548 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1870, 548) to order parameter `staple_hb_sect3'
+WARNING: HB pair 1871 549 not complementary, but still an order parameter
+INFO: --> Adding HB pair (1871, 549) to order parameter `staple_hb_sect3'
+INFO: --> Adding HB pair (1883, 318) to order parameter `staple_hb_sect3'
+INFO: --> Adding HB pair (1882, 319) to order parameter `staple_hb_sect3'
+INFO: --> Adding HB pair (1881, 320) to order parameter `staple_hb_sect3'
+INFO: --> Adding HB pair (1880, 321) to order parameter `staple_hb_sect3'
+INFO: --> Adding HB pair (1879, 322) to order parameter `staple_hb_sect3'
+INFO: --> Adding HB pair (1878, 323) to order parameter `staple_hb_sect3'
+INFO:  File hb_region_staple_sect3.txt parsed; found 1 hb_dim, 0 dist_dim
+INFO: N: 1884, N molecules: 30
+INFO: Using randomly distributed velocities
+INFO: Initial kinetic energy: 543.633938
+INFO: RELEASE: v3.7.0
+INFO: GIT COMMIT: 97e29111
+INFO: COMPILED ON: 05/11/25
+INFO: diffusion fixed.. -2629.64 -2629.64
+INFO: diffusion fixed.. -2600.04 -2600.04
+INFO: diffusion fixed.. -2610.37 -2610.37
+INFO: diffusion fixed.. -2595.47 -2595.47
+INFO: diffusion fixed.. -2571.06 -2571.06
+INFO: diffusion fixed.. -2581.22 -2581.22
+INFO: diffusion fixed.. -2603.04 -2603.04
+INFO: diffusion fixed.. -2597.24 -2597.24
+INFO: diffusion fixed.. -2609.5 -2609.5
+INFO: diffusion fixed.. -2605.31 -2605.31
+INFO: diffusion fixed.. -2613.84 -2613.84
+INFO: diffusion fixed.. -2619.03 -2619.03
+INFO: diffusion fixed.. -2636.97 -2636.97
+INFO: diffusion fixed.. -2656.66 -2656.66
+INFO: diffusion fixed.. -2658.64 -2658.64
+INFO: diffusion fixed.. -2653.6 -2653.6
+INFO: diffusion fixed.. -2645.41 -2645.41
+INFO: diffusion fixed.. -2649.04 -2649.04
+INFO: diffusion fixed.. -2669.9 -2669.9
+INFO: # Caught SIGNAL 15; setting stop = 1
+
+INFO: # Caught SIGNAL 15; setting stop = 1
+
+
+INFO: Total Running Time: 16485.4 s, per step: 8.24477 ms
+INFO: Timings, in seconds, by Timer (total, own, spent in children)
+> SimBackend                      16485.411 (100.0%)        5.803 (  0.0%)    16479.607 (100.0%)
+***> Lists                          283.851 (  1.7%)      283.851 (  1.7%)        0.000 (  0.0%)
+***> Thermostat                       1.598 (  0.0%)        1.598 (  0.0%)        0.000 (  0.0%)
+***> Forces                       15840.318 ( 96.1%)    15840.318 ( 96.1%)        0.000 (  0.0%)
+***> First Step                     346.490 (  2.1%)      346.490 (  2.1%)        0.000 (  0.0%)
+***> Observables                      7.350 (  0.0%)        7.350 (  0.0%)        0.000 (  0.0%)
+
+INFO: END OF THE SIMULATION, everything went OK!
+INFO: Lists updated 27825 times (every ~71.859838 steps)
+INFO: Aggregated I/O statistics (set debug=1 for file-wise information)
+	 11.491 MB written to files
+	124.000  B written to stdout/stderr
+	For a total of 0.000697 MB/s
+
+Please cite at least the following publication for any work that uses the oxDNA simulation package
+  * E. Poppleton et al., J. Open Source Softw. 8, 4693 (2023), DOI: 10.21105/joss.04693

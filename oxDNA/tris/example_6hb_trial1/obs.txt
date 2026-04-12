@@ -1,0 +1,29 @@
+{
+  "output_1" : {
+    "print_every" : "1e3",
+    "name" : "posttraps_rel_MD_dist.dat",
+    "cols" : [
+      {
+        "type" : "step",
+        "units" : "MD"
+      },
+      {
+        "type" : "distance",
+	"particle_1" : "2382",
+	"particle_2" : "2506"
+      },
+      {
+	"type" : "external_force",
+	"particles" : "2382"
+      },
+      {
+	"type" : "external_force",
+	"particles" : "2506"
+      },
+      {
+	"type" : "hb_list",
+	"only_count" : "true"
+      }
+    ]
+  }
+}
