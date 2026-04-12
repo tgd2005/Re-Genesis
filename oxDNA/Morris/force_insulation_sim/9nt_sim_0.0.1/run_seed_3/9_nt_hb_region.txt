@@ -1,0 +1,13 @@
+{
+    order_parameter = bond
+    name = lettuce9nt_stem_hb
+    pair1 = 174,226
+    pair2 = 175,225
+    pair3 = 176,224
+    pair4 = 177,223
+    pair5 = 178,222
+    pair6 = 179,221
+    pair7 = 180,220
+    pair8 = 181,219
+    pair9 = 182,218
+}

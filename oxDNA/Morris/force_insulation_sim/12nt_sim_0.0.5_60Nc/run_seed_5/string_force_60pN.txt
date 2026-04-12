@@ -1,0 +1,16 @@
+{
+  type = string
+  particle = 0
+  F0 = 1.0508
+  rate = 0
+  dir = 0, 0, 1
+}
+
+
+{
+  type = string
+  particle = 83
+  F0 = 1.0508
+  rate = 0
+  dir = 0, 0, -1
+}

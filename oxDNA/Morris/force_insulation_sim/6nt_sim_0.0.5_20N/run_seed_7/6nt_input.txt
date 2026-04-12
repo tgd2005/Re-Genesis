@@ -1,0 +1,57 @@
+# Backend and Model
+interaction_type = DNA2
+seq_dep_file = '/rds/general/user/tc2523/home/oxDNA/oxDNA2/oxDNA/oxDNA2_average_sequence_parameters.txt ' 
+backend = CPU
+sim_type = MD
+restart_step_counter = 1
+seed = 12345
+
+# Physical Parameters
+T = 20C
+salt_concentration = 0.5
+
+# Simulation Length (10^8 steps)
+steps = 1e8
+dt = 0.001
+verlet_skin = 0.05
+refresh_vel = 1
+
+# Input/Output Files
+topology = 6nt-insulation-RELAXED-o3.top
+conf_file = 6nt-insulation-RELAXED-o3.dat 
+trajectory_file = 6nt_rupture_traj.dat
+energy_file = 6nt_rupture_energy.dat
+lastconf_file = 6nt_rupture_last.conf
+
+# Housekeeping
+print_conf_interval = 1e6
+print_energy_every = 1e6
+thermostat = john # john is an alternative
+#gamma = 4.0 # remove if john
+newtonian_steps = 103
+diff_coeff = 2.5
+time_scale = linear
+
+max_backbone_force = 5
+max_backbone_force_far = 10
+
+# mutual traps
+external_forces = 1
+external_forces_file = string_force_20pN.txt
+
+data_output_1 = {
+	name = lettuce_hbonds.dat
+	print_every = 1e3
+	col_1 = {
+		type = step
+		unit = MD
+	}
+	col_2 = {
+		type = hb_list
+		order_parameters_file = 6_nt_hb_region.txt
+		only_count = true
+	}
+}
+
+
+
