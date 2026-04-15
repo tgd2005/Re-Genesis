@@ -1,0 +1,89 @@
+# Backend and Model
+interaction_type = DNA2
+seq_dep_file = '/rds/general/user/tc2523/home/oxDNA/oxDNA2/oxDNA/oxDNA2_average_sequence_parameters.txt ' 
+backend = CPU
+sim_type = MD
+restart_step_counter = 1
+seed = 12345
+
+# Physical Parameters
+T = 20C
+salt_concentration = 0.5
+
+# Simulation Length (10^8 steps)
+steps = 1e8
+dt = 0.001
+verlet_skin = 0.05
+refresh_vel = 1
+
+# Input/Output Files
+topology = 12nt-insulation-RELAXED.top
+conf_file = 12nt-insulation-RELAXED.dat 
+trajectory_file = 12nt_rupture_traj.dat
+energy_file = 12nt_rupture_energy.dat
+lastconf_file = 12nt_rupture_last.conf
+
+# Housekeeping
+print_conf_interval = 1e6
+print_energy_every = 1e6
+thermostat = john # john is an alternative
+#gamma = 4.0 # remove if john
+newtonian_steps = 103
+diff_coeff = 2.5
+time_scale = linear
+
+max_backbone_force = 5
+max_backbone_force_far = 10
+
+# mutual traps
+external_forces = 1
+external_forces_file = 12nt-insulation-RELAXED_force.txt 
+
+data_output_1 = {
+	name = lettuce_hbonds.dat
+	print_every = 1e3
+	col_1 = {
+		type = step
+		unit = MD
+	}
+	col_2 = {
+		type = hb_list
+		order_parameters_file = 12_nt_hb_region.txt
+		only_count = true
+	}
+}
+
+data_output_2 = {
+	name = distance.dat
+	print_every = 1e3
+	col_1 = {
+		type = step
+		unit = MD
+	}
+	col_2 = { type = distance; particle_1 = 36; particle_2 = 94 }
+    col_3 = { type = distance; particle_1 = 37; particle_2 = 93 }
+    col_4 = { type = distance; particle_1 = 38; particle_2 = 92 }
+    col_5 = { type = distance; particle_1 = 39; particle_2 = 91 }
+    col_6 = { type = distance; particle_1 = 40; particle_2 = 90 }
+    col_7 = { type = distance; particle_1 = 41; particle_2 = 89 }
+    col_8 = { type = distance; particle_1 = 42; particle_2 = 88 }
+    col_9 = { type = distance; particle_1 = 43; particle_2 = 87 }
+    col_10 = { type = distance; particle_1 = 44; particle_2 = 86 }
+    col_11 = { type = distance; particle_1 = 45; particle_2 = 85 }
+    col_12 = { type = distance; particle_1 = 46; particle_2 = 84 }
+    col_13 = { type = distance; particle_1 = 47; particle_2 = 83 }
+	
+}
+
+data_output_3 = {
+	name = stem_total_hb_energy.dat
+	print_every = 1e3
+	col_1 = {
+		type = step
+		unit = MD
+	}
+	col_2 = {
+		type = hb_energy 
+		pairs_file = 12_nt_hb_region.txt
+	}
+}

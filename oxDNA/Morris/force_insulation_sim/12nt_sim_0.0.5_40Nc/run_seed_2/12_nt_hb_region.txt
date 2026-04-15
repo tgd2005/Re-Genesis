@@ -1,0 +1,16 @@
+{
+    order_parameter = bond
+    name = lettuce6nt_stem_hb
+    pair1 = 15,68
+    pair2 = 16,67
+    pair3 = 17,66
+    pair4 = 18,65
+    pair5 = 19,64
+    pair6 = 20,63
+    pair7 = 21,62
+    pair8 = 22,61
+    pair9 = 23,60
+    pair10 = 24,59
+    pair11 = 25,58
+    pair12 = 26,57
+}

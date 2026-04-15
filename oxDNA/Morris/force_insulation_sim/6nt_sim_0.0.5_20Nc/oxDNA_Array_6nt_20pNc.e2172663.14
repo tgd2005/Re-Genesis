@@ -1,0 +1,25 @@
+cp: cannot stat 'string_force_20pN': No such file or directory
+WARNING: Overwriting key `seed' (`12345' to `10014')
+WARNING: Overwriting key `energy_file' (`rupture_energy.dat' to `energy_s14.dat')
+WARNING: Overwriting key `trajectory_file' (`rupture_traj.dat' to `traj_s14.dat')
+WARNING: Overwriting key `lastconf_file' (`rupture_last.conf' to `last_s14.conf')
+INFO: seeding the RNG with 10014
+INFO: Initializing backend 
+INFO: Simulation type: MD
+INFO: The generator will try to take into account bonded interactions by choosing distances between bonded neighbours no larger than 2.000000
+INFO: Converting temperature from Celsius (20.000000 C°) to simulation units (0.097717)
+INFO: Using a maximum backbone force of 5  (the corresponding mbf_xmax is 0.120156) and a far value of 10
+INFO: Running Debye-Huckel at salt concentration =  0.5
+INFO: Using different widths for major and minor grooves
+INFO: Temperature change detected (new temperature: 20.00 C, 293.15 K), re-initialising the DNA interaction
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: pid: 2594166
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: Aggregated I/O statistics (set debug=1 for file-wise information)
+	  0.000  B written to files
+	  0.000  B written to stdout/stderr
+ERROR: Can't read external_forces_file 'string_force_20pN.txt'

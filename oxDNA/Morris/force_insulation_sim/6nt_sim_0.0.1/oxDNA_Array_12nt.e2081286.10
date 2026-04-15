@@ -1,0 +1,1275 @@
+WARNING: Overwriting key `seed' (`12345' to `10010')
+WARNING: Overwriting key `energy_file' (`6nt_rupture_energy.dat' to `energy_s10.dat')
+WARNING: Overwriting key `trajectory_file' (`6nt_rupture_traj.dat' to `traj_s10.dat')
+WARNING: Overwriting key `lastconf_file' (`6nt_rupture_last.conf' to `last_s10.conf')
+INFO: seeding the RNG with 10010
+INFO: Initializing backend 
+INFO: Simulation type: MD
+INFO: The generator will try to take into account bonded interactions by choosing distances between bonded neighbours no larger than 2.000000
+INFO: Converting temperature from Celsius (20.000000 C°) to simulation units (0.097717)
+INFO: Using a maximum backbone force of 5  (the corresponding mbf_xmax is 0.120156) and a far value of 10
+INFO: Running Debye-Huckel at salt concentration =  0.5
+INFO: Using different widths for major and minor grooves
+INFO: Temperature change detected (new temperature: 20.00 C, 293.15 K), re-initialising the DNA interaction
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+WARNING: Multiple `=' symbols found in line 'col_2 = { type = distance'. Assuming you know what you are doing.
+WARNING: Multiple `=' symbols found in line 'col_3 = { type = distance'. Assuming you know what you are doing.
+WARNING: Multiple `=' symbols found in line 'col_4 = { type = distance'. Assuming you know what you are doing.
+WARNING: Multiple `=' symbols found in line 'col_5 = { type = distance'. Assuming you know what you are doing.
+WARNING: Multiple `=' symbols found in line 'col_6 = { type = distance'. Assuming you know what you are doing.
+WARNING: Multiple `=' symbols found in line 'col_7 = { type = distance'. Assuming you know what you are doing.
+INFO: pid: 3687394
+DEBUG: Debye-Huckel parameters: Q=0.054300, lambda_0=0.361646, lambda=0.505571, r_high=1.516714, cutoff=3.237868
+DEBUG: Debye-Huckel parameters: debye_huckel_RC=2.275071e+00, debye_huckel_B=3.099313e-03
+INFO: The Debye length at this temperature and salt concentration is 0.505571
+INFO: Parsing force file 6nt-insulation-RELAXED_force.txt
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=80, PBC=1) on particle 150
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=150, PBC=1) on particle 80
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=79, PBC=1) on particle 151
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=78, PBC=1) on particle 152
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=77, PBC=1) on particle 153
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=76, PBC=1) on particle 154
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=75, PBC=1) on particle 155
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=74, PBC=1) on particle 156
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=73, PBC=1) on particle 157
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=72, PBC=1) on particle 158
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=71, PBC=1) on particle 159
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=70, PBC=1) on particle 160
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=69, PBC=1) on particle 161
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=68, PBC=1) on particle 162
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=67, PBC=1) on particle 163
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=66, PBC=1) on particle 164
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=11, PBC=1) on particle 165
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=10, PBC=1) on particle 166
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=9, PBC=1) on particle 167
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=8, PBC=1) on particle 168
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=7, PBC=1) on particle 169
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=6, PBC=1) on particle 170
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=151, PBC=1) on particle 79
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=152, PBC=1) on particle 78
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=153, PBC=1) on particle 77
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=154, PBC=1) on particle 76
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=155, PBC=1) on particle 75
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=156, PBC=1) on particle 74
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=157, PBC=1) on particle 73
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=158, PBC=1) on particle 72
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=159, PBC=1) on particle 71
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=160, PBC=1) on particle 70
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=161, PBC=1) on particle 69
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=162, PBC=1) on particle 68
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=163, PBC=1) on particle 67
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=164, PBC=1) on particle 66
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=165, PBC=1) on particle 11
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=166, PBC=1) on particle 10
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=167, PBC=1) on particle 9
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=168, PBC=1) on particle 8
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=169, PBC=1) on particle 7
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=170, PBC=1) on particle 6
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=220, PBC=1) on particle 174
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=219, PBC=1) on particle 175
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=218, PBC=1) on particle 176
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=217, PBC=1) on particle 177
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=216, PBC=1) on particle 178
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=215, PBC=1) on particle 179
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=174, PBC=1) on particle 220
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=175, PBC=1) on particle 219
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=176, PBC=1) on particle 218
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=177, PBC=1) on particle 217
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=178, PBC=1) on particle 216
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=179, PBC=1) on particle 215
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=5, PBC=1) on particle 224
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=224, PBC=1) on particle 5
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=4, PBC=1) on particle 225
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=3, PBC=1) on particle 226
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=2, PBC=1) on particle 227
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=1, PBC=1) on particle 228
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=0, PBC=1) on particle 229
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=149, PBC=1) on particle 230
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=148, PBC=1) on particle 231
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=147, PBC=1) on particle 232
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=146, PBC=1) on particle 233
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=145, PBC=1) on particle 234
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=144, PBC=1) on particle 235
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=143, PBC=1) on particle 236
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=142, PBC=1) on particle 237
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=141, PBC=1) on particle 238
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=140, PBC=1) on particle 239
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=139, PBC=1) on particle 240
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=138, PBC=1) on particle 241
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=137, PBC=1) on particle 242
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=136, PBC=1) on particle 243
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=135, PBC=1) on particle 244
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=225, PBC=1) on particle 4
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=226, PBC=1) on particle 3
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=227, PBC=1) on particle 2
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=228, PBC=1) on particle 1
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=229, PBC=1) on particle 0
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=230, PBC=1) on particle 149
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=231, PBC=1) on particle 148
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=232, PBC=1) on particle 147
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=233, PBC=1) on particle 146
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=234, PBC=1) on particle 145
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=235, PBC=1) on particle 144
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=236, PBC=1) on particle 143
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=237, PBC=1) on particle 142
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=238, PBC=1) on particle 141
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=239, PBC=1) on particle 140
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=240, PBC=1) on particle 139
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=241, PBC=1) on particle 138
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=242, PBC=1) on particle 137
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=243, PBC=1) on particle 136
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=244, PBC=1) on particle 135
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=12, PBC=1) on particle 134
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=134, PBC=1) on particle 12
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=13, PBC=1) on particle 133
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=14, PBC=1) on particle 132
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=15, PBC=1) on particle 131
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=16, PBC=1) on particle 130
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=17, PBC=1) on particle 129
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=18, PBC=1) on particle 128
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=19, PBC=1) on particle 127
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=20, PBC=1) on particle 126
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=21, PBC=1) on particle 125
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=22, PBC=1) on particle 124
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=23, PBC=1) on particle 123
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=24, PBC=1) on particle 122
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=25, PBC=1) on particle 121
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=26, PBC=1) on particle 120
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=27, PBC=1) on particle 119
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=28, PBC=1) on particle 118
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=29, PBC=1) on particle 117
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=30, PBC=1) on particle 116
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=31, PBC=1) on particle 115
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=32, PBC=1) on particle 114
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=33, PBC=1) on particle 113
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=34, PBC=1) on particle 112
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=35, PBC=1) on particle 111
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=36, PBC=1) on particle 110
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=37, PBC=1) on particle 109
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=38, PBC=1) on particle 108
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=39, PBC=1) on particle 107
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=40, PBC=1) on particle 106
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=41, PBC=1) on particle 105
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=42, PBC=1) on particle 104
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=43, PBC=1) on particle 103
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=44, PBC=1) on particle 102
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=45, PBC=1) on particle 101
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=46, PBC=1) on particle 100
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=47, PBC=1) on particle 99
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=48, PBC=1) on particle 98
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=49, PBC=1) on particle 97
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=50, PBC=1) on particle 96
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=51, PBC=1) on particle 95
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=52, PBC=1) on particle 94
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=53, PBC=1) on particle 93
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=54, PBC=1) on particle 92
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=55, PBC=1) on particle 91
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=56, PBC=1) on particle 90
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=59, PBC=1) on particle 87
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=60, PBC=1) on particle 86
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=61, PBC=1) on particle 85
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=62, PBC=1) on particle 84
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=63, PBC=1) on particle 83
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=64, PBC=1) on particle 82
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=65, PBC=1) on particle 81
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=133, PBC=1) on particle 13
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=132, PBC=1) on particle 14
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=131, PBC=1) on particle 15
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=130, PBC=1) on particle 16
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=129, PBC=1) on particle 17
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=128, PBC=1) on particle 18
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=127, PBC=1) on particle 19
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=126, PBC=1) on particle 20
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=125, PBC=1) on particle 21
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=124, PBC=1) on particle 22
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=123, PBC=1) on particle 23
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=122, PBC=1) on particle 24
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=121, PBC=1) on particle 25
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=120, PBC=1) on particle 26
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=119, PBC=1) on particle 27
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=118, PBC=1) on particle 28
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=117, PBC=1) on particle 29
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=116, PBC=1) on particle 30
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=115, PBC=1) on particle 31
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=114, PBC=1) on particle 32
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=113, PBC=1) on particle 33
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=112, PBC=1) on particle 34
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=110, PBC=1) on particle 36
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=109, PBC=1) on particle 37
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=108, PBC=1) on particle 38
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=107, PBC=1) on particle 39
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=106, PBC=1) on particle 40
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=105, PBC=1) on particle 41
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=104, PBC=1) on particle 42
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=103, PBC=1) on particle 43
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=102, PBC=1) on particle 44
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=101, PBC=1) on particle 45
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=100, PBC=1) on particle 46
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=99, PBC=1) on particle 47
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=98, PBC=1) on particle 48
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=97, PBC=1) on particle 49
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=96, PBC=1) on particle 50
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=95, PBC=1) on particle 51
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=94, PBC=1) on particle 52
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=93, PBC=1) on particle 53
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=92, PBC=1) on particle 54
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=91, PBC=1) on particle 55
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=90, PBC=1) on particle 56
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=87, PBC=1) on particle 59
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=86, PBC=1) on particle 60
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=85, PBC=1) on particle 61
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=84, PBC=1) on particle 62
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=83, PBC=1) on particle 63
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=82, PBC=1) on particle 64
+INFO: Adding a MutualTrap (stiff=0.1, stiff_rate=0, r0=1.2, rate=0, ref_particle=81, PBC=1) on particle 65
+INFO: Adding a MutualTrap (stiff=1, stiff_rate=0, r0=1.2, rate=0, ref_particle=88, PBC=1) on particle 58
+INFO: Adding a MutualTrap (stiff=1, stiff_rate=0, r0=1.2, rate=0, ref_particle=58, PBC=1) on particle 88
+INFO: Adding a MutualTrap (stiff=1, stiff_rate=0, r0=1.2, rate=0, ref_particle=57, PBC=1) on particle 89
+INFO: Adding a MutualTrap (stiff=1, stiff_rate=0, r0=1.2, rate=0, ref_particle=89, PBC=1) on particle 57
+INFO:    Force file parsed
+INFO: (Cells.cpp) N_cells_side: 8, 8, 8; rcut=3.33787, IS_MC: 0
+INFO: Parsing order parameter file 6_nt_hb_region.txt
+INFO: Order parameter type bond found, processing
+INFO: --> Adding HB pair (174, 220) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (175, 219) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (176, 218) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (177, 217) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (178, 216) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (179, 215) to order parameter `lettuce6nt_stem_hb'
+INFO:  File 6_nt_hb_region.txt parsed; found 1 hb_dim, 0 dist_dim
+INFO: Parsing order parameter file 6_nt_hb_region.txt
+INFO: Order parameter type bond found, processing
+INFO: --> Adding HB pair (174, 220) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (175, 219) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (176, 218) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (177, 217) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (178, 216) to order parameter `lettuce6nt_stem_hb'
+INFO: --> Adding HB pair (179, 215) to order parameter `lettuce6nt_stem_hb'
+INFO:  File 6_nt_hb_region.txt parsed; found 1 hb_dim, 0 dist_dim
+INFO: N: 245, N molecules: 4
+INFO: Using randomly distributed velocities
+INFO: Initial kinetic energy: 66.076979
+INFO: RELEASE: v3.7.0
+INFO: GIT COMMIT: 97e29111
+INFO: COMPILED ON: 06/11/25
+INFO: diffusion fixed.. -354.352 -354.352
+INFO: diffusion fixed.. -353.968 -353.968
+INFO: diffusion fixed.. -350.674 -350.674
+INFO: diffusion fixed.. -358.191 -358.191
+INFO: diffusion fixed.. -358.028 -358.028
+INFO: diffusion fixed.. -359.628 -359.628
+INFO: diffusion fixed.. -362.845 -362.845
+INFO: diffusion fixed.. -361.563 -361.563
+INFO: diffusion fixed.. -352.156 -352.156
+INFO: diffusion fixed.. -353.494 -353.494
+INFO: diffusion fixed.. -356.515 -356.515
+INFO: diffusion fixed.. -356.595 -356.595
+INFO: diffusion fixed.. -357.091 -357.091
+INFO: diffusion fixed.. -351.891 -351.891
+INFO: diffusion fixed.. -361.408 -361.408
+INFO: diffusion fixed.. -359.112 -359.112
+INFO: diffusion fixed.. -351.568 -351.568
+INFO: diffusion fixed.. -351.335 -351.335
+INFO: diffusion fixed.. -350.96 -350.96
+INFO: diffusion fixed.. -347.723 -347.723
+INFO: diffusion fixed.. -350.973 -350.973
+INFO: diffusion fixed.. -352.587 -352.587
+INFO: diffusion fixed.. -351.94 -351.94
+INFO: diffusion fixed.. -350.141 -350.141
+INFO: diffusion fixed.. -354.332 -354.332
+INFO: diffusion fixed.. -350.888 -350.888
+INFO: diffusion fixed.. -349.863 -349.863
+INFO: diffusion fixed.. -347.523 -347.523
+INFO: diffusion fixed.. -351.305 -351.305
+INFO: diffusion fixed.. -353.817 -353.817
+INFO: diffusion fixed.. -353.301 -353.301
+INFO: diffusion fixed.. -349.188 -349.188
+INFO: diffusion fixed.. -353.904 -353.904
+INFO: diffusion fixed.. -357.636 -357.636
+INFO: diffusion fixed.. -354.389 -354.389
+INFO: diffusion fixed.. -347.075 -347.075
+INFO: diffusion fixed.. -343.638 -343.638
+INFO: diffusion fixed.. -347.802 -347.802
+INFO: diffusion fixed.. -341.333 -341.333
+INFO: diffusion fixed.. -341.195 -341.195
+INFO: diffusion fixed.. -346.292 -346.292
+INFO: diffusion fixed.. -346.103 -346.103
+INFO: diffusion fixed.. -352.54 -352.54
+INFO: diffusion fixed.. -357.896 -357.896
+INFO: diffusion fixed.. -354.492 -354.492
+INFO: diffusion fixed.. -356.087 -356.087
+INFO: diffusion fixed.. -354.687 -354.687
+INFO: diffusion fixed.. -352.654 -352.654
+INFO: diffusion fixed.. -349.869 -349.869
+INFO: diffusion fixed.. -352.141 -352.141
+INFO: diffusion fixed.. -352.736 -352.736
+INFO: diffusion fixed.. -356.097 -356.097
+INFO: diffusion fixed.. -356.763 -356.763
+INFO: diffusion fixed.. -356.971 -356.971
+INFO: diffusion fixed.. -356.35 -356.35
+INFO: diffusion fixed.. -353.212 -353.212
+INFO: diffusion fixed.. -358.791 -358.791
+INFO: diffusion fixed.. -356.772 -356.772
+INFO: diffusion fixed.. -355.219 -355.219
+INFO: diffusion fixed.. -357.78 -357.78
+INFO: diffusion fixed.. -356.124 -356.124
+INFO: diffusion fixed.. -358.515 -358.515
+INFO: diffusion fixed.. -354.084 -354.084
+INFO: diffusion fixed.. -351.289 -351.289
+INFO: diffusion fixed.. -356.555 -356.555
+INFO: diffusion fixed.. -355.933 -355.933
+INFO: diffusion fixed.. -358.369 -358.369
+INFO: diffusion fixed.. -354.255 -354.255
+INFO: diffusion fixed.. -355.522 -355.522
+INFO: diffusion fixed.. -354.879 -354.879
+INFO: diffusion fixed.. -355.788 -355.788
+INFO: diffusion fixed.. -356.703 -356.703
+INFO: diffusion fixed.. -345.64 -345.64
+INFO: diffusion fixed.. -353.752 -353.752
+INFO: diffusion fixed.. -356.053 -356.053
+INFO: diffusion fixed.. -358.247 -358.247
+INFO: diffusion fixed.. -354.656 -354.656
+INFO: diffusion fixed.. -355.179 -355.179
+INFO: diffusion fixed.. -349.004 -349.004
+INFO: diffusion fixed.. -358.471 -358.471
+INFO: diffusion fixed.. -347.635 -347.635
+INFO: diffusion fixed.. -352.389 -352.389
+INFO: diffusion fixed.. -353.958 -353.958
+INFO: diffusion fixed.. -354.495 -354.495
+INFO: diffusion fixed.. -357.368 -357.368
+INFO: diffusion fixed.. -356.783 -356.783
+INFO: diffusion fixed.. -352.247 -352.247
+INFO: diffusion fixed.. -352.279 -352.279
+INFO: diffusion fixed.. -351.36 -351.36
+INFO: diffusion fixed.. -348.743 -348.743
+INFO: diffusion fixed.. -348.999 -348.999
+INFO: diffusion fixed.. -352.026 -352.026
+INFO: diffusion fixed.. -346.952 -346.952
+INFO: diffusion fixed.. -348.377 -348.377
+INFO: diffusion fixed.. -344.111 -344.111
+INFO: diffusion fixed.. -351.446 -351.446
+INFO: diffusion fixed.. -353.025 -353.025
+INFO: diffusion fixed.. -353.6 -353.6
+INFO: diffusion fixed.. -351.688 -351.688
+INFO: diffusion fixed.. -348.049 -348.049
+INFO: diffusion fixed.. -351.181 -351.181
+INFO: diffusion fixed.. -352.011 -352.011
+INFO: diffusion fixed.. -351.405 -351.405
+INFO: diffusion fixed.. -351.38 -351.38
+INFO: diffusion fixed.. -349.85 -349.85
+INFO: diffusion fixed.. -349.709 -349.709
+INFO: diffusion fixed.. -352.302 -352.302
+INFO: diffusion fixed.. -345.684 -345.684
+INFO: diffusion fixed.. -352.889 -352.889
+INFO: diffusion fixed.. -351.597 -351.597
+INFO: diffusion fixed.. -350.58 -350.58
+INFO: diffusion fixed.. -351.258 -351.258
+INFO: diffusion fixed.. -352.975 -352.975
+INFO: diffusion fixed.. -354.541 -354.541
+INFO: diffusion fixed.. -353.617 -353.617
+INFO: diffusion fixed.. -356.53 -356.53
+INFO: diffusion fixed.. -356.968 -356.968
+INFO: diffusion fixed.. -355.758 -355.758
+INFO: diffusion fixed.. -363.607 -363.607
+INFO: diffusion fixed.. -358.825 -358.825
+INFO: diffusion fixed.. -355.989 -355.989
+INFO: diffusion fixed.. -356.256 -356.256
+INFO: diffusion fixed.. -362.177 -362.177
+INFO: diffusion fixed.. -358.064 -358.064
+INFO: diffusion fixed.. -352.093 -352.093
+INFO: diffusion fixed.. -353.393 -353.393
+INFO: diffusion fixed.. -349.229 -349.229
+INFO: diffusion fixed.. -358.571 -358.571
+INFO: diffusion fixed.. -352.193 -352.193
+INFO: diffusion fixed.. -356.645 -356.645
+INFO: diffusion fixed.. -356.393 -356.393
+INFO: diffusion fixed.. -354.763 -354.763
+INFO: diffusion fixed.. -346.636 -346.636
+INFO: diffusion fixed.. -356.155 -356.155
+INFO: diffusion fixed.. -352.982 -352.982
+INFO: diffusion fixed.. -352.887 -352.887
+INFO: diffusion fixed.. -351.758 -351.758
+INFO: diffusion fixed.. -350.92 -350.92
+INFO: diffusion fixed.. -353.117 -353.117
+INFO: diffusion fixed.. -356.448 -356.448
+INFO: diffusion fixed.. -351.703 -351.703
+INFO: diffusion fixed.. -349.666 -349.666
+INFO: diffusion fixed.. -351.466 -351.466
+INFO: diffusion fixed.. -352.931 -352.931
+INFO: diffusion fixed.. -354.908 -354.908
+INFO: diffusion fixed.. -354.188 -354.188
+INFO: diffusion fixed.. -352.376 -352.376
+INFO: diffusion fixed.. -353.782 -353.782
+INFO: diffusion fixed.. -350.998 -350.998
+INFO: diffusion fixed.. -348.827 -348.827
+INFO: diffusion fixed.. -348.549 -348.549
+INFO: diffusion fixed.. -350.156 -350.156
+INFO: diffusion fixed.. -348.473 -348.473
+INFO: diffusion fixed.. -344.216 -344.216
+INFO: diffusion fixed.. -350.885 -350.885
+INFO: diffusion fixed.. -348.737 -348.737
+INFO: diffusion fixed.. -354.155 -354.155
+INFO: diffusion fixed.. -351.88 -351.88
+INFO: diffusion fixed.. -354.601 -354.601
+INFO: diffusion fixed.. -354.97 -354.97
+INFO: diffusion fixed.. -357.429 -357.429
+INFO: diffusion fixed.. -355.747 -355.747
+INFO: diffusion fixed.. -354.199 -354.199
+INFO: diffusion fixed.. -355.704 -355.704
+INFO: diffusion fixed.. -357.075 -357.075
+INFO: diffusion fixed.. -363.727 -363.727
+INFO: diffusion fixed.. -352.581 -352.581
+INFO: diffusion fixed.. -352.647 -352.647
+INFO: diffusion fixed.. -353.925 -353.925
+INFO: diffusion fixed.. -352.436 -352.436
+INFO: diffusion fixed.. -352.397 -352.397
+INFO: diffusion fixed.. -354.986 -354.986
+INFO: diffusion fixed.. -357.66 -357.66
+INFO: diffusion fixed.. -353.282 -353.282
+INFO: diffusion fixed.. -354.351 -354.351
+INFO: diffusion fixed.. -350.33 -350.33
+INFO: diffusion fixed.. -358.928 -358.928
+INFO: diffusion fixed.. -358.881 -358.881
+INFO: diffusion fixed.. -353.964 -353.964
+INFO: diffusion fixed.. -347.451 -347.451
+INFO: diffusion fixed.. -354.567 -354.567
+INFO: diffusion fixed.. -353.079 -353.079
+INFO: diffusion fixed.. -357.334 -357.334
+INFO: diffusion fixed.. -354.479 -354.479
+INFO: diffusion fixed.. -355.697 -355.697
+INFO: diffusion fixed.. -358.02 -358.02
+INFO: diffusion fixed.. -355.111 -355.111
+INFO: diffusion fixed.. -356.266 -356.266
+INFO: diffusion fixed.. -356.911 -356.911
+INFO: diffusion fixed.. -362.149 -362.149
+INFO: diffusion fixed.. -358.536 -358.536
+INFO: diffusion fixed.. -348.937 -348.937
+INFO: diffusion fixed.. -356.085 -356.085
+INFO: diffusion fixed.. -358.384 -358.384
+INFO: diffusion fixed.. -360.356 -360.356
+INFO: diffusion fixed.. -358.705 -358.705
+INFO: diffusion fixed.. -354.59 -354.59
+INFO: diffusion fixed.. -357.463 -357.463
+INFO: diffusion fixed.. -354.07 -354.07
+INFO: diffusion fixed.. -358.441 -358.441
+INFO: diffusion fixed.. -355.081 -355.081
+INFO: diffusion fixed.. -354.317 -354.317
+INFO: diffusion fixed.. -360.619 -360.619
+INFO: diffusion fixed.. -354.225 -354.225
+INFO: diffusion fixed.. -356.693 -356.693
+INFO: diffusion fixed.. -355.873 -355.873
+INFO: diffusion fixed.. -358.494 -358.494
+INFO: diffusion fixed.. -353.326 -353.326
+INFO: diffusion fixed.. -348.853 -348.853
+INFO: diffusion fixed.. -352.97 -352.97
+INFO: diffusion fixed.. -358.062 -358.062
+INFO: diffusion fixed.. -351.568 -351.568
+INFO: diffusion fixed.. -359.331 -359.331
+INFO: diffusion fixed.. -352.423 -352.423
+INFO: diffusion fixed.. -355.64 -355.64
+INFO: diffusion fixed.. -356.159 -356.159
+INFO: diffusion fixed.. -355.537 -355.537
+INFO: diffusion fixed.. -353.625 -353.625
+INFO: diffusion fixed.. -352.346 -352.346
+INFO: diffusion fixed.. -355.548 -355.548
+INFO: diffusion fixed.. -348.299 -348.299
+INFO: diffusion fixed.. -354.231 -354.231
+INFO: diffusion fixed.. -351.142 -351.142
+INFO: diffusion fixed.. -351.06 -351.06
+INFO: diffusion fixed.. -356.466 -356.466
+INFO: diffusion fixed.. -355.31 -355.31
+INFO: diffusion fixed.. -355.756 -355.756
+INFO: diffusion fixed.. -353.288 -353.288
+INFO: diffusion fixed.. -355.845 -355.845
+INFO: diffusion fixed.. -352.213 -352.213
+INFO: diffusion fixed.. -346.719 -346.719
+INFO: diffusion fixed.. -359.218 -359.218
+INFO: diffusion fixed.. -358.681 -358.681
+INFO: diffusion fixed.. -351.932 -351.932
+INFO: diffusion fixed.. -351.634 -351.634
+INFO: diffusion fixed.. -344.632 -344.632
+INFO: diffusion fixed.. -355.559 -355.559
+INFO: diffusion fixed.. -350.821 -350.821
+INFO: diffusion fixed.. -351.467 -351.467
+INFO: diffusion fixed.. -347.548 -347.548
+INFO: diffusion fixed.. -351.237 -351.237
+INFO: diffusion fixed.. -357.075 -357.075
+INFO: diffusion fixed.. -355.827 -355.827
+INFO: diffusion fixed.. -353.683 -353.683
+INFO: diffusion fixed.. -353.951 -353.951
+INFO: diffusion fixed.. -353.74 -353.74
+INFO: diffusion fixed.. -349.967 -349.967
+INFO: diffusion fixed.. -354.954 -354.954
+INFO: diffusion fixed.. -360.605 -360.605
+INFO: diffusion fixed.. -351.365 -351.365
+INFO: diffusion fixed.. -358.637 -358.637
+INFO: diffusion fixed.. -357.796 -357.796
+INFO: diffusion fixed.. -359.053 -359.053
+INFO: diffusion fixed.. -355.754 -355.754
+INFO: diffusion fixed.. -355.97 -355.97
+INFO: diffusion fixed.. -358.259 -358.259
+INFO: diffusion fixed.. -349.044 -349.044
+INFO: diffusion fixed.. -354.431 -354.431
+INFO: diffusion fixed.. -349.851 -349.851
+INFO: diffusion fixed.. -353.595 -353.595
+INFO: diffusion fixed.. -354.482 -354.482
+INFO: diffusion fixed.. -359.706 -359.706
+INFO: diffusion fixed.. -357.824 -357.824
+INFO: diffusion fixed.. -349.13 -349.13
+INFO: diffusion fixed.. -353.549 -353.549
+INFO: diffusion fixed.. -352.256 -352.256
+INFO: diffusion fixed.. -354.553 -354.553
+INFO: diffusion fixed.. -354.391 -354.391
+INFO: diffusion fixed.. -358.392 -358.392
+INFO: diffusion fixed.. -359.078 -359.078
+INFO: diffusion fixed.. -362.213 -362.213
+INFO: diffusion fixed.. -358.546 -358.546
+INFO: diffusion fixed.. -361.35 -361.35
+INFO: diffusion fixed.. -358.767 -358.767
+INFO: diffusion fixed.. -358.028 -358.028
+INFO: diffusion fixed.. -356.483 -356.483
+INFO: diffusion fixed.. -352.815 -352.815
+INFO: diffusion fixed.. -350.575 -350.575
+INFO: diffusion fixed.. -351.955 -351.955
+INFO: diffusion fixed.. -350.111 -350.111
+INFO: diffusion fixed.. -346.574 -346.574
+INFO: diffusion fixed.. -351.528 -351.528
+INFO: diffusion fixed.. -352.371 -352.371
+INFO: diffusion fixed.. -348.408 -348.408
+INFO: diffusion fixed.. -353.236 -353.236
+INFO: diffusion fixed.. -357.409 -357.409
+INFO: diffusion fixed.. -351.013 -351.013
+INFO: diffusion fixed.. -355.44 -355.44
+INFO: diffusion fixed.. -356.483 -356.483
+INFO: diffusion fixed.. -356.554 -356.554
+INFO: diffusion fixed.. -352.765 -352.765
+INFO: diffusion fixed.. -356.132 -356.132
+INFO: diffusion fixed.. -353.535 -353.535
+INFO: diffusion fixed.. -350.888 -350.888
+INFO: diffusion fixed.. -345.934 -345.934
+INFO: diffusion fixed.. -345.481 -345.481
+INFO: diffusion fixed.. -347.361 -347.361
+INFO: diffusion fixed.. -351.398 -351.398
+INFO: diffusion fixed.. -356.83 -356.83
+INFO: diffusion fixed.. -353.61 -353.61
+INFO: diffusion fixed.. -355.289 -355.289
+INFO: diffusion fixed.. -356.605 -356.605
+INFO: diffusion fixed.. -351.331 -351.331
+INFO: diffusion fixed.. -352.635 -352.635
+INFO: diffusion fixed.. -353.266 -353.266
+INFO: diffusion fixed.. -360.283 -360.283
+INFO: diffusion fixed.. -353.174 -353.174
+INFO: diffusion fixed.. -349.613 -349.613
+INFO: diffusion fixed.. -349.535 -349.535
+INFO: diffusion fixed.. -358.211 -358.211
+INFO: diffusion fixed.. -349.416 -349.416
+INFO: diffusion fixed.. -358.666 -358.666
+INFO: diffusion fixed.. -352.23 -352.23
+INFO: diffusion fixed.. -354.344 -354.344
+INFO: diffusion fixed.. -353.848 -353.848
+INFO: diffusion fixed.. -353.637 -353.637
+INFO: diffusion fixed.. -357.462 -357.462
+INFO: diffusion fixed.. -349.1 -349.1
+INFO: diffusion fixed.. -346.029 -346.029
+INFO: diffusion fixed.. -350.727 -350.727
+INFO: diffusion fixed.. -353.773 -353.773
+INFO: diffusion fixed.. -349.428 -349.428
+INFO: diffusion fixed.. -348.208 -348.208
+INFO: diffusion fixed.. -347.484 -347.484
+INFO: diffusion fixed.. -351.892 -351.892
+INFO: diffusion fixed.. -362.932 -362.932
+INFO: diffusion fixed.. -358.236 -358.236
+INFO: diffusion fixed.. -352.089 -352.089
+INFO: diffusion fixed.. -355.808 -355.808
+INFO: diffusion fixed.. -356.584 -356.584
+INFO: diffusion fixed.. -354.242 -354.242
+INFO: diffusion fixed.. -353.697 -353.697
+INFO: diffusion fixed.. -355.787 -355.787
+INFO: diffusion fixed.. -350.076 -350.076
+INFO: diffusion fixed.. -353.241 -353.241
+INFO: diffusion fixed.. -354.243 -354.243
+INFO: diffusion fixed.. -352.295 -352.295
+INFO: diffusion fixed.. -351.129 -351.129
+INFO: diffusion fixed.. -350.942 -350.942
+INFO: diffusion fixed.. -353.76 -353.76
+INFO: diffusion fixed.. -355.319 -355.319
+INFO: diffusion fixed.. -354.207 -354.207
+INFO: diffusion fixed.. -357.515 -357.515
+INFO: diffusion fixed.. -356.542 -356.542
+INFO: diffusion fixed.. -359.379 -359.379
+INFO: diffusion fixed.. -353.616 -353.616
+INFO: diffusion fixed.. -354.566 -354.566
+INFO: diffusion fixed.. -356.253 -356.253
+INFO: diffusion fixed.. -354.557 -354.557
+INFO: diffusion fixed.. -358.191 -358.191
+INFO: diffusion fixed.. -355.997 -355.997
+INFO: diffusion fixed.. -354.026 -354.026
+INFO: diffusion fixed.. -354.432 -354.432
+INFO: diffusion fixed.. -357.186 -357.186
+INFO: diffusion fixed.. -349.972 -349.972
+INFO: diffusion fixed.. -350.493 -350.493
+INFO: diffusion fixed.. -352.193 -352.193
+INFO: diffusion fixed.. -352.446 -352.446
+INFO: diffusion fixed.. -359.042 -359.042
+INFO: diffusion fixed.. -354.13 -354.13
+INFO: diffusion fixed.. -351.688 -351.688
+INFO: diffusion fixed.. -351.328 -351.328
+INFO: diffusion fixed.. -355.002 -355.002
+INFO: diffusion fixed.. -352.229 -352.229
+INFO: diffusion fixed.. -354.626 -354.626
+INFO: diffusion fixed.. -351.584 -351.584
+INFO: diffusion fixed.. -358.099 -358.099
+INFO: diffusion fixed.. -354.598 -354.598
+INFO: diffusion fixed.. -358.188 -358.188
+INFO: diffusion fixed.. -357.071 -357.071
+INFO: diffusion fixed.. -356.456 -356.456
+INFO: diffusion fixed.. -358.383 -358.383
+INFO: diffusion fixed.. -357.547 -357.547
+INFO: diffusion fixed.. -355.778 -355.778
+INFO: diffusion fixed.. -351.985 -351.985
+INFO: diffusion fixed.. -354.996 -354.996
+INFO: diffusion fixed.. -352.54 -352.54
+INFO: diffusion fixed.. -354.727 -354.727
+INFO: diffusion fixed.. -350.083 -350.083
+INFO: diffusion fixed.. -360.663 -360.663
+INFO: diffusion fixed.. -358.564 -358.564
+INFO: diffusion fixed.. -358.643 -358.643
+INFO: diffusion fixed.. -352.788 -352.788
+INFO: diffusion fixed.. -350.596 -350.596
+INFO: diffusion fixed.. -350.836 -350.836
+INFO: diffusion fixed.. -357.625 -357.625
+INFO: diffusion fixed.. -350.815 -350.815
+INFO: diffusion fixed.. -355.747 -355.747
+INFO: diffusion fixed.. -354.748 -354.748
+INFO: diffusion fixed.. -346.56 -346.56
+INFO: diffusion fixed.. -356.472 -356.472
+INFO: diffusion fixed.. -352.806 -352.806
+INFO: diffusion fixed.. -355.979 -355.979
+INFO: diffusion fixed.. -357.044 -357.044
+INFO: diffusion fixed.. -361.844 -361.844
+INFO: diffusion fixed.. -356.691 -356.691
+INFO: diffusion fixed.. -357.633 -357.633
+INFO: diffusion fixed.. -355.844 -355.844
+INFO: diffusion fixed.. -359.683 -359.683
+INFO: diffusion fixed.. -357.345 -357.345
+INFO: diffusion fixed.. -353.429 -353.429
+INFO: diffusion fixed.. -358.739 -358.739
+INFO: diffusion fixed.. -351.857 -351.857
+INFO: diffusion fixed.. -342.176 -342.176
+INFO: diffusion fixed.. -351.342 -351.342
+INFO: diffusion fixed.. -355.215 -355.215
+INFO: diffusion fixed.. -350.448 -350.448
+INFO: diffusion fixed.. -352.009 -352.009
+INFO: diffusion fixed.. -354.339 -354.339
+INFO: diffusion fixed.. -354.274 -354.274
+INFO: diffusion fixed.. -354.555 -354.555
+INFO: diffusion fixed.. -357.751 -357.751
+INFO: diffusion fixed.. -356.061 -356.061
+INFO: diffusion fixed.. -354.647 -354.647
+INFO: diffusion fixed.. -353.485 -353.485
+INFO: diffusion fixed.. -358.548 -358.548
+INFO: diffusion fixed.. -351.293 -351.293
+INFO: diffusion fixed.. -355.676 -355.676
+INFO: diffusion fixed.. -360.513 -360.513
+INFO: diffusion fixed.. -355.317 -355.317
+INFO: diffusion fixed.. -356.476 -356.476
+INFO: diffusion fixed.. -359.888 -359.888
+INFO: diffusion fixed.. -356.043 -356.043
+INFO: diffusion fixed.. -354.296 -354.296
+INFO: diffusion fixed.. -357.742 -357.742
+INFO: diffusion fixed.. -356.563 -356.563
+INFO: diffusion fixed.. -357.78 -357.78
+INFO: diffusion fixed.. -355.43 -355.43
+INFO: diffusion fixed.. -349.887 -349.887
+INFO: diffusion fixed.. -347.687 -347.687
+INFO: diffusion fixed.. -355.924 -355.924
+INFO: diffusion fixed.. -354.585 -354.585
+INFO: diffusion fixed.. -351.378 -351.378
+INFO: diffusion fixed.. -352.763 -352.763
+INFO: diffusion fixed.. -354.948 -354.948
+INFO: diffusion fixed.. -350.906 -350.906
+INFO: diffusion fixed.. -352.217 -352.217
+INFO: diffusion fixed.. -351.101 -351.101
+INFO: diffusion fixed.. -351.488 -351.488
+INFO: diffusion fixed.. -347.754 -347.754
+INFO: diffusion fixed.. -355.186 -355.186
+INFO: diffusion fixed.. -352.512 -352.512
+INFO: diffusion fixed.. -355.154 -355.154
+INFO: diffusion fixed.. -351.636 -351.636
+INFO: diffusion fixed.. -348.473 -348.473
+INFO: diffusion fixed.. -354.492 -354.492
+INFO: diffusion fixed.. -352.943 -352.943
+INFO: diffusion fixed.. -354.06 -354.06
+INFO: diffusion fixed.. -352.156 -352.156
+INFO: diffusion fixed.. -347.29 -347.29
+INFO: diffusion fixed.. -348.894 -348.894
+INFO: diffusion fixed.. -347.037 -347.037
+INFO: diffusion fixed.. -349.988 -349.988
+INFO: diffusion fixed.. -355.198 -355.198
+INFO: diffusion fixed.. -352.984 -352.984
+INFO: diffusion fixed.. -352.875 -352.875
+INFO: diffusion fixed.. -341.706 -341.706
+INFO: diffusion fixed.. -349.223 -349.223
+INFO: diffusion fixed.. -350.377 -350.377
+INFO: diffusion fixed.. -347.589 -347.589
+INFO: diffusion fixed.. -352.154 -352.154
+INFO: diffusion fixed.. -349.064 -349.064
+INFO: diffusion fixed.. -347.318 -347.318
+INFO: diffusion fixed.. -353.278 -353.278
+INFO: diffusion fixed.. -347.634 -347.634
+INFO: diffusion fixed.. -340.709 -340.709
+INFO: diffusion fixed.. -346.857 -346.857
+INFO: diffusion fixed.. -344.133 -344.133
+INFO: diffusion fixed.. -350.366 -350.366
+INFO: diffusion fixed.. -347.4 -347.4
+INFO: diffusion fixed.. -353.808 -353.808
+INFO: diffusion fixed.. -352.053 -352.053
+INFO: diffusion fixed.. -350.233 -350.233
+INFO: diffusion fixed.. -355.491 -355.491
+INFO: diffusion fixed.. -349.29 -349.29
+INFO: diffusion fixed.. -351.626 -351.626
+INFO: diffusion fixed.. -343.989 -343.989
+INFO: diffusion fixed.. -342.244 -342.244
+INFO: diffusion fixed.. -345.367 -345.367
+INFO: diffusion fixed.. -346.209 -346.209
+INFO: diffusion fixed.. -350.325 -350.325
+INFO: diffusion fixed.. -348.534 -348.534
+INFO: diffusion fixed.. -354.553 -354.553
+INFO: diffusion fixed.. -347.261 -347.261
+INFO: diffusion fixed.. -346.476 -346.476
+INFO: diffusion fixed.. -350.541 -350.541
+INFO: diffusion fixed.. -348.234 -348.234
+INFO: diffusion fixed.. -350.753 -350.753
+INFO: diffusion fixed.. -350.333 -350.333
+INFO: diffusion fixed.. -347.133 -347.133
+INFO: diffusion fixed.. -349.906 -349.906
+INFO: diffusion fixed.. -355.02 -355.02
+INFO: diffusion fixed.. -355.708 -355.708
+INFO: diffusion fixed.. -354.39 -354.39
+INFO: diffusion fixed.. -352.994 -352.994
+INFO: diffusion fixed.. -353.128 -353.128
+INFO: diffusion fixed.. -358.819 -358.819
+INFO: diffusion fixed.. -355.662 -355.662
+INFO: diffusion fixed.. -353.877 -353.877
+INFO: diffusion fixed.. -348.028 -348.028
+INFO: diffusion fixed.. -353.97 -353.97
+INFO: diffusion fixed.. -352.481 -352.481
+INFO: diffusion fixed.. -350.157 -350.157
+INFO: diffusion fixed.. -355.223 -355.223
+INFO: diffusion fixed.. -350.616 -350.616
+INFO: diffusion fixed.. -356.959 -356.959
+INFO: diffusion fixed.. -356.37 -356.37
+INFO: diffusion fixed.. -354.376 -354.376
+INFO: diffusion fixed.. -359.41 -359.41
+INFO: diffusion fixed.. -358.293 -358.293
+INFO: diffusion fixed.. -355.781 -355.781
+INFO: diffusion fixed.. -352.943 -352.943
+INFO: diffusion fixed.. -355.198 -355.198
+INFO: diffusion fixed.. -357.925 -357.925
+INFO: diffusion fixed.. -358.466 -358.466
+INFO: diffusion fixed.. -353.681 -353.681
+INFO: diffusion fixed.. -349.324 -349.324
+INFO: diffusion fixed.. -356.48 -356.48
+INFO: diffusion fixed.. -356.903 -356.903
+INFO: diffusion fixed.. -356.812 -356.812
+INFO: diffusion fixed.. -357.534 -357.534
+INFO: diffusion fixed.. -358.592 -358.592
+INFO: diffusion fixed.. -354.276 -354.276
+INFO: diffusion fixed.. -354.962 -354.962
+INFO: diffusion fixed.. -353.723 -353.723
+INFO: diffusion fixed.. -354.691 -354.691
+INFO: diffusion fixed.. -351.589 -351.589
+INFO: diffusion fixed.. -354.994 -354.994
+INFO: diffusion fixed.. -358.621 -358.621
+INFO: diffusion fixed.. -357.236 -357.236
+INFO: diffusion fixed.. -357.889 -357.889
+INFO: diffusion fixed.. -358.054 -358.054
+INFO: diffusion fixed.. -353.835 -353.835
+INFO: diffusion fixed.. -347.936 -347.936
+INFO: diffusion fixed.. -350.015 -350.015
+INFO: diffusion fixed.. -353.255 -353.255
+INFO: diffusion fixed.. -355.191 -355.191
+INFO: diffusion fixed.. -359.654 -359.654
+INFO: diffusion fixed.. -355.586 -355.586
+INFO: diffusion fixed.. -349.468 -349.468
+INFO: diffusion fixed.. -349.884 -349.884
+INFO: diffusion fixed.. -347.041 -347.041
+INFO: diffusion fixed.. -346.515 -346.515
+INFO: diffusion fixed.. -349.203 -349.203
+INFO: diffusion fixed.. -344.274 -344.274
+INFO: diffusion fixed.. -349.775 -349.775
+INFO: diffusion fixed.. -353.315 -353.315
+INFO: diffusion fixed.. -346.587 -346.587
+INFO: diffusion fixed.. -354.7 -354.7
+INFO: diffusion fixed.. -347.434 -347.434
+INFO: diffusion fixed.. -350.191 -350.191
+INFO: diffusion fixed.. -351.668 -351.668
+INFO: diffusion fixed.. -349.912 -349.912
+INFO: diffusion fixed.. -350.356 -350.356
+INFO: diffusion fixed.. -355.097 -355.097
+INFO: diffusion fixed.. -354.474 -354.474
+INFO: diffusion fixed.. -356.434 -356.434
+INFO: diffusion fixed.. -360.684 -360.684
+INFO: diffusion fixed.. -358.198 -358.198
+INFO: diffusion fixed.. -357.554 -357.554
+INFO: diffusion fixed.. -355.375 -355.375
+INFO: diffusion fixed.. -354.681 -354.681
+INFO: diffusion fixed.. -360.151 -360.151
+INFO: diffusion fixed.. -354.158 -354.158
+INFO: diffusion fixed.. -356.343 -356.343
+INFO: diffusion fixed.. -354.131 -354.131
+INFO: diffusion fixed.. -352.219 -352.219
+INFO: diffusion fixed.. -361.309 -361.309
+INFO: diffusion fixed.. -351.753 -351.753
+INFO: diffusion fixed.. -350.167 -350.167
+INFO: diffusion fixed.. -349.74 -349.74
+INFO: diffusion fixed.. -353.806 -353.806
+INFO: diffusion fixed.. -355.055 -355.055
+INFO: diffusion fixed.. -352.757 -352.757
+INFO: diffusion fixed.. -353.898 -353.898
+INFO: diffusion fixed.. -353.619 -353.619
+INFO: diffusion fixed.. -353.46 -353.46
+INFO: diffusion fixed.. -353.459 -353.459
+INFO: diffusion fixed.. -355.453 -355.453
+INFO: diffusion fixed.. -347.695 -347.695
+INFO: diffusion fixed.. -347.791 -347.791
+INFO: diffusion fixed.. -346.277 -346.277
+INFO: diffusion fixed.. -347.319 -347.319
+INFO: diffusion fixed.. -348.569 -348.569
+INFO: diffusion fixed.. -344.461 -344.461
+INFO: diffusion fixed.. -352.616 -352.616
+INFO: diffusion fixed.. -344.74 -344.74
+INFO: diffusion fixed.. -342.427 -342.427
+INFO: diffusion fixed.. -344.362 -344.362
+INFO: diffusion fixed.. -347.248 -347.248
+INFO: diffusion fixed.. -348.661 -348.661
+INFO: diffusion fixed.. -348.618 -348.618
+INFO: diffusion fixed.. -351.313 -351.313
+INFO: diffusion fixed.. -345.2 -345.2
+INFO: diffusion fixed.. -348.533 -348.533
+INFO: diffusion fixed.. -353.109 -353.109
+INFO: diffusion fixed.. -350.036 -350.036
+INFO: diffusion fixed.. -353.682 -353.682
+INFO: diffusion fixed.. -344.697 -344.697
+INFO: diffusion fixed.. -349.451 -349.451
+INFO: diffusion fixed.. -343.775 -343.775
+INFO: diffusion fixed.. -354.097 -354.097
+INFO: diffusion fixed.. -347.418 -347.418
+INFO: diffusion fixed.. -351.423 -351.423
+INFO: diffusion fixed.. -352.187 -352.187
+INFO: diffusion fixed.. -349.266 -349.266
+INFO: diffusion fixed.. -349.705 -349.705
+INFO: diffusion fixed.. -348.089 -348.089
+INFO: diffusion fixed.. -352.637 -352.637
+INFO: diffusion fixed.. -349.236 -349.236
+INFO: diffusion fixed.. -350.612 -350.612
+INFO: diffusion fixed.. -354.251 -354.251
+INFO: diffusion fixed.. -355.313 -355.313
+INFO: diffusion fixed.. -355.249 -355.249
+INFO: diffusion fixed.. -354.019 -354.019
+INFO: diffusion fixed.. -348.194 -348.194
+INFO: diffusion fixed.. -356.57 -356.57
+INFO: diffusion fixed.. -350.638 -350.638
+INFO: diffusion fixed.. -350.587 -350.587
+INFO: diffusion fixed.. -354.482 -354.482
+INFO: diffusion fixed.. -353.433 -353.433
+INFO: diffusion fixed.. -343.4 -343.4
+INFO: diffusion fixed.. -345.447 -345.447
+INFO: diffusion fixed.. -347.654 -347.654
+INFO: diffusion fixed.. -351.78 -351.78
+INFO: diffusion fixed.. -352.886 -352.886
+INFO: diffusion fixed.. -352.609 -352.609
+INFO: diffusion fixed.. -348.773 -348.773
+INFO: diffusion fixed.. -350.675 -350.675
+INFO: diffusion fixed.. -349.285 -349.285
+INFO: diffusion fixed.. -352.561 -352.561
+INFO: diffusion fixed.. -352.144 -352.144
+INFO: diffusion fixed.. -349.572 -349.572
+INFO: diffusion fixed.. -353.204 -353.204
+INFO: diffusion fixed.. -354.506 -354.506
+INFO: diffusion fixed.. -356.563 -356.563
+INFO: diffusion fixed.. -349.9 -349.9
+INFO: diffusion fixed.. -354.406 -354.406
+INFO: diffusion fixed.. -351.009 -351.009
+INFO: diffusion fixed.. -351.804 -351.804
+INFO: diffusion fixed.. -350.406 -350.406
+INFO: diffusion fixed.. -351.484 -351.484
+INFO: diffusion fixed.. -350.746 -350.746
+INFO: diffusion fixed.. -350.418 -350.418
+INFO: diffusion fixed.. -353.958 -353.958
+INFO: diffusion fixed.. -354.293 -354.293
+INFO: diffusion fixed.. -349.656 -349.656
+INFO: diffusion fixed.. -350.504 -350.504
+INFO: diffusion fixed.. -352.428 -352.428
+INFO: diffusion fixed.. -350.815 -350.815
+INFO: diffusion fixed.. -348.374 -348.374
+INFO: diffusion fixed.. -348.812 -348.812
+INFO: diffusion fixed.. -351.484 -351.484
+INFO: diffusion fixed.. -345.014 -345.014
+INFO: diffusion fixed.. -343.774 -343.774
+INFO: diffusion fixed.. -344.335 -344.335
+INFO: diffusion fixed.. -340.821 -340.821
+INFO: diffusion fixed.. -352.029 -352.029
+INFO: diffusion fixed.. -346.853 -346.853
+INFO: diffusion fixed.. -350.628 -350.628
+INFO: diffusion fixed.. -353.424 -353.424
+INFO: diffusion fixed.. -349.265 -349.265
+INFO: diffusion fixed.. -357.844 -357.844
+INFO: diffusion fixed.. -355.199 -355.199
+INFO: diffusion fixed.. -349.545 -349.545
+INFO: diffusion fixed.. -348.434 -348.434
+INFO: diffusion fixed.. -350.98 -350.98
+INFO: diffusion fixed.. -347.017 -347.017
+INFO: diffusion fixed.. -349.426 -349.426
+INFO: diffusion fixed.. -346.238 -346.238
+INFO: diffusion fixed.. -352.407 -352.407
+INFO: diffusion fixed.. -352.486 -352.486
+INFO: diffusion fixed.. -351.927 -351.927
+INFO: diffusion fixed.. -350.516 -350.516
+INFO: diffusion fixed.. -357.562 -357.562
+INFO: diffusion fixed.. -347.898 -347.898
+INFO: diffusion fixed.. -349.736 -349.736
+INFO: diffusion fixed.. -345.497 -345.497
+INFO: diffusion fixed.. -344.832 -344.832
+INFO: diffusion fixed.. -348.826 -348.826
+INFO: diffusion fixed.. -346.77 -346.77
+INFO: diffusion fixed.. -350.654 -350.654
+INFO: diffusion fixed.. -345.012 -345.012
+INFO: diffusion fixed.. -344.155 -344.155
+INFO: diffusion fixed.. -346.282 -346.282
+INFO: diffusion fixed.. -350.677 -350.677
+INFO: diffusion fixed.. -343.922 -343.922
+INFO: diffusion fixed.. -349.396 -349.396
+INFO: diffusion fixed.. -353.16 -353.16
+INFO: diffusion fixed.. -349.306 -349.306
+INFO: diffusion fixed.. -351.729 -351.729
+INFO: diffusion fixed.. -348.302 -348.302
+INFO: diffusion fixed.. -345.47 -345.47
+INFO: diffusion fixed.. -342.918 -342.918
+INFO: diffusion fixed.. -351.013 -351.013
+INFO: diffusion fixed.. -353.812 -353.812
+INFO: diffusion fixed.. -348.159 -348.159
+INFO: diffusion fixed.. -343.541 -343.541
+INFO: diffusion fixed.. -334.698 -334.698
+INFO: diffusion fixed.. -335.3 -335.3
+INFO: diffusion fixed.. -342.425 -342.425
+INFO: diffusion fixed.. -338.783 -338.783
+INFO: diffusion fixed.. -337.605 -337.605
+INFO: diffusion fixed.. -344.093 -344.093
+INFO: diffusion fixed.. -353.207 -353.207
+INFO: diffusion fixed.. -348.444 -348.444
+INFO: diffusion fixed.. -346.763 -346.763
+INFO: diffusion fixed.. -350.136 -350.136
+INFO: diffusion fixed.. -352.832 -352.832
+INFO: diffusion fixed.. -344.124 -344.124
+INFO: diffusion fixed.. -350.522 -350.522
+INFO: diffusion fixed.. -357.518 -357.518
+INFO: diffusion fixed.. -348.866 -348.866
+INFO: diffusion fixed.. -354.544 -354.544
+INFO: diffusion fixed.. -355.001 -355.001
+INFO: diffusion fixed.. -344.219 -344.219
+INFO: diffusion fixed.. -346.432 -346.432
+INFO: diffusion fixed.. -346.799 -346.799
+INFO: diffusion fixed.. -341.99 -341.99
+INFO: diffusion fixed.. -342.784 -342.784
+INFO: diffusion fixed.. -343.515 -343.515
+INFO: diffusion fixed.. -346.153 -346.153
+INFO: diffusion fixed.. -347.259 -347.259
+INFO: diffusion fixed.. -349.568 -349.568
+INFO: diffusion fixed.. -347.007 -347.007
+INFO: diffusion fixed.. -349.288 -349.288
+INFO: diffusion fixed.. -349.39 -349.39
+INFO: diffusion fixed.. -347.378 -347.378
+INFO: diffusion fixed.. -343.413 -343.413
+INFO: diffusion fixed.. -346.199 -346.199
+INFO: diffusion fixed.. -341.915 -341.915
+INFO: diffusion fixed.. -345.856 -345.856
+INFO: diffusion fixed.. -342.283 -342.283
+INFO: diffusion fixed.. -338.106 -338.106
+INFO: diffusion fixed.. -339.832 -339.832
+INFO: diffusion fixed.. -340.24 -340.24
+INFO: diffusion fixed.. -344.414 -344.414
+INFO: diffusion fixed.. -347.188 -347.188
+INFO: diffusion fixed.. -346.873 -346.873
+INFO: diffusion fixed.. -342.178 -342.178
+INFO: diffusion fixed.. -348.413 -348.413
+INFO: diffusion fixed.. -348.359 -348.359
+INFO: diffusion fixed.. -343.064 -343.064
+INFO: diffusion fixed.. -344.305 -344.305
+INFO: diffusion fixed.. -348.033 -348.033
+INFO: diffusion fixed.. -347.577 -347.577
+INFO: diffusion fixed.. -343.574 -343.574
+INFO: diffusion fixed.. -337.134 -337.134
+INFO: diffusion fixed.. -347.192 -347.192
+INFO: diffusion fixed.. -348.53 -348.53
+INFO: diffusion fixed.. -340.667 -340.667
+INFO: diffusion fixed.. -348.771 -348.771
+INFO: diffusion fixed.. -351.133 -351.133
+INFO: diffusion fixed.. -350.221 -350.221
+INFO: diffusion fixed.. -347.4 -347.4
+INFO: diffusion fixed.. -346.416 -346.416
+INFO: diffusion fixed.. -339.796 -339.796
+INFO: diffusion fixed.. -348.102 -348.102
+INFO: diffusion fixed.. -350.002 -350.002
+INFO: diffusion fixed.. -354.429 -354.429
+INFO: diffusion fixed.. -344.361 -344.361
+INFO: diffusion fixed.. -349.725 -349.725
+INFO: diffusion fixed.. -351.303 -351.303
+INFO: diffusion fixed.. -349.512 -349.512
+INFO: diffusion fixed.. -350.255 -350.255
+INFO: diffusion fixed.. -346.662 -346.662
+INFO: diffusion fixed.. -344.411 -344.411
+INFO: diffusion fixed.. -339.895 -339.895
+INFO: diffusion fixed.. -345.374 -345.374
+INFO: diffusion fixed.. -343.421 -343.421
+INFO: diffusion fixed.. -342.025 -342.025
+INFO: diffusion fixed.. -343.069 -343.069
+INFO: diffusion fixed.. -352.035 -352.035
+INFO: diffusion fixed.. -349.798 -349.798
+INFO: diffusion fixed.. -351.616 -351.616
+INFO: diffusion fixed.. -350.072 -350.072
+INFO: diffusion fixed.. -348.617 -348.617
+INFO: diffusion fixed.. -351.223 -351.223
+INFO: diffusion fixed.. -346.803 -346.803
+INFO: diffusion fixed.. -353.074 -353.074
+INFO: diffusion fixed.. -352.423 -352.423
+INFO: diffusion fixed.. -348.12 -348.12
+INFO: diffusion fixed.. -349.836 -349.836
+INFO: diffusion fixed.. -349.79 -349.79
+INFO: diffusion fixed.. -351.693 -351.693
+INFO: diffusion fixed.. -355.904 -355.904
+INFO: diffusion fixed.. -356.441 -356.441
+INFO: diffusion fixed.. -357.565 -357.565
+INFO: diffusion fixed.. -349.241 -349.241
+INFO: diffusion fixed.. -346.879 -346.879
+INFO: diffusion fixed.. -346.718 -346.718
+INFO: diffusion fixed.. -346.529 -346.529
+INFO: diffusion fixed.. -348.417 -348.417
+INFO: diffusion fixed.. -348.516 -348.516
+INFO: diffusion fixed.. -352.82 -352.82
+INFO: diffusion fixed.. -352.499 -352.499
+INFO: diffusion fixed.. -355.027 -355.027
+INFO: diffusion fixed.. -356.683 -356.683
+INFO: diffusion fixed.. -352.944 -352.944
+INFO: diffusion fixed.. -356.277 -356.277
+INFO: diffusion fixed.. -358.427 -358.427
+INFO: diffusion fixed.. -350.217 -350.217
+INFO: diffusion fixed.. -357.515 -357.515
+INFO: diffusion fixed.. -354.73 -354.73
+INFO: diffusion fixed.. -355.656 -355.656
+INFO: diffusion fixed.. -354.788 -354.788
+INFO: diffusion fixed.. -352.228 -352.228
+INFO: diffusion fixed.. -352.184 -352.184
+INFO: diffusion fixed.. -357.353 -357.353
+INFO: diffusion fixed.. -356.133 -356.133
+INFO: diffusion fixed.. -351.137 -351.137
+INFO: diffusion fixed.. -353.24 -353.24
+INFO: diffusion fixed.. -355.283 -355.283
+INFO: diffusion fixed.. -352.982 -352.982
+INFO: diffusion fixed.. -356.411 -356.411
+INFO: diffusion fixed.. -353.054 -353.054
+INFO: diffusion fixed.. -349.655 -349.655
+INFO: diffusion fixed.. -353.789 -353.789
+INFO: diffusion fixed.. -347.25 -347.25
+INFO: diffusion fixed.. -346.408 -346.408
+INFO: diffusion fixed.. -342.359 -342.359
+INFO: diffusion fixed.. -344.329 -344.329
+INFO: diffusion fixed.. -343.315 -343.315
+INFO: diffusion fixed.. -346.804 -346.804
+INFO: diffusion fixed.. -346.342 -346.342
+INFO: diffusion fixed.. -348.664 -348.664
+INFO: diffusion fixed.. -348.85 -348.85
+INFO: diffusion fixed.. -343.778 -343.778
+INFO: diffusion fixed.. -349.797 -349.797
+INFO: diffusion fixed.. -346.985 -346.985
+INFO: diffusion fixed.. -348.783 -348.783
+INFO: diffusion fixed.. -353.882 -353.882
+INFO: diffusion fixed.. -353.383 -353.383
+INFO: diffusion fixed.. -352.584 -352.584
+INFO: diffusion fixed.. -343.239 -343.239
+INFO: diffusion fixed.. -342.897 -342.897
+INFO: diffusion fixed.. -348.861 -348.861
+INFO: diffusion fixed.. -345.097 -345.097
+INFO: diffusion fixed.. -346.92 -346.92
+INFO: diffusion fixed.. -347.183 -347.183
+INFO: diffusion fixed.. -338.727 -338.727
+INFO: diffusion fixed.. -350.055 -350.055
+INFO: diffusion fixed.. -349.55 -349.55
+INFO: diffusion fixed.. -343.289 -343.289
+INFO: diffusion fixed.. -349.429 -349.429
+INFO: diffusion fixed.. -346.62 -346.62
+INFO: diffusion fixed.. -345.173 -345.173
+INFO: diffusion fixed.. -354.576 -354.576
+INFO: diffusion fixed.. -354.35 -354.35
+INFO: diffusion fixed.. -351.733 -351.733
+INFO: diffusion fixed.. -354.909 -354.909
+INFO: diffusion fixed.. -349.916 -349.916
+INFO: diffusion fixed.. -347.334 -347.334
+INFO: diffusion fixed.. -350.638 -350.638
+INFO: diffusion fixed.. -357.508 -357.508
+INFO: diffusion fixed.. -355.346 -355.346
+INFO: diffusion fixed.. -354.672 -354.672
+INFO: diffusion fixed.. -356.588 -356.588
+INFO: diffusion fixed.. -346.352 -346.352
+INFO: diffusion fixed.. -350.582 -350.582
+INFO: diffusion fixed.. -347.034 -347.034
+INFO: diffusion fixed.. -352.699 -352.699
+INFO: diffusion fixed.. -349.316 -349.316
+INFO: diffusion fixed.. -352.034 -352.034
+INFO: diffusion fixed.. -348.533 -348.533
+INFO: diffusion fixed.. -348.797 -348.797
+INFO: diffusion fixed.. -348.65 -348.65
+INFO: diffusion fixed.. -350.316 -350.316
+INFO: diffusion fixed.. -352.177 -352.177
+INFO: diffusion fixed.. -351.424 -351.424
+INFO: diffusion fixed.. -353.056 -353.056
+INFO: diffusion fixed.. -352.783 -352.783
+INFO: diffusion fixed.. -350.697 -350.697
+INFO: diffusion fixed.. -348.269 -348.269
+INFO: diffusion fixed.. -347.231 -347.231
+INFO: diffusion fixed.. -343.661 -343.661
+INFO: diffusion fixed.. -352.527 -352.527
+INFO: diffusion fixed.. -356.219 -356.219
+INFO: diffusion fixed.. -349.282 -349.282
+INFO: diffusion fixed.. -351.833 -351.833
+INFO: diffusion fixed.. -350.625 -350.625
+INFO: diffusion fixed.. -348.383 -348.383
+INFO: diffusion fixed.. -346.277 -346.277
+INFO: diffusion fixed.. -344.844 -344.844
+INFO: diffusion fixed.. -348.664 -348.664
+INFO: diffusion fixed.. -352.647 -352.647
+INFO: diffusion fixed.. -349.494 -349.494
+INFO: diffusion fixed.. -350.519 -350.519
+INFO: diffusion fixed.. -346.71 -346.71
+INFO: diffusion fixed.. -347.516 -347.516
+INFO: diffusion fixed.. -345.585 -345.585
+INFO: diffusion fixed.. -346.736 -346.736
+INFO: diffusion fixed.. -351.28 -351.28
+INFO: diffusion fixed.. -355.326 -355.326
+INFO: diffusion fixed.. -348.187 -348.187
+INFO: diffusion fixed.. -344.366 -344.366
+INFO: diffusion fixed.. -350.219 -350.219
+INFO: diffusion fixed.. -353.904 -353.904
+INFO: diffusion fixed.. -351.981 -351.981
+INFO: diffusion fixed.. -347.512 -347.512
+INFO: diffusion fixed.. -347.228 -347.228
+INFO: diffusion fixed.. -347.463 -347.463
+INFO: diffusion fixed.. -345.46 -345.46
+INFO: diffusion fixed.. -349.539 -349.539
+INFO: diffusion fixed.. -350.824 -350.824
+INFO: diffusion fixed.. -355.008 -355.008
+INFO: diffusion fixed.. -350.589 -350.589
+INFO: diffusion fixed.. -346.447 -346.447
+INFO: diffusion fixed.. -354.988 -354.988
+INFO: diffusion fixed.. -348.082 -348.082
+INFO: diffusion fixed.. -346.919 -346.919
+INFO: diffusion fixed.. -351.325 -351.325
+INFO: diffusion fixed.. -348.949 -348.949
+INFO: diffusion fixed.. -343.725 -343.725
+INFO: diffusion fixed.. -348.207 -348.207
+INFO: diffusion fixed.. -350.623 -350.623
+INFO: diffusion fixed.. -345.031 -345.031
+INFO: diffusion fixed.. -339.096 -339.096
+INFO: diffusion fixed.. -339.998 -339.998
+INFO: diffusion fixed.. -344.026 -344.026
+INFO: diffusion fixed.. -346.614 -346.614
+INFO: diffusion fixed.. -340.974 -340.974
+INFO: diffusion fixed.. -349.703 -349.703
+INFO: diffusion fixed.. -350.4 -350.4
+INFO: diffusion fixed.. -351.503 -351.503
+INFO: diffusion fixed.. -343.39 -343.39
+INFO: diffusion fixed.. -355.079 -355.079
+INFO: diffusion fixed.. -354.762 -354.762
+INFO: diffusion fixed.. -348.976 -348.976
+INFO: diffusion fixed.. -350.041 -350.041
+INFO: diffusion fixed.. -350.043 -350.043
+INFO: diffusion fixed.. -345.326 -345.326
+INFO: diffusion fixed.. -347.471 -347.471
+INFO: diffusion fixed.. -351.476 -351.476
+INFO: diffusion fixed.. -355.411 -355.411
+INFO: diffusion fixed.. -350.243 -350.243
+INFO: diffusion fixed.. -351.775 -351.775
+INFO: diffusion fixed.. -349.797 -349.797
+INFO: diffusion fixed.. -348.054 -348.054
+INFO: diffusion fixed.. -346.906 -346.906
+INFO: diffusion fixed.. -348.675 -348.675
+INFO: diffusion fixed.. -350.245 -350.245
+INFO: diffusion fixed.. -347.139 -347.139
+INFO: diffusion fixed.. -346.313 -346.313
+INFO: diffusion fixed.. -355.11 -355.11
+INFO: diffusion fixed.. -347.003 -347.003
+INFO: diffusion fixed.. -352.035 -352.035
+INFO: diffusion fixed.. -345.309 -345.309
+INFO: diffusion fixed.. -346.5 -346.5
+INFO: diffusion fixed.. -351.662 -351.662
+INFO: diffusion fixed.. -353.397 -353.397
+INFO: diffusion fixed.. -349.667 -349.667
+INFO: diffusion fixed.. -344.259 -344.259
+INFO: diffusion fixed.. -348.04 -348.04
+INFO: diffusion fixed.. -351.963 -351.963
+INFO: diffusion fixed.. -353.179 -353.179
+INFO: diffusion fixed.. -353.439 -353.439
+INFO: diffusion fixed.. -361.633 -361.633
+INFO: diffusion fixed.. -356.639 -356.639
+INFO: diffusion fixed.. -352.706 -352.706
+INFO: diffusion fixed.. -350.368 -350.368
+INFO: diffusion fixed.. -352.65 -352.65
+INFO: diffusion fixed.. -343.942 -343.942
+INFO: diffusion fixed.. -344.662 -344.662
+INFO: diffusion fixed.. -351.145 -351.145
+INFO: diffusion fixed.. -347.814 -347.814
+INFO: diffusion fixed.. -353.235 -353.235
+INFO: diffusion fixed.. -353.359 -353.359
+INFO: diffusion fixed.. -351.301 -351.301
+INFO: diffusion fixed.. -353.773 -353.773
+INFO: diffusion fixed.. -351.86 -351.86
+INFO: diffusion fixed.. -357.011 -357.011
+INFO: diffusion fixed.. -351.583 -351.583
+INFO: diffusion fixed.. -354.522 -354.522
+INFO: diffusion fixed.. -351.242 -351.242
+INFO: diffusion fixed.. -352.781 -352.781
+INFO: diffusion fixed.. -347.077 -347.077
+INFO: diffusion fixed.. -348.503 -348.503
+INFO: diffusion fixed.. -353.596 -353.596
+INFO: diffusion fixed.. -357.479 -357.479
+INFO: diffusion fixed.. -355.245 -355.245
+INFO: diffusion fixed.. -351.373 -351.373
+INFO: diffusion fixed.. -353.114 -353.114
+INFO: diffusion fixed.. -352.711 -352.711
+INFO: diffusion fixed.. -350.072 -350.072
+INFO: diffusion fixed.. -348.954 -348.954
+INFO: diffusion fixed.. -351.666 -351.666
+INFO: diffusion fixed.. -350.103 -350.103
+INFO: diffusion fixed.. -353.976 -353.976
+INFO: diffusion fixed.. -348.161 -348.161
+INFO: diffusion fixed.. -349.132 -349.132
+INFO: diffusion fixed.. -348.057 -348.057
+INFO: diffusion fixed.. -350.464 -350.464
+INFO: diffusion fixed.. -350.479 -350.479
+INFO: diffusion fixed.. -350.767 -350.767
+INFO: diffusion fixed.. -347.385 -347.385
+INFO: diffusion fixed.. -353.783 -353.783
+INFO: diffusion fixed.. -355.788 -355.788
+INFO: diffusion fixed.. -356.491 -356.491
+INFO: diffusion fixed.. -353.209 -353.209
+
+INFO: Total Running Time: 69480.2 s, per step: 0.694802 ms
+INFO: Timings, in seconds, by Timer (total, own, spent in children)
+> SimBackend                      69480.209 (100.0%)      165.232 (  0.2%)    69314.977 ( 99.8%)
+***> Lists                          554.692 (  0.8%)      554.692 (  0.8%)        0.000 (  0.0%)
+***> Thermostat                      30.489 (  0.0%)       30.489 (  0.0%)        0.000 (  0.0%)
+***> Forces                       66484.651 ( 95.7%)    66484.651 ( 95.7%)        0.000 (  0.0%)
+***> First Step                    2171.690 (  3.1%)     2171.690 (  3.1%)        0.000 (  0.0%)
+***> Observables                     73.453 (  0.1%)       73.453 (  0.1%)        0.000 (  0.0%)
+
+INFO: END OF THE SIMULATION, everything went OK!
+INFO: Lists updated 2305185 times (every ~43.380466 steps)
+INFO: Aggregated I/O statistics (set debug=1 for file-wise information)
+	 26.480 MB written to files
+	  6.115 KB written to stdout/stderr
+	For a total of 0.000381 MB/s
+
+Please cite at least the following publication for any work that uses the oxDNA simulation package
+  * E. Poppleton et al., J. Open Source Softw. 8, 4693 (2023), DOI: 10.21105/joss.04693
