@@ -1,0 +1,77 @@
+#!/bin/sh
+#PBS -l walltime=15:00:00
+#PBS -l select=1:ncpus=1:mem=10GB
+#PBS -J 1-28
+
+set -euo pipefail
+
+# --- paths ---
+TEMPLATE="$HOME/Re-Genesis/oxDNA/alex/fd_array_fullrod_kinking/template"
+PARAMS="$HOME/Re-Genesis/oxDNA/alex/fd_array_fullrod_kinking/params.tsv"
+OUTROOT="$HOME/Re-Genesis/oxDNA/alex/fd_array_fullrod_kinking/output"
+
+# --- array index ---
+IDX="${PBS_ARRAY_INDEX:-${PBS_ARRAYID:-1}}"
+
+# --- read k, r0, seed from params.tsv ---
+KRS="$(awk -v i="$IDX" '
+  $0 ~ /^[[:space:]]*(#|$)/ {next}
+  NF>=4 && $1==i {print $2, $3, $4; exit}
+' "$PARAMS" || true)"
+
+if [ -z "$KRS" ]; then
+  echo "ERROR: could not find (k, r0, seed) for idx=$IDX in $PARAMS" >&2
+  exit 1
+fi
+
+k="$(echo "$KRS" | awk '{print $1}')"
+r0="$(echo "$KRS" | awk '{print $2}')"
+seed_raw="$(echo "$KRS" | awk '{print $3}')"
+
+# --- tags ---
+k_tag="$(printf "%03d" "$(awk -v k="$k" 'BEGIN{printf "%.0f", k*100}')")"
+r0_tag="$(awk -v r="$r0" 'BEGIN{if (r==int(r)) printf "%d", r; else printf "%g", r}')"
+seed_tag="$(awk -v s="$seed_raw" 'BEGIN{printf "%s", s+0==s?int(s):s}')"
+
+TOP="K_${k_tag}_r0_${r0_tag}_seed_${seed_tag}"
+
+# --- directories for this stage and prior stages ---
+OUTDIR="${OUTROOT}/${TOP}/${TOP}_traps_MD_long"
+MC_DIR="${OUTROOT}/${TOP}/${TOP}_traps_MC"
+MD_DIR="${OUTROOT}/${TOP}/${TOP}_traps_MD"
+
+mkdir -p "$OUTDIR"
+
+# --- stage inputs into OUTDIR ---
+cp "$TEMPLATE/input_only_traps_long_MD" "$OUTDIR/input_only_traps_long_MD"
+cp "$TEMPLATE/top_5to3.top"             "$OUTDIR/top_5to3.top"
+cp "$TEMPLATE/external.conf"            "$OUTDIR/external.conf"
+cp "$TEMPLATE/make_obs.sh"              "$OUTDIR/make_obs.sh" 2>/dev/null || true
+chmod +x "$OUTDIR/make_obs.sh" 2>/dev/null || true
+
+# Bring relaxed conf from previous (seeded) MD stage
+cp "${MD_DIR}/posttraps_relax_MD_last.conf" \
+   "$OUTDIR/posttraps_relax_MD_last.conf"
+
+cd "$OUTDIR"
+
+# --- patch external.conf (stiff = k, r0 = r0) ---
+awk -v k="$k" -v r0="$r0" '
+  {
+    if ($0 ~ /^[[:space:]]*stiff[[:space:]]*=/) { print "   stiff = " k; next }
+    if ($0 ~ /^[[:space:]]*r0[[:space:]]*=/)    { print "   r0 = " r0; next }
+    print
+  }
+' external.conf > external.conf.tmp && mv external.conf.tmp external.conf
+
+# --- ensure SEED inside the long-MD input ---
+INPUT_FILE="$OUTDIR/input_only_traps_long_MD"
+if grep -qi '^[[:space:]]*seed[[:space:]]*=' "$INPUT_FILE"; then
+  sed -E -i "s/^([[:space:]]*seed[[:space:]]*=[[:space:]]*).*/\1${seed_tag}/I" "$INPUT_FILE"
+else
+  sed -i "1i seed = ${seed_tag}" "$INPUT_FILE"
+fi
+
+# --- run long MD ---
+runcommand="$HOME/oxDNA/build/bin/oxDNA $INPUT_FILE"
+timeout 885m $runcommand

@@ -1,0 +1,69 @@
+#!/bin/sh
+#PBS -l walltime=00:10:00
+#PBS -l select=1:ncpus=1:mem=10GB
+#PBS -J 1-63
+
+
+# --- template input directory (one "base case") ---
+TEMPLATE="$HOME/Re-Genesis/oxDNA/alex/fd_array_fullrod_kinking/template/"
+
+# --- parameter table ---
+PARAMS="$HOME/Re-Genesis/oxDNA/alex/fd_array_fullrod_kinking/params.tsv"
+
+# --- which array index am I? ---
+IDX="${PBS_ARRAY_INDEX:-${PBS_ARRAYID:-1}}"
+
+# --- read k and r0 from the table line matching IDX ---
+KR="$(awk -v i="$IDX" '
+  $0 ~ /^#/ {next}
+  NF>=3 && $1==i {print $2, $3; exit}
+' "$PARAMS")"
+
+if [ -z "$KR" ]; then
+  echo "Could not find parameters for index $IDX in $PARAMS" >&2
+  exit 1
+fi
+
+k="$(echo "$KR" | awk '{print $1}')"
+r0="$(echo "$KR" | awk '{print $2}')"
+
+# --- format k like 0.75 -> 075, 0.25 -> 025 ---
+k_tag="$(printf "%.0f" "$(awk -v k="$k" 'BEGIN{print k*100}')")"
+k_tag="$(printf "%03d" "$k_tag")"   # zero-pad to 3 digits
+
+# --- format r0 like 2.0 -> 2, 4.0 -> 4, 6.0 -> 6 ---
+r0_tag="$(awk -v r="$r0" 'BEGIN{
+  if (r == int(r)) printf "%d", int(r);
+  else printf "%g", r
+}')"
+
+
+# --- output directory ---
+OUTROOT="$HOME/Re-Genesis/oxDNA/alex/fd_array_fullrod_kinking/output/"
+OUTDIR="$OUTROOT/K_${k_tag}_r0_${r0_tag}/K_${k_tag}_r0_${r0_tag}_traps_MC"
+mkdir -p "$OUTDIR"
+# --- stage inputs into OUTDIR ---
+cp "$TEMPLATE/input_only_traps_MC"        "$OUTDIR/input_only_traps_MC"
+cp "$TEMPLATE/top_5to3.top"                   "$OUTDIR/top_5to3.top"
+cp "$TEMPLATE/external.conf"                  "$OUTDIR/external.conf"
+cp "$TEMPLATE/make_obs.sh"                  "$OUTDIR/make_obs.sh"
+cp "$TEMPLATE/assembly_last.conf"	"$OUTDIR/assembly_last.conf"
+#cp "$OUTROOT/K_${k_tag}_r0_${r0_tag}/K_${k_tag}_r0_${r0_tag}_rel_MD/postass_relax_MD_last.conf"                  "$OUTDIR/postass_relax_MD_last.conf"
+chmod +x "$OUTDIR/make_obs.sh"
+
+cd "$OUTDIR"
+
+# --- patch external.conf: replace ALL stiff= and r0= values (file only has mutual_trap blocks) ---
+awk -v k="$k" -v r0="$r0" '
+  {
+    if ($0 ~ /^[[:space:]]*stiff[[:space:]]*=/) { print "   stiff = " k; next }
+    if ($0 ~ /^[[:space:]]*r0[[:space:]]*=/)    { print "   r0 = " r0; next }
+    print
+  }
+' external.conf > external.conf.tmp && mv external.conf.tmp external.conf
+
+# --- run ---
+input_file="$OUTDIR/input_only_traps_MC"
+runcommand="$HOME/oxDNA_git/oxDNA/build/bin/oxDNA $input_file"
+timeout 7m $runcommand
+

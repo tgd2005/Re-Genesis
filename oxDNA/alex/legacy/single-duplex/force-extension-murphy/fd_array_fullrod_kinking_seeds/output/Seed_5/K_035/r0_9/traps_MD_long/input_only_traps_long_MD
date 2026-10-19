@@ -1,0 +1,86 @@
+# Backend and Model
+interaction_type = DNA2
+seq_dep_file = '/rds/general/user/tgd23/home/oxDNA/oxDNA2_average_sequence_parameters.txt' 
+backend = CPU
+sim_type = MD
+restart_step_counter = 1
+seed = 5
+
+# Physical Parameters
+T = 20C
+salt_concentration = 0.5
+
+# Simulation Length (10^8 steps)
+steps = 5e7
+dt = 0.001
+verlet_skin = 0.05
+refresh_vel = 1
+
+# Input/Output Files
+topology = top_5to3.top
+conf_file = posttraps_relax_MD_last.conf
+trajectory_file = posttraps_long_MD_traj.dat
+energy_file = posttraps_long_MD_energy.dat
+lastconf_file = posttraps_long_MD_last.conf
+
+# Housekeeping
+print_conf_interval = 1e5
+print_energy_every = 1e5
+thermostat = john # john is an alternative
+#gamma = 4.0 # remove if john
+newtonian_steps = 103
+diff_coeff = 2.5
+time_scale = linear
+
+max_backbone_force = 5
+max_backbone_force_far = 10
+
+# mutual traps
+external_forces = 1
+external_forces_file = external.conf
+
+data_output_1={
+        name=posttraps_long_MD_dist.dat
+        print_every=1e3
+        col_1={
+                type=step
+        }
+        col_2={
+                type=distance
+                particle_1=15
+                particle_2=16
+        }
+        col_3={
+		type=external_force
+		particles=15
+	}
+	col_4={
+		type=external_force
+		particles=16
+	}
+	col_5={
+		type=hb_list
+		only_count=true
+	}
+	col_6={
+                type=force_energy
+        }
+}
+
+data_output_2={
+        name=posttraps_long_MD_pair_energy.dat
+        print_every=1e2
+        col_1={
+                type=pair_energy
+                particle1_id=0
+                particle2_id=85
+        }
+        col_2={
+                type=pair_energy
+                particle1_id=31
+                particle2_id=32
+        }
+}
+
+
+
