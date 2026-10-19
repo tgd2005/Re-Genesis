@@ -1,0 +1,36 @@
+# Backend and Model
+interaction_type = DNA2
+seq_dep_file = '$HOME/oxDNA/oxDNA2_sequence_dependent_parameters'
+backend = CPU
+sim_type = MD
+restart_step_counter = 1
+seed = 12345
+
+# Physical Parameters
+T = 20C
+salt_concentration = 0.5
+
+# Simulation Length (10^8 steps)
+steps = 1e8
+dt = 0.003
+verlet_skin = 0.05
+refresh_vel = 1
+
+# Input/Output Files
+topology = generated.top
+conf_file = last_conf.dat
+trajectory_file = trajectory.dat
+energy_file = energy.dat
+last_conf_file = last_conf.dat
+
+# Housekeeping
+print_conf_interval = 1e6
+print_energy_every = 1e6
+thermostat = john
+newtonian_steps = 103
+diff_coeff = 2.5
+time_scale = linear
+
+# mutual traps
+external_forces = 1
+external_forces_file = external.conf
