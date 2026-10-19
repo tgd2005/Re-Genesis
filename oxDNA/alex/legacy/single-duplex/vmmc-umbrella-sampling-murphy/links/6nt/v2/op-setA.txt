@@ -1,0 +1,17 @@
+{
+order_parameter = bond
+name = all_native_bonds
+pair1 = 153, 194
+pair2 = 154, 193
+pair3 = 155, 192
+pair4 = 156, 191
+pair5 = 157, 190
+pair6 = 158, 189
+}
+
+{
+order_parameter = mindistance
+name = caca1
+pair1 = 153, 194
+interfaces = 3.
+}

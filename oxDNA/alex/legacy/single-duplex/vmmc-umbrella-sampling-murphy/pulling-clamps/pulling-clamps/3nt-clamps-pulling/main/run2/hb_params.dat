@@ -1,0 +1,7 @@
+{
+order_parameter = bond
+name = TN_bp_total
+pair1 = 153, 188
+pair2 = 154, 187
+pair3 = 155, 186
+}
